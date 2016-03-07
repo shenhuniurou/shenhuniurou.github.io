@@ -1,0 +1,10 @@
+---
+name : hyde
+website :  https://github.com/poole/hyde
+description :  "Hyde built for Jekyll"
+git_url : git://github.com/poole/hyde.git
+source_url : https://github.com/poole/hyde
+author:
+  name : Mark Otto
+  email : md
+  website : http://mdo.fm
