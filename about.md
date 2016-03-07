@@ -3,28 +3,14 @@ layout: page
 title: About
 ---
 
+Tyler is an Android Developer currently living in Durham, NC. He is a mountain biker, banjo picker, and a coffee enthusiast.
+
+He believes: 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+	Imagination rules the world.
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+You can find him on [GitHub](https://github.com/poole), on Twitter [@w3bshark](https://twitter.com/w3bshark), and on [LinkedIn](https://www.linkedin.com/in/tylermccraw), or you can email him at mccraw.tyler [at] gmail.com.
 
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+### This site was made with
+[Jekyll](http://jekyllrb.com) a Ruby powered static content generator, [Sass](http://sass-lang.com/) a CSS extension language, a Jekyll theme called [Hyde](http://hyde.getpoole.com) and a font family called Roboto by [Christian Robinson](https://twitter.com/cr64)

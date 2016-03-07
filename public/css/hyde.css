@@ -32,7 +32,7 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
   html {
@@ -79,7 +79,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: "Roboto Condensed", serif;
   font-size: 3.25rem;
 }
 
@@ -176,6 +176,15 @@ a.sidebar-nav-item:focus {
  */
 
 /* Base16 (http://chriskempson.github.io/base16/#default) */
+
+/* Purple */
+.theme-material .sidebar {
+  background-color: #673AB7;
+}
+.theme-material .content a,
+.theme-material .related-posts li a:hover {
+  color: #673AB7;
+}
 
 /* Red */
 .theme-base-08 .sidebar {

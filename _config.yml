@@ -6,20 +6,17 @@ gems: [jekyll-paginate, jekyll-gist]
 permalink:        pretty
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            Tyler McCraw
+tagline:          'An Android blog'
+description:      'A blog on Android development and other trains of thoughts.<br>Made by <a href="https://twitter.com/w3bshark" target="_blank">@w3bshark</a>.'
+url:              http://w3bshark.com
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Tyler McCraw'
+  url:            https://twitter.com/w3bshark
 
 paginate:         5
 
 # Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/poole/hyde
+github:			  https://github.com/tylermccraw
