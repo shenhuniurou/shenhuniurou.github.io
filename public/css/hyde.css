@@ -88,7 +88,7 @@ html {
   margin-bottom: 1rem;
 }
 .sidebar-nav-item {
-  display: block;
+  margin-right: 1rem;
   line-height: 1.75;
 }
 a.sidebar-nav-item:hover,
@@ -97,6 +97,9 @@ a.sidebar-nav-item:focus {
 }
 .sidebar-nav-item.active {
   font-weight: bold;
+}
+.sidebar-nav-copyright {
+  font-size: .8rem;
 }
 
 /* Sticky sidebar
