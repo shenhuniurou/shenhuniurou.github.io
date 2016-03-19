@@ -20,3 +20,6 @@ paginate:         1
 
 # Custom vars
 github:			  https://github.com/tylermccraw
+
+# Disqus comments configuration (leave blank to disable comments)
+disqus_shortname: 'w3bshark'
