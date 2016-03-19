@@ -1,6 +1,7 @@
 ---
 layout: post
 comments: true
+permalink: /blog/:title
 title: Why Android?
 ---
 
