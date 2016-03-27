@@ -1,6 +1,6 @@
 # Dependencies
 highlighter:      rouge
-gems: [jekyll-paginate, jekyll-gist]
+gems: [jekyll-paginate, jekyll-gist, jekyll-github-metadata]
 
 # Permalinks
 permalink:        pretty
@@ -19,7 +19,10 @@ author:
 paginate:         1
 
 # Custom vars
-github:			  https://github.com/tylermccraw
+github_link:	  https://github.com/tylermccraw
+
+# GitHub Metadata setup
+repository: 	  tylermccraw/tylermccraw.github.io
 
 # Disqus comments configuration (leave blank to disable comments)
 disqus_shortname: 'w3bshark'
