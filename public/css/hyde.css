@@ -88,8 +88,9 @@ html {
   margin-bottom: 1rem;
 }
 .sidebar-nav-item {
-  margin-right: 1rem;
+  margin-right: .6rem;
   line-height: 1.75;
+  font-size: .85rem;
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
