@@ -265,3 +265,36 @@ a.sidebar-nav-item:focus {
  * Material Icon theming
  */
 .material-icons.md-18 { font-size: 18px; }
+
+/*
+ * Portfolio theming
+ */
+.portfolio-item {
+  position: relative;
+  padding: 1em;
+  margin-top: 1em;
+  max-width: 600px;
+
+  opacity: 0.75;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.portfolio-item:hover {
+  opacity: 1;
+}
+
+.portfolio-item:after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*background:no-repeat url(http://placehold.it/600x150);*/
+  background: #717171;
+  width: 100%;
+  height: 100%;
+  opacity : 0.2;
+  z-index: -1;
+}
