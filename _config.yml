@@ -1,6 +1,6 @@
 # Dependencies
 highlighter:      rouge
-gems: [jekyll-paginate, jekyll-gist, jekyll-github-metadata]
+gems: [jekyll-paginate, jekyll-gist, jekyll-github-metadata, jekyll-time-to-read]
 
 # Permalinks
 permalink:        pretty

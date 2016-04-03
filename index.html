@@ -12,7 +12,7 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date: "%-d %b %Y" }} · {{ post.content | reading_time }}</span>
+    <span class="post-date">{{ post.date | date: "%-d %b %Y" }} · {{ post.content | reading_time_as_i }}</span>
 
     <a class="post-excerpt" href="{{ post.url }}">{{ post.content | strip_html | truncatewords: 50 }}</a>
     <br />
