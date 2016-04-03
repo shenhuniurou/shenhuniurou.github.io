@@ -350,6 +350,7 @@ tbody tr:nth-child(odd) th {
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
+  font-size: .7rem;
 }
 
 /* Related posts */
@@ -430,6 +431,35 @@ a.pagination-item:hover {
 }
 
 /* CUSTOM THEMING */
+
+/*
+ * Post Excerpts
+ */
+.post-excerpt {
+  color: inherit !important;
+  text-decoration: inherit;
+}
+.post-excerpt:hover {
+  color: #515151;
+  text-decoration: none;
+} 
+.post-excerpt:focus {
+  color: #515151;
+  text-decoration: none;
+}
+
+.read-more {
+  color: rgba(0,0,0,.3) !important;
+  font-size: .7rem;
+}
+.read-more:hover {
+  color: rgba(0,0,0,.44) !important;
+  text-decoration: none;
+}
+.read-more:focus {
+  color: rgba(0,0,0,.44) !important;
+  text-decoration: none;
+}
 
 /*
  * About theming

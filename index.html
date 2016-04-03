@@ -12,9 +12,11 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">{{ post.date | date: "%-d %b %Y" }} · {{ post.content | reading_time }}</span>
 
-    {{ post.content }}
+    <a class="post-excerpt" href="{{ post.url }}">{{ post.content | strip_html | truncatewords: 50 }}</a>
+    <br />
+    <a class="read-more" href="{{ post.url }}">Read more...</a>
   </div>
   {% endfor %}
 </div>
