@@ -154,3 +154,5 @@ In the javadoc for the TextInputEditText, it describes itself as:
 
 If you use the TextInputEditText in any other layout, the EditText won't have any reference to a TextInputLayout `hint`, so there's no way for the IME to know what text to display as a hint in Extract mode.
 Also, keep in mind that if you're not using TextInputLayouts, there's no point in using the TextInputEditText API.
+
+#### Have other helpful hints on TextInputLayouts? Make sure to leave a comment below.
