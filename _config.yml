@@ -1,28 +1,20 @@
 # Dependencies
-highlighter:      rouge
-gems: [jekyll-paginate, jekyll-gist, jekyll-github-metadata]
-paginate: 5
+highlighter: rouge
+paginate: 10
 
 # Setup
-title:            shenhuniurou
-tagline:          'shenhuniurou's blogs'
-description:      '当世事再无完美，可远在岁月如歌中找你'
-url:              http://shenhuniurou.com
-baseurl:          /
-
-author:
-  name:           'shenhuniurou'
-  url:            http://shenhuniurou.com
-
-paginate:         5
+title: shenhuniurou
+tagline: 'shenhuniurou's blogs'
+description: '当世事再无完美，可远在岁月如歌中找你'
+url: http://shenhuniurou.com
 
 # Custom vars
-github_link:	  https://github.com/shenhuniurou
+github_link: https://github.com/shenhuniurou
 
-weibo_link:       http://weibo.com/shenhuniurou
+weibo_link: http://weibo.com/shenhuniurou
 
 # GitHub Metadata setup
-repository: 	  shenhuniurou/shenhuniurou.github.io
+repository: shenhuniurou/shenhuniurou.github.io
 
 # Disqus comments configuration (leave blank to disable comments)
 disqus_shortname: 'shenhuniurou'
