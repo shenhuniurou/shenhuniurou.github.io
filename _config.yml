@@ -1,10 +1,6 @@
 # Dependencies
 highlighter:      rouge
 gems: [jekyll-paginate, jekyll-gist, jekyll-github-metadata]
-markdown: redcarpet
-safe: false
-pygments: true
-excerpt_separator: "\n\n\n"
 paginate: 5
 
 # Setup

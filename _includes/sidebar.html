@@ -1,16 +1,16 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <h1>
+      <h3>
         <a href="{{ site.baseurl }}">
-          {{ site.title }}
+          {{ site.title }的个人博客}
         </a>
-      </h1>
+      </h3>
       <p class="lead">{{ site.description }}</p>
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">首页</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -28,6 +28,6 @@
 
     </nav>
 
-    <p class="sidebar-nav-copyright">&copy; {{ site.time | date: '%Y' }} Tyler McCraw</p>
+    <p class="sidebar-nav-copyright">&copy; {{ site.time | date: '%Y' }} shenhuniurou</p>
   </div>
 </div>
