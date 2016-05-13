@@ -1,14 +1,8 @@
 ---
 layout: page
-title: 关于
+title: About
 ---
-
-Tyler is an Android Developer currently living in Durham, NC.  
-   He is a: <i class="material-icons md-18">&#xE52F;</i> mountain biker, <i class="material-icons md-18">&#xE405;</i> banjo picker, and a <i class="material-icons md-18">&#xE544;</i> coffee enthusiast.
-
-You can find him on [GitHub](https://github.com/TylerMcCraw), Twitter [@w3bshark](https://twitter.com/w3bshark), and [LinkedIn](https://www.linkedin.com/in/tylermccraw), or you can email him at mccraw.tyler [at] gmail.com.
-
-------
-
-This site was made with [Jekyll](http://jekyllrb.com), [Hyde](http://hyde.getpoole.com), [Poole](http://getpoole.com), and [Sass](http://sass-lang.com/). 
-It was written using a font family called [Roboto](https://www.google.com/fonts/specimen/Roboto) by [Christian Robinson](https://twitter.com/cr64) and the [Material Design Icons](http://google.github.io/material-design-icons/).
+-   程序员一枚，性别男爱好女。
+-   主要从事移动开发，android和iOS都会一点，还做过一年java后台。
+-   周末喜欢打打篮球，弹弹尤克里里。
+-   喜欢看NBA，湖人铁粉，科蜜。

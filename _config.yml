@@ -1,14 +1,16 @@
 # Dependencies
 highlighter:      rouge
 gems: [jekyll-paginate, jekyll-gist, jekyll-github-metadata]
-
-# Permalinks
-permalink:        pretty
+markdown: redcarpet
+safe: false
+pygments: true
+excerpt_separator: "\n\n\n"
+paginate: 5
 
 # Setup
 title:            shenhuniurou
-tagline:          'An Android blog'
-description:      'A blog on Android development and other trains of thoughts.<br>Made by <a href="http://shenhuniurou.com" target="_blank">@shenhuniurou</a>.'
+tagline:          'shenhuniurou's blogs'
+description:      '当世事再无完美，可远在岁月如歌中找你'
 url:              http://shenhuniurou.com
 baseurl:          /
 
@@ -20,6 +22,8 @@ paginate:         5
 
 # Custom vars
 github_link:	  https://github.com/shenhuniurou
+
+weibo_link:       http://weibo.com/shenhuniurou
 
 # GitHub Metadata setup
 repository: 	  shenhuniurou/shenhuniurou.github.io
