@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 关于
 ---
 
 Tyler is an Android Developer currently living in Durham, NC.  

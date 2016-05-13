@@ -6,23 +6,23 @@ gems: [jekyll-paginate, jekyll-gist, jekyll-github-metadata]
 permalink:        pretty
 
 # Setup
-title:            Tyler McCraw
+title:            shenhuniurou
 tagline:          'An Android blog'
-description:      'A blog on Android development and other trains of thoughts.<br>Made by <a href="https://twitter.com/w3bshark" target="_blank">@w3bshark</a>.'
-url:              http://w3bshark.com
+description:      'A blog on Android development and other trains of thoughts.<br>Made by <a href="http://shenhuniurou.com" target="_blank">@shenhuniurou</a>.'
+url:              http://shenhuniurou.com
 baseurl:          /
 
 author:
-  name:           'Tyler McCraw'
-  url:            https://twitter.com/w3bshark
+  name:           'shenhuniurou'
+  url:            http://shenhuniurou.com
 
 paginate:         5
 
 # Custom vars
-github_link:	  https://github.com/tylermccraw
+github_link:	  https://github.com/shenhuniurou
 
 # GitHub Metadata setup
-repository: 	  tylermccraw/tylermccraw.github.io
+repository: 	  shenhuniurou/shenhuniurou.github.io
 
 # Disqus comments configuration (leave blank to disable comments)
-disqus_shortname: 'w3bshark'
+disqus_shortname: 'shenhuniurou'
