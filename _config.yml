@@ -4,14 +4,14 @@ email: "shenhuniurou@gmail.com"
 description: "shenhuniurou's blog"
 baseurl: ""
 url: "http://shenhuniurou.com"
-permalink: /:year/:title
+permalink: /:year/:month/:day/:title
 
 
 # Social account
 twitter:  Kosolxx
 weibo:    shenhuniurou
 github:   shenhuniurou
-# codepen:  P233
+# codepen:  username
 # dribbble: username
 
 
