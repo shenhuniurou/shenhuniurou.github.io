@@ -1,22 +1,8 @@
 ---
 layout: default
-title: Home
 ---
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date: "%-d %b %Y" }}</span>
-
-    <a class="post-excerpt" href="{{ post.url }}">{{ post.content | strip_html | truncatewords: 50 }}</a>
-    <br />
-    <a class="read-more" href="{{ post.url }}">Read more...</a>
-  </div>
-  {% endfor %}
+<div id="home" class="container">
+  <h1>shenhuniurou</h1>
+  <p>移动开发爱好者</p>
+  
 </div>
