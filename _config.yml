@@ -1,6 +1,30 @@
-title: shenhuniurou
-description: '当世事再无完美，可远在岁月如歌中找你'
-url: http://shenhuniurou.com
+# Site settings
+title: shenhuniurou's blog
+description: "shenhuniurou's blog"
 baseurl: ""
-highlighter: rouge
-paginate: 10
+url: "http://shenhuniurou.com"
+permalink: /:year/:title
+
+
+# Social account
+# twitter:  Kosolxx
+weibo:    shenhuniurou
+github:   shenhuniurou
+# codepen:  P233
+# dribbble: username
+
+
+# Comment
+# disqus_shortname:
+
+
+# Google Analytics
+google_analytics: UA-60830414-1
+
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+gems:
+  - jekyll-sitemap
