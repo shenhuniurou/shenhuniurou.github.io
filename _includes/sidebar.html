@@ -1,33 +1,34 @@
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h3>
-        <a href="{{ site.baseurl }}">
-          {{ site.title 的个人博客}}
-        </a>
-      </h3>
-      <p class="lead">{{ site.description }}</p>
+<aside id="sidebar">
+  <div id="sidebar-left">
+    <a id="sidebar-avatar" href="{{ "/" | prepend: site.baseurl }}">
+      <img id="sidebar-avatar-img" alt="{{ site.tittle }}" src="{{ "/assets/img/avatar.jpg" | prepend: site.baseurl }}"/>
+    </a>
+
+    <div id="sidebar-social">
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="sidebar-social-icon feed"></a>
+      <a href="mailto:{{ site.email }}" class="sidebar-social-icon email"></a>
+      {% include social.html %}
     </div>
 
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">首页</a>
-
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
-
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-          {% endif %}
-        {% endif %}
+    <ul id="sidebar-tags">
+      <li class="sidebar-tag active" data-filter="all">全部文章</li>
+      {% for tag in site.tags %}
+      <li class="sidebar-tag" data-filter="{{ tag | first }}">{{ tag | first }}</li>
       {% endfor %}
-
-    </nav>
-
-    <p class="sidebar-nav-copyright">&copy; {{ site.time | date: '%Y' }} shenhuniurou</p>
+    </ul>
   </div>
-</div>
+
+  <div id="sidebar-right">
+    <div id="search-box">
+      <input id="search-input" type="text" placeholder="Search" />
+    </div>
+
+    <nav id="toc">
+      {% for post in site.posts %}
+      <a class="toc-link" data-tags="{{ post.tags | join: ' ' }}" href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+      {% endfor %}
+    </nav>
+  </div>
+</aside>
