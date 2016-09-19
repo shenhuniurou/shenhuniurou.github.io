@@ -21,8 +21,8 @@ disqus_shortname: shenhuniurou
 
 # Google Analytics
 ga:
-	id: UA-84364073-1
-	url: shenhuniurou.com
+  id: UA-84364073-1
+  url: shenhuniurou.com
 
 # Build settings
 markdown: kramdown
