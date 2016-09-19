@@ -20,12 +20,15 @@ disqus_shortname: shenhuniurou
 
 
 # Google Analytics
-google_analytics: UA-60830414-1
-
+ga:
+	id: UA-84364073-1
+	url: shenhuniurou.com
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 sass:
   style: compressed
 gems:
   - jekyll-sitemap
+  - jekyll-seo-tag
