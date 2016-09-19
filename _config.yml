@@ -23,6 +23,10 @@ disqus_shortname: shenhuniurou
 ga:
   id: UA-84364073-1
   url: shenhuniurou.com
+  
+# Sidebar filter
+# Choose 'tag' or 'category' as filter in sidebar.
+filter: 'category'
 
 # Build settings
 markdown: kramdown
