@@ -16,7 +16,8 @@ github:   shenhuniurou
 
 
 # Comment
-disqus_shortname: shenhuniurou
+disqus:
+  shortname: shenhuniurou
 
 
 # Google Analytics
