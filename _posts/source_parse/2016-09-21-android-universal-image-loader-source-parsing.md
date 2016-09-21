@@ -10,11 +10,11 @@ keywords:
 Android-Universal-Image-Loader（UIL）作为一款强大的被普遍运用的可高度定制的第三方图片缓存显示框架，研究它的底层实现是很有必要的，研究透它的源码，能帮助我们更好地在项目中运用它，也能让我们学习到作者的设计思路，达到能够自定义我们想要的图片显示器的水准，因为今后我们有可能会遇到一些不太大的项目，对图片的处理也没有那么多要求，如果直接导入UIL可能会使得我们的项目体积变大，这时候自己写一个比较简单的图片显示器就更好了。
 #####使用步骤：
 * 导入jar包或者在主moudle的build.gradle中dependencies部分加上
-```java
+```
 compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 ```
 * 然后在Application中进行相关配置
-```java
+```
 ImageLoaderConfiguration configuration = new ImageLoaderConfiguration.Builder(this)
             // 添加你的配置需求
             .build();
