@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Android-Universal-Image-Loader源码解析
+title: Android-Universal-Image-Loader框架源码解析
 category: 源码解析
-tags: Android-Universal-Image-Loader
+tags: 图片框架
 keywords: 
 ---
+
 
 Android-Universal-Image-Loader（UIL）作为一款强大的被普遍运用的可高度定制的第三方图片缓存显示框架，研究它的底层实现是很有必要的，研究透它的源码，能帮助我们更好地在项目中运用它，也能让我们学习到作者的设计思路，达到能够自定义我们想要的图片显示器的水准，因为今后我们有可能会遇到一些不太大的项目，对图片的处理也没有那么多要求，如果直接导入UIL可能会使得我们的项目体积变大，这时候自己写一个比较简单的图片显示器就更好了。
 #####使用步骤：
