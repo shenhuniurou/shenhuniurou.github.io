@@ -9,7 +9,7 @@ keywords:
 
 Android-Universal-Image-Loader（UIL）作为一款强大的被普遍运用的可高度定制的第三方图片缓存显示框架，研究它的底层实现是很有必要的，研究透它的源码，能帮助我们更好地在项目中运用它，也能让我们学习到作者的设计思路，达到能够自定义我们想要的图片显示器的水准，因为今后我们有可能会遇到一些不太大的项目，对图片的处理也没有那么多要求，如果直接导入UIL可能会使得我们的项目体积变大，这时候自己写一个比较简单的图片显示器就更好了。
 
-#####使用步骤：
+##使用步骤：
 
 * 导入jar包或者在主moudle的build.gradle中dependencies部分加上
 
@@ -72,7 +72,7 @@ final DisplayImageOptions defaultDisplayImageOptions;
 ImageLoader.getInstance().diaplayImage(imageurl, imageview);
 ```
 
-#####工作流程及原理
+##工作流程及原理
 
 * Overall design
 
@@ -90,7 +90,8 @@ ImageLoader.getInstance().diaplayImage(imageurl, imageview);
 * 包结构
 
 ![universal-image-loader包结构.png](http://upload-images.jianshu.io/upload_images/1159224-5a34b8d67cab1354.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
-```javacache分为MemoryCeche和DiskCache，内存图片缓存和本地图片缓存；
+```java
+cache分为MemoryCeche和DiskCache，内存图片缓存和本地图片缓存；
 core中包括：
 图片解码器BitmapDecder，负责将图片输入流inputstream转换为Bitmap对象
 图片显示器BitmapDisplayer，将bitmap对象显示到ImageAware
@@ -103,9 +104,9 @@ core中包括：
 用于显示图片的任务DisplayBitmapTask
 ```
 
-#####核心类介绍
+##核心类介绍
 
-* ######ImageLoader
+* ###ImageLoader
 
 单例对象
 
