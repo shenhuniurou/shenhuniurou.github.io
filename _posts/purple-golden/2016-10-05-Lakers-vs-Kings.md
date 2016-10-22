@@ -7,11 +7,11 @@ tags: 湖人
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;等待了一整个夏天，经过漫长的休赛季，终于迎来了湖人第一场季前赛。夏天也一直在关注着湖人年轻球员和湖人官方平台的动态，球员们的训练以及日常，时不时跑去他们的Twitter和Instagram上看他们的训练视频。虽然前不久我们经历了Kobe退役这个令人悲痛的时刻，但是赛季结束后管理层弄来了年轻主教练卢克沃顿，这个前湖人球员以及前勇士助教，他的加入无疑让湖人球员兴奋不已。经过短暂几个月的训练，想看看这群年轻人到底有什么样的改变和进步。
 
-![最后比分](https://github.com/shenhuniurou/shenhuniurou.github.io/tree/master/assets/img/1.jpg)
+![最后比分](http://offfjcibp.bkt.clouddn.com/1.jpg)
 
-![技术统计1](https://github.com/shenhuniurou/shenhuniurou.github.io/tree/master/assets/img/2.png)
+![技术统计1](http://offfjcibp.bkt.clouddn.com/2.png)
 
-![技术统计2](https://github.com/shenhuniurou/shenhuniurou.github.io/tree/master/assets/img/3.png)
+![技术统计2](http://offfjcibp.bkt.clouddn.com/3.png)
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从首发名单来看，沃顿做了一个很大的调整，就是让路威顶替克拉克森首发出场，克拉克森打替补，上个赛季他的防守一直是人们诟病的地方，可能沃顿也觉得他比较适合打替补。首发阵容：拉塞尔PG，路威SG，鲁尔邓SF，兰豆PF，莫兹戈夫C。
@@ -32,6 +32,6 @@ tags: 湖人
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;沃顿给湖人带来的变化是显而易见的，给人最直观的就是球队氛围特别好，从平时训练中可以看出来，另外一个变化，就是球队开始防守了，虽然还是很差，但是沃顿开始着手做防守这件事了。总之，一场季前赛，能看出来的也不多，沃顿在后面一定有新的东西，继续观察吧。
 
-最后来一个英格拉姆盖帽加抢断的动图。
+最后来一个英格拉姆盖帽加抢断的动图
 
-![英格拉姆盖帽抢断](https://github.com/shenhuniurou/shenhuniurou.github.io/tree/master/assets/img/4.gif)
+![英格拉姆盖帽抢断](http://offfjcibp.bkt.clouddn.com/4.gif)
