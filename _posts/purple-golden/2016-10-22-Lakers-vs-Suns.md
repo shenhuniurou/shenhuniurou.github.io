@@ -3,7 +3,6 @@ layout: post
 title: 2016.10.22-季前赛-湖人vs太阳
 category: 紫金岁月
 tags: 湖人
-keywords:湖人、太阳
 ---
 
 ## 季前赛 湖人VS太阳
