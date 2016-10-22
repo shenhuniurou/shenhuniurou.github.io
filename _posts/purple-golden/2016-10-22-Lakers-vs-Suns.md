@@ -5,7 +5,6 @@ category: 紫金岁月
 tags: 湖人
 ---
 
-## 季前赛 湖人VS太阳
 
 ![布克对位拉塞尔](http://offfjcibp.bkt.clouddn.com/IMG_1695.JPG)
 
