@@ -6,17 +6,17 @@ tags: 微信小程序
 ---
 
 
-######官方教程链接: https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1476243262796
+##官方教程链接: https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1476243262796
 
-###简单教程分四步：
+##简单教程分四步：
 
 - **获取微信小程序的 AppID**
 
-    如果你是收到邀请的开发者，微信开放平台会提供一个帐号，利用提供的帐号，登录 [https://mp.weixin.qq.com](https://mp.weixin.qq.com/?t=1476197480996) ，就可以在网站的“设置”-“开发者设置”中，查看到微信小程序的 AppID 了，注意不可直接使用服务号或订阅号的 AppID 。如果没有收到内测邀请，可以跳过本步骤。![](http://upload-images.jianshu.io/upload_images/1159224-b4986d0954b22a23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)**注意：如果要以非管理员微信号在手机上体验该小程序，那么我们还需要操作“绑定开发者”。即在“用户身份”-“开发者”模块，绑定上需要体验该小程序的微信号。本教程默认注册帐号、体验都是使用管理员微信号。**
+    如果你是收到邀请的开发者，微信开放平台会提供一个帐号，利用提供的帐号，登录 [https://mp.weixin.qq.com](https://mp.weixin.qq.com/?t=1476197480996) ，就可以在网站的“设置”-“开发者设置”中，查看到微信小程序的 AppID 了，注意不可直接使用服务号或订阅号的 AppID 。如果没有收到内测邀请，可以跳过本步骤。![setting](http://offfjcibp.bkt.clouddn.com/setting.png)`注意：如果要以非管理员微信号在手机上体验该小程序，那么我们还需要操作“绑定开发者”。即在“用户身份”-“开发者”模块，绑定上需要体验该小程序的微信号。本教程默认注册帐号、体验都是使用管理员微信号。`
 
 - **创建项目**
 
-    我们需要通过[开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/devtools.html?t=1476197480996)，来完成小程序创建和代码编辑。开发者工具安装完成后，打开并使用微信扫码登录。选择创建“项目”，填入上文获取到的 AppID ，设置一个本地项目的名称（非小程序名称），比如“我的第一个项目”，并选择一个本地的文件夹作为代码存储的目录，点击“新建项目”就可以了。为方便初学者了解微信小程序的基本代码结构，在创建过程中，如果选择的本地文件夹是个空文件夹，开发者工具会提示，是否需要创建一个 quick start 项目。选择“是”，开发者工具会帮助我们在开发目录里生成一个简单的 demo。![](http://upload-images.jianshu.io/upload_images/1159224-cc8de78fc381ac22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)项目创建成功后，我们就可以点击该项目，进入并看到完整的开发者工具界面，点击左侧导航，在“编辑”里可以查看和编辑我们的代码，在“调试”里可以测试代码并模拟小程序在微信客户端效果，在“项目”里可以发送到手机里预览实际效果。
+    我们需要通过[开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/devtools.html?t=1476197480996)，来完成小程序创建和代码编辑。开发者工具安装完成后，打开并使用微信扫码登录。选择创建“项目”，填入上文获取到的 AppID ，设置一个本地项目的名称（非小程序名称），比如“我的第一个项目”，并选择一个本地的文件夹作为代码存储的目录，点击“新建项目”就可以了。为方便初学者了解微信小程序的基本代码结构，在创建过程中，如果选择的本地文件夹是个空文件夹，开发者工具会提示，是否需要创建一个 quick start 项目。选择“是”，开发者工具会帮助我们在开发目录里生成一个简单的 demo。![](http://offfjcibp.bkt.clouddn.com/new_project.png)项目创建成功后，我们就可以点击该项目，进入并看到完整的开发者工具界面，点击左侧导航，在“编辑”里可以查看和编辑我们的代码，在“调试”里可以测试代码并模拟小程序在微信客户端效果，在“项目”里可以发送到手机里预览实际效果。
 
 - **编写代码**
 
@@ -86,7 +86,7 @@ App({
 
 ```
 
-    app.json 是对整个小程序的全局配置。我们可以在这个文件中配置小程序是由哪些页面组成，配置小程序的窗口背景色，配置导航条样式，配置默认标题。注意该文件不可添加任何注释。更多可配置项可参考[配置详解](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html?t=1476197480996)
+app.json 是对整个小程序的全局配置。我们可以在这个文件中配置小程序是由哪些页面组成，配置小程序的窗口背景色，配置导航条样式，配置默认标题。注意该文件不可添加任何注释。更多可配置项可参考[配置详解](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html?t=1476197480996)
 
 ```css
 
@@ -296,11 +296,11 @@ Page({
 
 ```
 
-运行结果如下：![](http://upload-images.jianshu.io/upload_images/1159224-c039bfa2795dd696.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+运行结果如下：![](http://offfjcibp.bkt.clouddn.com/start_result.png)
 
 - **手机预览**
 
-    开发者工具左侧菜单栏选择"项目"，点击"预览"，扫码后即可在微信客户端中体验。![](http://upload-images.jianshu.io/upload_images/1159224-999a31d4042fd4d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    开发者工具左侧菜单栏选择"项目"，点击"预览"，扫码后即可在微信客户端中体验。![](http://offfjcibp.bkt.clouddn.com/start_preview.png)
 
 这就是微信官方的简易教程，接下来会学习微信小程序的整个框架模块和组件等。
 
