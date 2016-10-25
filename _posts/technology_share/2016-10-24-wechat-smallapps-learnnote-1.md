@@ -6,9 +6,9 @@ tags: 微信小程序
 ---
 
 
-##官方教程链接: https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1476243262796
+## 官方教程链接: https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1476243262796
 
-##简单教程分四步：
+## 简单教程分四步：
 
 - **获取微信小程序的 AppID**
 
@@ -74,7 +74,7 @@ App({
 
         } 
 
-      }, 
+    }, 
 
     globalData:{ 
 
