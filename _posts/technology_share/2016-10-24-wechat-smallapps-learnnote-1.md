@@ -6,7 +6,7 @@ tags: 微信小程序
 ---
 
 
-## 官方教程链接: https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1476243262796
+## 官方教程链接: [https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1476243262796](https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1476243262796)
 
 ## 简单教程分四步：
 
@@ -86,7 +86,7 @@ App({
 
 ```
 
-app.json 是对整个小程序的全局配置。我们可以在这个文件中配置小程序是由哪些页面组成，配置小程序的窗口背景色，配置导航条样式，配置默认标题。注意该文件不可添加任何注释。更多可配置项可参考[配置详解](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html?t=1476197480996)
+    app.json 是对整个小程序的全局配置。我们可以在这个文件中配置小程序是由哪些页面组成，配置小程序的窗口背景色，配置导航条样式，配置默认标题。注意该文件不可添加任何注释。更多可配置项可参考[配置详解](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html?t=1476197480996)
 
 ```css
 
@@ -120,7 +120,7 @@ app.json 是对整个小程序的全局配置。我们可以在这个文件中�
 
 ```
 
-创建页面在这个教程里，我们有两个页面，index 页面和 logs 页面，即欢迎页和小程序启动日志的展示页，他们都在 pages 目录下。微信小程序中的每一个页面的【路径+页面名】都需要写在 app.json 的 pages 中，且 pages 中的第一个页面是小程序的首页。每一个[小程序页面](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html?t=1476197480996)是由同路径下同名的四个不同后缀文件的组成，如：index.js、index.wxml、index.wxss、index.json。.js后缀的文件是脚本文件，.json后缀的文件是配置文件，.wxss后缀的是样式表文件，.wxml后缀的文件是页面结构文件。index.wxml 是页面的结构文件：
+    创建页面在这个教程里，我们有两个页面，index 页面和 logs 页面，即欢迎页和小程序启动日志的展示页，他们都在 pages 目录下。微信小程序中的每一个页面的【路径+页面名】都需要写在 app.json 的 pages 中，且 pages 中的第一个页面是小程序的首页。每一个[小程序页面](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html?t=1476197480996)是由同路径下同名的四个不同后缀文件的组成，如：index.js、index.wxml、index.wxss、index.json。.js后缀的文件是脚本文件，.json后缀的文件是配置文件，.wxss后缀的是样式表文件，.wxml后缀的文件是页面结构文件。index.wxml 是页面的结构文件：
 
 ```java
 
@@ -146,7 +146,7 @@ app.json 是对整个小程序的全局配置。我们可以在这个文件中�
 
 ```
 
-本例中使用了[`<view/`>](https://mp.weixin.qq.com/debug/wxadoc/dev/component/view.html?t=1476197480996)、[`<image/`>](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html?t=1476197480996)、[`<text/`>](https://mp.weixin.qq.com/debug/wxadoc/dev/component/text.html?t=1476197480996)来搭建页面结构，绑定数据和交互处理函数。index.js 是页面的脚本文件，在这个文件中我们可以监听并处理页面的生命周期函数、获取小程序实例，声明并处理数据，响应页面交互事件等。
+    本例中使用了[`<view/`>](https://mp.weixin.qq.com/debug/wxadoc/dev/component/view.html?t=1476197480996)、[`<image/`>](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html?t=1476197480996)、[`<text/`>](https://mp.weixin.qq.com/debug/wxadoc/dev/component/text.html?t=1476197480996)来搭建页面结构，绑定数据和交互处理函数。index.js 是页面的脚本文件，在这个文件中我们可以监听并处理页面的生命周期函数、获取小程序实例，声明并处理数据，响应页面交互事件等。
 
 ```javascript
 
@@ -202,7 +202,7 @@ Page({
 
 ```
 
-index.wxss 是页面的样式表：
+    index.wxss 是页面的样式表：
 
 ```css 
 
@@ -252,7 +252,7 @@ index.wxss 是页面的样式表：
 
 ```
 
-页面的样式表是非必要的。当有页面样式表时，页面的样式表中的样式规则会层叠覆盖 app.wxss 中的样式规则。如果不指定页面的样式表，也可以在页面的结构文件中直接使用 app.wxss 中指定的样式规则。index.json 是页面的配置文件：页面的配置文件是非必要的。当有页面的配置文件时，配置项在该页面会覆盖 app.json 的 window 中相同的配置项。如果没有指定的页面配置文件，则在该页面直接使用 app.json 中的默认配置。logs 的页面结构：
+    页面的样式表是非必要的。当有页面样式表时，页面的样式表中的样式规则会层叠覆盖 app.wxss 中的样式规则。如果不指定页面的样式表，也可以在页面的结构文件中直接使用 app.wxss 中指定的样式规则。index.json 是页面的配置文件：页面的配置文件是非必要的。当有页面的配置文件时，配置项在该页面会覆盖 app.json 的 window 中相同的配置项。如果没有指定的页面配置文件，则在该页面直接使用 app.json 中的默认配置。logs 的页面结构：
 
 ```java
 
@@ -270,7 +270,7 @@ index.wxss 是页面的样式表：
 
 ```
 
-logs 页面使用 [`<block/`>](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/list.html?t=1476197480996#block-wxfor) 控制标签来组织代码，在 `<block/`>上使用 [wx:for](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/list.html?t=1476197480996#block-wxfor) 绑定 logs数据，并将 logs数据循环展开节点
+    logs 页面使用 [`<block/`>](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/list.html?t=1476197480996#block-wxfor) 控制标签来组织代码，在 `<block/`>上使用 [wx:for](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/list.html?t=1476197480996#block-wxfor) 绑定 logs数据，并将 logs数据循环展开节点
 
 ```javascript 
 
@@ -296,11 +296,11 @@ Page({
 
 ```
 
-运行结果如下：![](http://offfjcibp.bkt.clouddn.com/start_result.png)
+    运行结果如下：![](http://offfjcibp.bkt.clouddn.com/start_result.png)
 
 - **手机预览**
 
     开发者工具左侧菜单栏选择"项目"，点击"预览"，扫码后即可在微信客户端中体验。![](http://offfjcibp.bkt.clouddn.com/start_preview.png)
 
-这就是微信官方的简易教程，接下来会学习微信小程序的整个框架模块和组件等。
+    这就是微信官方的简易教程，接下来会学习微信小程序的整个框架模块和组件等。
 
