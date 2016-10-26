@@ -30,9 +30,13 @@ ga:
 filter: 'category'
 
 # Build settings
-markdown: redcarpet
+
+# Format
+highlighter: rouge
+markdown: kramdown
 redcarpet:
-    extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "tables"]
+  
 sass:
   style: compressed
 gems:
