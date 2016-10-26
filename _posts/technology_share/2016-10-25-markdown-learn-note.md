@@ -60,7 +60,7 @@ tags: markdown语法
 
 - 链接和图片，方式是差不多的
 
-    - 链接是“`[名称](url地址)`”这样的，比如[shenhuniurou‘s bolg](http://shenhuniurou.com)
+    - 链接是“`[名称](url地址)`”这样的，比如[shenhuniurou‘s bolg](http://shenhuniurou.com)。
 
-    - 图片是“`![名称](url地址)`”这样的
+    - 图片是“`![名称](url地址)`”。
 

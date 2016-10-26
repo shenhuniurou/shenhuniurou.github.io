@@ -35,11 +35,11 @@ tags: 微信小程序
     "pages/logs/logs"
   ],
   "window": {
-    "navigationBarTitleText": "Demo", // 顶部导航条显示的文字内容
-    "navigationBarBackgroundColor": "#019DD6", // 顶部导航条的背景颜色
-    "navigationBarTextStyle": "white" // 顶部导航条的文字颜色
+    "navigationBarTitleText": "Demo", 
+    "navigationBarBackgroundColor": "#019DD6",
+    "navigationBarTextStyle": "white" 
   },
-  "tabBar": { // 这里配置的是在底部显示的tabBar，最多5个，最少2个
+  "tabBar": { 
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页"
@@ -48,11 +48,11 @@ tags: 微信小程序
       "text": "日志"
     }]
   },
-  "networkTimeout": { // 网络请求超时的配置
+  "networkTimeout": { 
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug": true // 调试模式
+  "debug": true 
 }
 ```
 其中，pages里面第一个页面将会是小程序启动时显示的那个页面，所以配置的时候要注意，一般我们会把启动页splash写在第一行。
