@@ -15,6 +15,7 @@ tags: 微信小程序
 |app.json|是|小程序公共设置
 |app.wxss|否|小程序公共样式表
 
+
 一个框架页面由四个文件组成，分别是：
 
 | 文件类型 | 必填 | 作用 |
@@ -23,9 +24,11 @@ tags: 微信小程序
 |json|否|页面配置
 |wxss|否|页面样式表
 |wxml|是|页面结构
+
+
 **注意：为了方便开发者减少配置项，我们规定描述页面的这四个文件必须具有相同的路径与文件名。**
 
-####配置
+#### 配置
 我们使用app.json文件来对微信小程序进行全局配置，决定页面文件的路径、窗口表现、设置网络超时时间、设置多 tab 等。
 以下是一个包含了所有配置选项的简单配置app.json：
 ```json
@@ -65,11 +68,12 @@ app.json 配置项列表说明：
 |tabBar|Object|否|设置底部 tab 的表现
 |networkTimeout|Object|否|设置网络超时时间
 |debug|Boolean|否|设置是否开启 debug 模式
+
 各个属性的详细说明：
-###pages
+### pages
 接收一个数组，每一项都是字符串，来指定小程序由哪些页面组成。每一项代表对应页面的【路径+文件名】信息，**数组的第一项代表小程序的初始页面**。小程序中新增/减少页面，都需要对 pages 数组进行修改。
 文件名不需要写文件后缀，因为框架会自动去寻找路径.json、.js、.wxml、.wxss的四个文件进行整合。
-###window
+### window
 用于设置小程序的状态栏、导航条、标题、窗口背景色。
 
 | 属性 | 类型 | 默认值 | 描述 |
@@ -80,7 +84,8 @@ app.json 配置项列表说明：
 |backgroundColor|HexColor|#ffffff|窗口的背景色
 |backgroundTextStyle|String|dark|下拉背景字体、loading 图的样式，仅支持 dark/light
 |enablePullDownRefresh|Boolean|false|是否开启下拉刷新，详见[页面相关事件处理函数](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html?t=1476197491005#页面相关事件处理函数)。
-###tabBar
+
+### tabBar
 
 如果我们的小程序是一个多 tab 应用（客户端窗口的底部有tab栏可以切换页面），那么我们可以通过 tabBar 配置项指定 tab 栏的表现，以及 tab 切换时显示的对应页面。
 tabBar 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按数组的顺序排序。
@@ -93,6 +98,7 @@ tabBar 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按�
 |backgroundColor|HexColor|是||tab 的背景色
 |borderStyle|String|否|black|tabbar上边框的颜色， 仅支持 black/white
 |list|Array|是||tab 的列表，详见 list 属性说明，最少2个、最多5个 tab
+
 其中 list 接受一个数组，数组中的每个项都是一个对象，其属性值如下：
 
 | 属性 | 类型 | 必填 | 描述 |
@@ -103,7 +109,8 @@ tabBar 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按�
 |selectedIconPath|String|是|选中时的图片路径，icon 大小限制为40kb
 
 ![](http://upload-images.jianshu.io/upload_images/1159224-45c33608f5602ab2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-###networkTimeout
+
+### networkTimeout
 可以设置各种网络请求的超时时间。
 
 **属性说明：**
@@ -114,9 +121,10 @@ tabBar 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按�
 |connectSocket|Number|否|[wx.connectSocket](https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html?t=1476197491005)的超时时间，单位毫秒
 |uploadFile|Number|否|[wx.uploadFile](https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-file.html?t=1476197491005#wxuploadfileobject)的超时时间，单位毫秒
 |downloadFile|Number|否|[wx.downloadFile](https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-file.html?t=1476197491005#wxdownloadfileobject)的超时时间，单位毫秒
-###debug
+
+### debug
 可以在开发者工具中开启 debug 模式，在开发者工具的控制台面板，调试信息以 info 的形式给出，其信息有Page的注册、页面路由、数据更新、事件触发。可以帮助开发者快速定位一些常见的问题。
-###page.json
+### page.json
 每一个小程序页面也可以使用.json文件来对本页面的窗口表现进行配置。 页面的配置比app.json全局配置简单得多，只是设置 app.json 中的 window 配置项的内容，页面中配置项会覆盖 app.json 的 window 中相同的配置项。页面的.json只能设置 window相关的配置项，以决定本页面的窗口表现，所以无需写 window这个键，如：
 ```json
 {
@@ -127,8 +135,8 @@ tabBar 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按�
   "backgroundTextStyle": "light"
 }
 ```
-####注册程序
-#####App
+#### 注册程序
+##### App
 `App()`函数用来注册一个小程序。接受一个 object 参数，其指定小程序的生命周期函数等。
 **object参数说明：**
 
@@ -138,6 +146,7 @@ tabBar 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按�
 |onShow|Function|生命周期函数--监听小程序显示|当小程序启动，或从后台进入前台显示，会触发 onShow
 |onHide|Function|生命周期函数--监听小程序隐藏|当小程序从前台进入后台，会触发 onHide
 |其他|Any|开发者可以添加任意的函数或数据到 Object 参数中，用`this`可以访问||
+
 **前台、后台定义：** 当用户点击左上角关闭，或者按了设备 Home 键离开微信，小程序并没有直接销毁，而是进入了后台；当再次进入微信或再次打开小程序，又会从后台进入前台。
 只有当小程序进入后台一定时间，或者系统资源占用过高，才会被真正的销毁。
 **示例代码：**
@@ -169,8 +178,9 @@ console.log(appInstance.globalData) // I am global data
 不要在定义于 App()内的函数中调用 getApp()，使用 this就可以拿到 app 实例。
 不要在 onLaunch 的时候调用 getCurrentPage()，此时 page 还没有生成。
 通过 getApp()获取实例之后，不要私自调用生命周期函数。
-####注册页面
-#####Page
+
+#### 注册页面
+##### Page
 `Page()`函数用来注册一个页面。接受一个 object 参数，其指定页面的初始数据、生命周期函数、事件处理函数等。
 **object 参数说明：**
 
@@ -184,6 +194,7 @@ console.log(appInstance.globalData) // I am global data
 |onUnload|Function|生命周期函数--监听页面卸载
 |onPullDownRefresh|Function|页面相关事件处理函数--监听用户下拉动作
 |其他|Any|开发者可以添加任意的函数或数据到 object 参数中，用 `this`可以访问
+
 **示例代码：**
 ```javascript
 //index.js
@@ -217,7 +228,7 @@ Page({
   }
 })
 ```
-#####生命周期函数
+##### 生命周期函数
 - onLoad: 页面加载
   - 一个页面只会调用一次。
   - 参数可以获取wx.navigateTo和wx.redirectTo及<navigator/>中的 query。
@@ -231,14 +242,14 @@ Page({
 - onUnload: 页面卸载
   - 当redirectTo或navigateBack的时候调用。
 
-#####页面相关事件处理函数
+##### 页面相关事件处理函数
 - onPullDownRefresh: 下拉刷新监听用户下拉刷新事件。
   - 需要在config的[window
 ](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html?t=1476766392127#window)选项中开启enablePullDownRefresh。
   - 当处理完数据刷新后，[wx.stopPullDownRefresh
 ](https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-other.html?t=1476766392127)可以停止当前页面的下拉刷新。
 
-#####事件处理函数
+##### 事件处理函数
 除了初始化数据和生命周期函数，Page 中还可以定义一些特殊的函数：事件处理函数。在渲染层可以在组件中加入[事件绑定](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/event.html?t=1476766392127)，当达到触发事件时，就会执行 Page 中定义的事件处理函数。
 **示例代码：**
 ```java
@@ -249,13 +260,13 @@ Page({
   }
 })
 ```
-#####Page.prototype.setData()
+##### Page.prototype.setData()
 `setData`函数用于将数据从逻辑层发送到视图层，同时改变对应的 `this.data`的值。
 **注意：**
 **1.直接修改 this.data 无效，无法改变页面的状态，还会造成数据不一致。**
 **2.单次设置的数据不能超过1024kB，请尽量避免一次设置过多的数据**。
 
-#####setData() 参数格式
+##### setData() 参数格式
 接受一个对象，以 key，value 的形式表示将 this.data 中的 key 对应的值改变成 value。其中 key 可以非常灵活，以数据路径的形式给出，如 array[2].message，a.b.c.d，并且不需要在 this.data 中预先定义。
 **示例代码：**
 ```java
@@ -304,7 +315,7 @@ Page({
 })
 ```
 
-###文件作用域
+### 文件作用域
 在 JavaScript 文件中声明的变量和函数只在该文件中有效；不同的文件中可以声明相同名字的变量和函数，不会互相影响。
 通过全局函数 [getApp()
 ](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/app.html?t=1476259068206#getapp) 可以获取全局的应用实例，如果需要全局的数据可以在 App()中设置，如：
@@ -327,7 +338,7 @@ var localValue = 'b'
 console.log(getApp().globalData)
 ```
 
-###模块化
+### 模块化
 我们可以将一些公共的代码抽离成为一个单独的 js 文件，作为一个模块。模块只有通过 module.exports或者 exports才能对外暴露接口。
 **需要注意的是：**
 - exports是 module.exports的一个引用，因此在模块里边随意更改 exports的指向会造成未知的错误。所以我们更推荐开发者采用module.exports来暴露模块接口，除非你已经清晰知道这两者的关系。
@@ -357,7 +368,7 @@ Page({
 })
 ```
 
-###数据绑定
+### 数据绑定
 Page中的数据再wxml中访问只需要用`{{}}`，例如：
 ```javascript
 <!--wxml-->
@@ -370,7 +381,7 @@ Page({
 })
 ```
 
-###列表渲染
+### 列表渲染
 ```javascript
 <!--wxml-->
 <view wx:for="{{array}}"> {{item}} </view>
@@ -382,7 +393,7 @@ Page({
 })
 ```
 
-###条件渲染
+### 条件渲染
 ```javascript
 <!--wxml-->
 <view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
@@ -396,7 +407,7 @@ Page({
 })
 ```
 
-###模板
+### 模板
 ```javascript
 <!-- 列表模板start -->
 <template name="items">
@@ -420,7 +431,7 @@ Page({
 ```
 模板拥有自己的作用域，只能使用data传入的数据。
 
-###事件
+### 事件
 ```javascript
 <view bindtap="add"> {{count}} </view>
 Page({
@@ -434,7 +445,7 @@ Page({
   }
 })
 ```
-####事件详解
+#### 事件详解
 ##### 事件分类
 事件分为冒泡事件和非冒泡事件：
 - 冒泡事件：当一个组件上的事件被触发后，该事件会向父节点传递。
@@ -474,7 +485,7 @@ WXML的冒泡事件列表：
 </view>
 ```
 
-#####事件对象
+##### 事件对象
 如无特殊说明，当组件触发事件时，逻辑层绑定该事件的处理函数会收到一个事件对象。
 
 **事件对象的属性列表：**
