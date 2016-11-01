@@ -127,7 +127,7 @@ tabBar 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按�
 ### debug
 可以在开发者工具中开启 debug 模式，在开发者工具的控制台面板，调试信息以 info 的形式给出，其信息有Page的注册、页面路由、数据更新、事件触发。可以帮助开发者快速定位一些常见的问题。
 ### page.json
-每一个小程序页面也可以使用.json文件来对本页面的窗口表现进行配置。 页面的配置比app.json全局配置简单得多，只是设置 app.json 中的 window 配置项的内容，页面中配置项会覆盖 app.json 的 window 中相同的配置项。页面的.json只能设置?window相关的配置项，以决定本页面的窗口表现，所以无需写?window这个键，如：
+每一个小程序页面也可以使用.json文件来对本页面的窗口表现进行配置。 页面的配置比app.json全局配置简单得多，只是设置 app.json 中的 window 配置项的内容，页面中配置项会覆盖 app.json 的 window 中相同的配置项。页面的.json只能设置window相关的配置项，以决定本页面的窗口表现，所以无需写window这个键，如：
 
 ```json
 {
@@ -151,8 +151,10 @@ tabBar 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按�
 |onHide|Function|生命周期函数--监听小程序隐藏|当小程序从前台进入后台，会触发 onHide
 |其他|Any|开发者可以添加任意的函数或数据到 Object 参数中，用`this`可以访问||
 
-**前台、后台定义：**?当用户点击左上角关闭，或者按了设备 Home 键离开微信，小程序并没有直接销毁，而是进入了后台；当再次进入微信或再次打开小程序，又会从后台进入前台。
-只有当小程序进入后台一定时间，或者系统资源占用过高，才会被真正的销毁。
+**前台、后台定义：**
+
+当用户点击左上角关闭，或者按了设备Home键离开微信，小程序并没有直接销毁，而是进入了后台；当再次进入微信或再次打开小程序，又会从后台进入前台。只有当小程序进入后台一定时间，或者系统资源占用过高，才会被真正的销毁。
+
 **示例代码：**
 
 ```javascript
@@ -173,7 +175,7 @@ App({
 **App.prototype.getCurrentPage()**
 getCurrentPage()函数用于获取当前[页面的实例](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html?t=1476766391616)。
 **getApp()**
-我们提供了全局的?getApp()函数，可以获取到小程序实例。
+我们提供了全局的getApp()函数，可以获取到小程序实例。
 
 ```javascript
 // other.js
@@ -182,10 +184,10 @@ console.log(appInstance.globalData) // I am global data
 ```
 
 **注意：**
-`App()`必须在app.js中注册，且不能注册多个。
-不要在定义于App()内的函数中调用?getApp()，使用?this就可以拿到 app 实例。
-不要在 onLaunch 的时候调用?getCurrentPage()，此时 page 还没有生成。
-通过?getApp()获取实例之后，不要私自调用生命周期函数。
+1、`App()`必须在`app.js`中注册，且不能注册多个。
+2、不要在定义于App()内的函数中调用`getApp()`，使用`this`就可以拿到`app`实例。
+3、不要在`onLaunch`的时候调用getCurrentPage()，此时`page`还没有生成。
+4、通过`getApp()`获取实例之后，不要私自调用生命周期函数。
 
 #### 注册页面
 ##### Page
@@ -201,7 +203,7 @@ console.log(appInstance.globalData) // I am global data
 |onHide|Function|生命周期函数--监听页面隐藏
 |onUnload|Function|生命周期函数--监听页面卸载
 |onPullDownRefresh|Function|页面相关事件处理函数--监听用户下拉动作
-|其他|Any|开发者可以添加任意的函数或数据到 object 参数中，用?`this`可以访问
+|其他|Any|开发者可以添加任意的函数或数据到 object 参数中，用`this`可以访问
 
 **示例代码：**
 ```javascript
@@ -269,13 +271,13 @@ Page({
 })
 ```
 ##### Page.prototype.setData()
-`setData`函数用于将数据从逻辑层发送到视图层，同时改变对应的?`this.data`的值。
+`setData`函数用于将数据从逻辑层发送到视图层，同时改变对应的`this.data`的值。
 **注意：**
 **1.直接修改 this.data 无效，无法改变页面的状态，还会造成数据不一致。**
 **2.单次设置的数据不能超过1024kB，请尽量避免一次设置过多的数据**。
 
 ##### setData() 参数格式
-接受一个对象，以 key，value 的形式表示将 this.data 中的 key 对应的值改变成 value。其中 key 可以非常灵活，以数据路径的形式给出，如?array[2].message，a.b.c.d，并且不需要在 this.data 中预先定义。
+接受一个对象，以 key，value 的形式表示将 this.data 中的 key 对应的值改变成 value。其中 key 可以非常灵活，以数据路径的形式给出，如array[2].message，a.b.c.d，并且不需要在 this.data 中预先定义。
 **示例代码：**
 ```xml
 <!--index.wxml-->
@@ -326,8 +328,8 @@ Page({
 
 ### 文件作用域
 在 JavaScript 文件中声明的变量和函数只在该文件中有效；不同的文件中可以声明相同名字的变量和函数，不会互相影响。
-通过全局函数?[getApp()
-](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/app.html?t=1476259068206#getapp)?可以获取全局的应用实例，如果需要全局的数据可以在?App()中设置，如：
+通过全局函数[getApp()
+](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/app.html?t=1476259068206#getapp)可以获取全局的应用实例，如果需要全局的数据可以在App()中设置，如：
 ```javascript
 // app.js
 App({
@@ -348,10 +350,10 @@ console.log(getApp().globalData)
 ```
 
 ### 模块化
-我们可以将一些公共的代码抽离成为一个单独的 js 文件，作为一个模块。模块只有通过?module.exports或者?exports才能对外暴露接口。
+我们可以将一些公共的代码抽离成为一个单独的 js 文件，作为一个模块。模块只有通过module.exports或者exports才能对外暴露接口。
 **需要注意的是：**
-- exports是?module.exports的一个引用，因此在模块里边随意更改?exports的指向会造成未知的错误。所以我们更推荐开发者采用module.exports来暴露模块接口，除非你已经清晰知道这两者的关系。
-- 小程序目前不支持直接引入?node_modules, 开发者需要使用到?node_modules时候建议拷贝出相关的代码到小程序的目录中。
+- exports是module.exports的一个引用，因此在模块里边随意更改exports的指向会造成未知的错误。所以我们更推荐开发者采用module.exports来暴露模块接口，除非你已经清晰知道这两者的关系。
+- 小程序目前不支持直接引入node_modules, 开发者需要使用到node_modules时候建议拷贝出相关的代码到小程序的目录中。
 
 ```javascript
 // common.js
@@ -365,7 +367,7 @@ module.exports.sayHello = sayHello
 exports.sayGoodbye = sayGoodbye
 ```
 
-在需要使用这些模块的文件中，使用?`require(path)`?将公共代码引入
+在需要使用这些模块的文件中，使用`require(path)`将公共代码引入
 ```javascript
 var common = require('common.js')
 Page({
