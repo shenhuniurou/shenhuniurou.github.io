@@ -367,7 +367,9 @@ console.log(getApp().globalData)
 
 ### 模块化
 我们可以将一些公共的代码抽离成为一个单独的 js 文件，作为一个模块。模块只有通过module.exports或者exports才能对外暴露接口。
+
 **需要注意的是：**
+
 - exports是module.exports的一个引用，因此在模块里边随意更改exports的指向会造成未知的错误。所以我们更推荐开发者采用module.exports来暴露模块接口，除非你已经清晰知道这两者的关系。
 - 小程序目前不支持直接引入node_modules, 开发者需要使用到node_modules时候建议拷贝出相关的代码到小程序的目录中。
 
@@ -398,7 +400,7 @@ Page({
 ```
 
 ### 数据绑定
-Page中的数据再wxml中访问只需要用`{{}}`，例如：
+Page中的数据再wxml中访问只需要用"{{}}"，例如：
 
 ```java
 <!--wxml-->
@@ -484,6 +486,7 @@ Page({
 #### 事件详解
 
 事件分类:事件分为冒泡事件和非冒泡事件：
+
 - 冒泡事件：当一个组件上的事件被触发后，该事件会向父节点传递。
 - 非冒泡事件：当一个组件上的事件被触发后，该事件不会向父节点传递。
 
@@ -497,10 +500,8 @@ WXML的冒泡事件列表：
 |touchend|手指触摸动作结束
 |tap|手指触摸后离开
 |longtap|手指触摸后，超过350ms再离开
-**注：除上表之外的其他组件自定义事件都是非冒泡事件，如[<form/>
-](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/component/form.md?t=1476197492610)的submit事件，[<input/>
-](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/component/input.md?t=1476197492610)的input事件，[<scroll-view/>
-](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/component/scroll-view.md?t=1476197492610)的scroll事件，(详见各个[组件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/component/index.md?t=1476197492610))**
+
+**注：除上表之外的其他组件自定义事件都是非冒泡事件，如form的submit事件，input的input事件，scroll-view的scroll事件，(详见各个[组件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/component/index.md?t=1476197492610))**
 
 #### 事件绑定
 
