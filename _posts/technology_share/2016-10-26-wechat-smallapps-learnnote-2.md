@@ -143,7 +143,9 @@ tabBar 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按�
 ```
 
 ## 注册程序
+
 ### App
+
 `App()`函数用来注册一个小程序。接受一个 object 参数，其指定小程序的生命周期函数等。
 **object参数说明：**
 
@@ -187,13 +189,16 @@ console.log(appInstance.globalData) // I am global data
 ```
 
 **注意：**
+
 - `App()`必须在`app.js`中注册，且不能注册多个。
 - 不要在定义于App()内的函数中调用`getApp()`，使用`this`就可以拿到`app`实例。
 - 不要在`onLaunch`的时候调用getCurrentPage()，此时`page`还没有生成。
 - 通过`getApp()`获取实例之后，不要私自调用生命周期函数。
 
 ## 注册页面
+
 ### Page
+
 `Page()`函数用来注册一个页面。接受一个 object 参数，其指定页面的初始数据、生命周期函数、事件处理函数等。
 **object 参数说明：**
 
@@ -379,6 +384,7 @@ exports.sayGoodbye = sayGoodbye
 ```
 
 在需要使用这些模块的文件中，使用`require(path)`将公共代码引入
+
 ```javascript
 var common = require('common.js')
 Page({
@@ -393,6 +399,7 @@ Page({
 
 ### 数据绑定
 Page中的数据再wxml中访问只需要用`{{}}`，例如：
+
 ```java
 <!--wxml-->
 <view> {{message}} </view>
@@ -405,6 +412,7 @@ Page({
 ```
 
 ### 列表渲染
+
 ```java
 <!--wxml-->
 <view wx:for="{{array}}"> {{item}} </view>
@@ -417,6 +425,7 @@ Page({
 ```
 
 ### 条件渲染
+
 ```xml
 <!--wxml-->
 <view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
@@ -431,6 +440,7 @@ Page({
 ```
 
 ### 模板
+
 ```javascript
 <!-- 列表模板start -->
 <template name="items">
@@ -456,6 +466,7 @@ Page({
 模板拥有自己的作用域，只能使用data传入的数据。
 
 ### 事件
+
 ```javascript
 <view bindtap="add"> {{count}} </view>
 Page({
@@ -492,6 +503,7 @@ WXML的冒泡事件列表：
 ](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/component/scroll-view.md?t=1476197492610)的scroll事件，(详见各个[组件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/component/index.md?t=1476197492610))**
 
 #### 事件绑定
+
 事件绑定的写法同组件的属性，以 key、value 的形式。
 
 - key 以bind或catch开头，然后跟上事件的类型，如bindtap、catchtouchstart
@@ -513,6 +525,7 @@ WXML的冒泡事件列表：
 ```
 
 ##### 事件对象
+
 如无特殊说明，当组件触发事件时，逻辑层绑定该事件的处理函数会收到一个事件对象。
 
 **事件对象的属性列表：**
@@ -538,5 +551,5 @@ touches是一个触摸点的数组，每个触摸点包括以下属性：
 - detail
 特殊事件所携带的数据，如表单组件的提交事件会携带用户的输入，媒体的错误事件会携带错误信息，详见[组件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/wxml/wxml-component.md?t=1476197492610)定义中各个事件的定义。
 
-### API文档
+## API文档
 [API文档地址](https://mp.weixin.qq.com/debug/wxadoc/dev/api/?t=1476197491461)
