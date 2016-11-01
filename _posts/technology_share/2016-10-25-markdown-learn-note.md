@@ -18,7 +18,7 @@ tags: markdown语法
 
     - 使用`*`，被一个`*`包裹的内容会显示斜体，比如`*shenhuniurou*`会显示成*shenhuniurou*
  
-    - 使用`tab`键上面的那个字符，被这个字符包裹的内容会有一个阴影
+	- 使用`tab`键上面的那个字符，被这个字符包裹的内容会有一个阴影
 
 	
 - 代码高亮，代码块用三个tab键上面那个字符加语言名再加三个这种字符来包裹代码，比如:
@@ -51,5 +51,6 @@ tags: markdown语法
 
     - 链接是“`[名称](url地址)`”这样的，比如[shenhuniurou‘s bolg](http://shenhuniurou.com)。
 
-    - 图片是“`![名称](url地址)`”，还有一个方式，`<img src="xxxxxxxxxxxxxxxxxxxxxxxxxxx" width="40%" />`比如你图片本身尺寸较大，而你又不需要图片显示很大时，可以用这种方式设置width。
+	- 图片是“`![名称](url地址)`”，还有一个方式，`<img src="http://sjdhfjksdhfksdlfsj" width="40%" />`比如你图片本身尺寸较大，而你又不需要图片显示很大时，可以用这种方式设置width。
+
 
