@@ -6,29 +6,28 @@ tags: 微信小程序
 ---
 
 
-#### 文件结构
+## 文件结构
 框架程序包含一个描述整体程序的 app 和多个描述各自页面的 page。一个框架程序主体部分由三个文件组成，必须放在项目的根目录，如下：
 
 | 文件 | 必填 | 作用 |
 |:------|:----|:-----|
-|app.js|是|小程序逻辑
-|app.json|是|小程序公共设置
-|app.wxss|否|小程序公共样式表
-
+|app.js|是|小程序逻辑|
+|app.json|是|小程序公共设置|
+|app.wxss|否|小程序公共样式表|
 
 一个框架页面由四个文件组成，分别是：
 
 | 文件类型 | 必填 | 作用 |
 |:------|:----|:-----|
-|js|是|页面逻辑
-|json|否|页面配置
-|wxss|否|页面样式表
-|wxml|是|页面结构
+|js|是|页面逻辑|
+|json|否|页面配置|
+|wxss|否|页面样式表|
+|wxml|是|页面结构|
 
 
 **注意：为了方便开发者减少配置项，我们规定描述页面的这四个文件必须具有相同的路径与文件名。**
 
-#### 配置
+## 配置
 我们使用app.json文件来对微信小程序进行全局配置，决定页面文件的路径、窗口表现、设置网络超时时间、设置多 tab 等。
 以下是一个包含了所有配置选项的简单配置app.json：
 
@@ -72,9 +71,11 @@ app.json 配置项列表说明：
 |debug|Boolean|否|设置是否开启 debug 模式
 
 各个属性的详细说明：
+
 ### pages
 接收一个数组，每一项都是字符串，来指定小程序由哪些页面组成。每一项代表对应页面的【路径+文件名】信息，**数组的第一项代表小程序的初始页面**。小程序中新增/减少页面，都需要对 pages 数组进行修改。
 文件名不需要写文件后缀，因为框架会自动去寻找路径.json、.js、.wxml、.wxss的四个文件进行整合。
+
 ### window
 用于设置小程序的状态栏、导航条、标题、窗口背景色。
 
@@ -91,6 +92,7 @@ app.json 配置项列表说明：
 
 如果我们的小程序是一个多 tab 应用（客户端窗口的底部有tab栏可以切换页面），那么我们可以通过 tabBar 配置项指定 tab 栏的表现，以及 tab 切换时显示的对应页面。
 tabBar 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按数组的顺序排序。
+
 **属性说明：**
 
 | 属性 | 类型 | 必填 | 默认值 | 描述 |
@@ -126,6 +128,7 @@ tabBar 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按�
 
 ### debug
 可以在开发者工具中开启 debug 模式，在开发者工具的控制台面板，调试信息以 info 的形式给出，其信息有Page的注册、页面路由、数据更新、事件触发。可以帮助开发者快速定位一些常见的问题。
+
 ### page.json
 每一个小程序页面也可以使用.json文件来对本页面的窗口表现进行配置。 页面的配置比app.json全局配置简单得多，只是设置 app.json 中的 window 配置项的内容，页面中配置项会覆盖 app.json 的 window 中相同的配置项。页面的.json只能设置window相关的配置项，以决定本页面的窗口表现，所以无需写window这个键，如：
 
@@ -139,8 +142,8 @@ tabBar 是一个数组，**只能配置最少2个、最多5个 tab**，tab 按�
 }
 ```
 
-#### 注册程序
-##### App
+## 注册程序
+### App
 `App()`函数用来注册一个小程序。接受一个 object 参数，其指定小程序的生命周期函数等。
 **object参数说明：**
 
@@ -184,18 +187,18 @@ console.log(appInstance.globalData) // I am global data
 ```
 
 **注意：**
-1、`App()`必须在`app.js`中注册，且不能注册多个。
-2、不要在定义于App()内的函数中调用`getApp()`，使用`this`就可以拿到`app`实例。
-3、不要在`onLaunch`的时候调用getCurrentPage()，此时`page`还没有生成。
-4、通过`getApp()`获取实例之后，不要私自调用生命周期函数。
+- `App()`必须在`app.js`中注册，且不能注册多个。
+- 不要在定义于App()内的函数中调用`getApp()`，使用`this`就可以拿到`app`实例。
+- 不要在`onLaunch`的时候调用getCurrentPage()，此时`page`还没有生成。
+- 通过`getApp()`获取实例之后，不要私自调用生命周期函数。
 
-#### 注册页面
-##### Page
+## 注册页面
+### Page
 `Page()`函数用来注册一个页面。接受一个 object 参数，其指定页面的初始数据、生命周期函数、事件处理函数等。
 **object 参数说明：**
 
 |属性|类型|描述|
-|:--:|:--:|:----|
+|:--|:--|:----|
 |[data](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html?t=1476259068206#初始化数据)|Object|页面的初始数据
 |onLoad|Function|生命周期函数--监听页面加载
 |onReady|Function|生命周期函数--监听页面初次渲染完成
@@ -206,6 +209,7 @@ console.log(appInstance.globalData) // I am global data
 |其他|Any|开发者可以添加任意的函数或数据到 object 参数中，用`this`可以访问
 
 **示例代码：**
+
 ```javascript
 //index.js
 Page({
@@ -238,7 +242,8 @@ Page({
   }
 })
 ```
-##### 生命周期函数
+
+### 生命周期函数
 - onLoad: 页面加载
   - 一个页面只会调用一次。
   - 参数可以获取wx.navigateTo和wx.redirectTo及<navigator/>中的 query。
@@ -252,7 +257,7 @@ Page({
 - onUnload: 页面卸载
   - 当redirectTo或navigateBack的时候调用。
 
-##### 页面相关事件处理函数
+### 页面相关事件处理函数
 - onPullDownRefresh: 下拉刷新监听用户下拉刷新事件。
   - 需要在config的[window
 ](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html?t=1476766392127#window)选项中开启enablePullDownRefresh。
@@ -261,7 +266,9 @@ Page({
 
 ##### 事件处理函数
 除了初始化数据和生命周期函数，Page 中还可以定义一些特殊的函数：事件处理函数。在渲染层可以在组件中加入[事件绑定](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/event.html?t=1476766392127)，当达到触发事件时，就会执行 Page 中定义的事件处理函数。
+
 **示例代码：**
+
 ```java
 <view bindtap="viewTap"> click me </view>
 Page({
@@ -270,15 +277,18 @@ Page({
   }
 })
 ```
-##### Page.prototype.setData()
+
+### Page.prototype.setData()
 `setData`函数用于将数据从逻辑层发送到视图层，同时改变对应的`this.data`的值。
 **注意：**
-**1.直接修改 this.data 无效，无法改变页面的状态，还会造成数据不一致。**
-**2.单次设置的数据不能超过1024kB，请尽量避免一次设置过多的数据**。
+- 直接修改 this.data 无效，无法改变页面的状态，还会造成数据不一致。
+- 单次设置的数据不能超过1024kB，请尽量避免一次设置过多的数据。
 
-##### setData() 参数格式
+### setData()参数格式
 接受一个对象，以 key，value 的形式表示将 this.data 中的 key 对应的值改变成 value。其中 key 可以非常灵活，以数据路径的形式给出，如array[2].message，a.b.c.d，并且不需要在 this.data 中预先定义。
+
 **示例代码：**
+
 ```xml
 <!--index.wxml-->
 <view>{{text}}</view>
@@ -330,6 +340,7 @@ Page({
 在 JavaScript 文件中声明的变量和函数只在该文件中有效；不同的文件中可以声明相同名字的变量和函数，不会互相影响。
 通过全局函数[getApp()
 ](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/app.html?t=1476259068206#getapp)可以获取全局的应用实例，如果需要全局的数据可以在App()中设置，如：
+
 ```javascript
 // app.js
 App({
@@ -460,8 +471,8 @@ Page({
 ```
 
 #### 事件详解
-##### 事件分类
-事件分为冒泡事件和非冒泡事件：
+
+事件分类:事件分为冒泡事件和非冒泡事件：
 - 冒泡事件：当一个组件上的事件被触发后，该事件会向父节点传递。
 - 非冒泡事件：当一个组件上的事件被触发后，该事件不会向父节点传递。
 
@@ -480,8 +491,9 @@ WXML的冒泡事件列表：
 ](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/component/input.md?t=1476197492610)的input事件，[<scroll-view/>
 ](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/component/scroll-view.md?t=1476197492610)的scroll事件，(详见各个[组件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/component/index.md?t=1476197492610))**
 
-##### 事件绑定
+#### 事件绑定
 事件绑定的写法同组件的属性，以 key、value 的形式。
+
 - key 以bind或catch开头，然后跟上事件的类型，如bindtap、catchtouchstart
 - value 是一个字符串，需要在对应的 Page 中定义同名的函数。不然当触发事件的时候会报错。
 
