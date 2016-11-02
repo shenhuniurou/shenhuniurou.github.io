@@ -307,10 +307,15 @@ public void queryAll() {
 ```
 
 常用的几个条件查询：
+
 - between(),greaterThan(),lessThan(),greaterThanOrEqualTo() & lessThanOrEqualTo()
+
 - equalTo() & notEqualTo()
+
 - contains(), beginsWith() & endsWith()
+
 - isNull() & isNotNull()
+
 - isEmpty() & isNotEmpty()
 
 还可以组合使用
@@ -338,7 +343,7 @@ double average = results.average("age");
 long matches = results.size();
 ```
 
-*注意:Not all conditions are applicable for all data types,并不是所有的条件都适用于所有数据类型。
+*注意:Not all conditions are applicable for all data types,并不是所有的条件都适用于所有数据类型。*
 
 **更新和异步更新**
 
