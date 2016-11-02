@@ -17,50 +17,40 @@ tags: markdown语法
     - 使用`**`，被两个`*`包裹的内容会显示粗体，比如`**shenhuniurou**`会显示成**shenhuniurou**
 
     - 使用`*`，被一个`*`包裹的内容会显示斜体，比如`*shenhuniurou*`会显示成*shenhuniurou*
-
-    - 使用`tab`键上面的那个字符`，被`包裹的内容会有一个阴影
+ 
+	- 使用`tab`键上面的那个字符，被这个字符包裹的内容会有一个阴影
 
 	
-- 代码高亮，代码块用"```语言名"和“```”来包裹代码，比如:
-```java
-
+- 代码高亮，代码块用三个tab键上面那个字符加语言名再加三个这种字符来包裹代码，比如:
+```xml
 <!--index.wxml-->
-
 <view class="container">
-
     <view bindtap="bindViewTap" class="userinfo">
-
         <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-
         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-
     </view>
-
     <view class="usermotto">
-
         <text class="user-motto">{{motto}}</text>
-
     </view>
-
 </view>
-
 ```
 
 - 表格 
    
 |名称|年龄|性别|
-|:----:|:--------|-----:|
-|小明|2222222|男
+|:----|:--------|:-----|
+|小明小明|2222222|男
 |小明|2111111|男
-|小明|24444|男
-|小明|2666|男
-|小明|2777777|男
+|小明小明小明小明|24444|男
+|小明小明|2666|男
+|小明小明小明|2777777|男
 
-格式“title1|title2|title3|...”，换行，“:---:|:----|---:”其中“:”表示对齐的方向，在左边，表示左对其，在右边表示右对齐，两边都有，表示居中。然后表格中的数据就一条条写下来，要以“|”隔开。
+格式“|title1|title2|title3|...”，换行，“|:---:|:----|---:|”，其中“:”表示对齐的方向，在左边，表示左对其，在右边表示右对齐，两边都有，表示居中。然后表格中的数据就一条条写下来，要以“|”隔开。
 
 - 链接和图片，方式是差不多的
 
     - 链接是“`[名称](url地址)`”这样的，比如[shenhuniurou‘s bolg](http://shenhuniurou.com)。
 
-    - 图片是“`![名称](url地址)`”。
+	- 图片是“`![名称](url地址)`”，还有一个方式，`<img src="http://sjdhfjksdhfksdlfsj" width="40%" />`比如你图片本身尺寸较大，而你又不需要图片显示很大时，可以用这种方式设置width。
+
 
