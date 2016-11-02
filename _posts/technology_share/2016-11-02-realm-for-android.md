@@ -115,8 +115,8 @@ public void onCreate() {
 
 **字段类型**
 
-Realm支持的字段类型有boolean,?byte,?short,?int,?long,?float,?double,?String,?Date和?byte[]，但是“The integer types?byte
-,?short,?int, and?long are all mapped to the same type (long actually) within Realm.?”就是说在Realm中byte、int、short、long这四种类型会被自动映射成long类型Boolean,?Byte,?Short,?Integer,?Long,?Float和Double也可以使用，但是用这种类型的话值有可能会被设置成null。
+Realm支持的字段类型有boolean,byte,short,int,long,float,double,String,Date和byte[]，但是“The integer types(byte
+,short,int, and long) are all mapped to the same type (long actually) within Realm.”就是说在Realm中byte、int、short、long这四种类型会被自动映射成long类型，Boolean,Byte,Short,Integer,Long,Float和Double也可以使用，但是用这种类型的话值有可能会被设置成null。
 
 **注解**
 
@@ -124,11 +124,11 @@ Realm支持的字段类型有boolean,?byte,?short,?int,?long,?float,?double,?Str
 
 @Ignore表示忽略该字段，不会被存储到本地。“Ignored fields are useful if your input contains more fields than your model, and you don’t wish to have many special cases for handling these unused data fields.”
 
-@Index给字段增加一个查询索引，它会使插入操作变慢数据文件变大但是查询速度会变的更快。所以这个注解只有在优化读取性能时才推荐使用，支持的字段类型有String、byte、short、?int、long、?boolean和Date。
+@Index给字段增加一个查询索引，它会使插入操作变慢数据文件变大但是查询速度会变的更快。所以这个注解只有在优化读取性能时才推荐使用，支持的字段类型有String、byte、short、int、long、boolean和Date。
 
-@PrimaryKey表示主键，能使用这个注解的字段类型只能是string (String) or integer (byte,?short, int, or?long) 和他们的封装类(Byte,?Short,?Integer, and?Long)，而且只能有一个字段使用，设置了PrimaryKey注解就意味着自动设置了@Index注解，使用了该注解之后可以使用copyToRealmOrUpdate()方法，通过主键查询它的对象，如果查询到了，则更新它，否则新建一个对象来代替。使用了该注解之后，创建和更新数据将会慢一点，查询数据会快一点。“?Creating and updating object will be a little slower while querying is expected to be a bit faster.?”
+@PrimaryKey表示主键，能使用这个注解的字段类型只能是string (String) or integer (byte,short, int, or long) 和他们的封装类(Byte, Short, Integer, and Long)，而且只能有一个字段使用，设置了PrimaryKey注解就意味着自动设置了@Index注解，使用了该注解之后可以使用copyToRealmOrUpdate()方法，通过主键查询它的对象，如果查询到了，则更新它，否则新建一个对象来代替。使用了该注解之后，创建和更新数据将会慢一点，查询数据会快一点。“Creating and updating object will be a little slower while querying is expected to be a bit faster.”
 
-**注意：“When calling?Realm.createObject(), it will return a new object with all fields set to the default value. In this case, there might be a conflict with an existing object whose primary key field is the default value. To avoid this, it is suggested to create an unmanaged object, set values of the fields, and then copy it to Realm by?copyToRealm() method.”如果使用了PrimaryKey注解，推荐使用copyToRealm来创建对象，因为createObject这种方式可能会引起主键冲突。**
+**注意：“When calling Realm.createObject(), it will return a new object with all fields set to the default value. In this case, there might be a conflict with an existing object whose primary key field is the default value. To avoid this, it is suggested to create an unmanaged object, set values of the fields, and then copy it to Realm by copyToRealm() method.”如果使用了PrimaryKey注解，推荐使用copyToRealm来创建对象，因为createObject这种方式可能会引起主键冲突。**
 
 
 **创建对象**
@@ -151,7 +151,7 @@ User realmUser = realm.copyToRealm(user);
 realm.commitTransaction();
 ```
 
-创建对象可以直接使用createObject方法，也可以用copyToRealm方法，两种方式都必需要求创建的对象Model继承自RealmObject，不同的是createObject是直接在Realm中创建了一个对象，而copyToRealm是先创建一个对象，然后将其复制一份到Realm中，所以“When using?realm.copyToRealm(), it is important to remember that only the returned object is managed by Realm, so any further changes to the original object will not be persisted.”也就是说这种方式创建的对象他的原始对象的任何变化都不会被存储。
+创建对象可以直接使用createObject方法，也可以用copyToRealm方法，两种方式都必需要求创建的对象Model继承自RealmObject，不同的是createObject是直接在Realm中创建了一个对象，而copyToRealm是先创建一个对象，然后将其复制一份到Realm中，所以“When using realm.copyToRealm(), it is important to remember that only the returned object is managed by Realm, so any further changes to the original object will not be persisted.”也就是说这种方式创建的对象他的原始对象的任何变化都不会被存储。
 
 
 **事务块**
@@ -174,24 +174,27 @@ realm.executeTransaction(new Realm.Transaction() {
 当事务被其他事务阻塞时，为了避免阻塞UI线程，它可以到后台线程去做所有的写操作，如果使用异步事务，Realm会将这个事务运行在后台线程，当事务处理完毕后返回到UI线程。OnSuccess和OnError这两个回调方法都是可选的，但是如果写了，在事务处理成功或失败后他们就一定会被调用。
 
 ```java
-realm.executeTransactionAsync(new Realm.Transaction() {
-	@Override
-	public void execute(Realm bgRealm) {
-		User user = bgRealm.createObject(User.class);
-		user.setName("John");
-		user.setEmail("john@corporation.com");
-	}
-}, new Realm.Transaction.OnSuccess() {
-	@Override
-	public void onSuccess() {
-		// Transaction was a success.
-	}
-}, new Realm.Transaction.OnError() {
-	@Override
-	public void onError(Throwable error) {
-		// Transaction failed and was automatically canceled.
-	}
-});
+realm.executeTransactionAsync(
+	new Realm.Transaction() {
+		@Override
+		public void execute(Realm bgRealm) {
+			User user = bgRealm.createObject(User.class);
+			user.setName("John");
+			user.setEmail("john@corporation.com");
+		}
+	}, 
+	new Realm.Transaction.OnSuccess() {
+		@Override
+		public void onSuccess() {
+			// Transaction was a success.
+		}
+	}, 
+	new Realm.Transaction.OnError() {
+		@Override
+		public void onError(Throwable error) {
+			// Transaction failed and was automatically canceled.
+		}
+	});
 ```
 
 *注意：使用异步操作时，execute(Realm bgRealm) 方法中的参数bgRealm是后台线程创建的，而Realm规定Realm对象只能在创建它的线程里被访问，所以，在UI线程中创建的Realm对象是不可以在execute方法中使用的，否则会抛异常：Caused by: java.lang.IllegalStateException: Realm access from incorrect thread. Realm objects can only be accessed on the thread they were created.*
@@ -231,25 +234,28 @@ void asyncAdd() {
 private void addPerson(final List<Person> persons) {
 	Realm mRealm = Realm.getDefaultInstance();
 
-	addTask =  mRealm.executeTransactionAsync(new Realm.Transaction() {
-		@Override
-		public void execute(Realm realm) {
-			for (Person person: persons) {
-				realm.copyToRealm(person);
+	addTask = mRealm.executeTransactionAsync(
+		new Realm.Transaction() {
+			@Override
+			public void execute(Realm realm) {
+				for (Person person: persons) {
+					realm.copyToRealm(person);
+				}
 			}
-		}
-	}, new Realm.Transaction.OnSuccess() {
-		@Override
-		public void onSuccess() {
-			Toast.makeText(MainActivity.this, "增加数据成功", Toast.LENGTH_SHORT).show();
-		}
-	}, new Realm.Transaction.OnError() {
-		@Override
-		public void onError(Throwable error) {
-			String message = error.getMessage();
-			Toast.makeText(MainActivity.this, "增加数据失败---" + message, Toast.LENGTH_SHORT).show();
-		}
-	});
+		}, 
+		new Realm.Transaction.OnSuccess() {
+			@Override
+			public void onSuccess() {
+				Toast.makeText(MainActivity.this, "增加数据成功", Toast.LENGTH_SHORT).show();
+			}
+		}, 
+		new Realm.Transaction.OnError() {
+			@Override
+			public void onError(Throwable error) {
+				String message = error.getMessage();
+				Toast.makeText(MainActivity.this, "增加数据失败---" + message, Toast.LENGTH_SHORT).show();
+			}
+		});
 
 }
 ```
@@ -301,11 +307,11 @@ public void queryAll() {
 ```
 
 常用的几个条件查询：
-- between(),greaterThan(),lessThan(),greaterThanOrEqualTo()&lessThanOrEqualTo()
-- equalTo() &?notEqualTo()
-- contains(),?beginsWith() &?endsWith()
-- isNull() &?isNotNull()
-- isEmpty() &?isNotEmpty()
+- between(),greaterThan(),lessThan(),greaterThanOrEqualTo() & lessThanOrEqualTo()
+- equalTo() & notEqualTo()
+- contains(), beginsWith() & endsWith()
+- isNull() & isNotNull()
+- isEmpty() & isNotEmpty()
 
 还可以组合使用
 
@@ -351,25 +357,28 @@ mRealm.executeTransaction(new Realm.Transaction() {
 
 //异步更新
 Realm mRealm = Realm.getDefaultInstance();
-updateTask = mRealm.executeTransactionAsync(new Realm.Transaction() {
-	@Override
-	public void execute(Realm realm) {
-		Person person = realm.where(Person.class).equalTo("id", item.getId()).findFirst();
-		person.setName("神户牛肉" + position);
-		item.setName(person.getName());
-	}
-}, new Realm.Transaction.OnSuccess() {
-	@Override
-	public void onSuccess() {
-		mAdapter.notifyItemChanged(position);
-		Toast.makeText(PersonListAsyncActivity.this, "更新成功", Toast.LENGTH_SHORT).show();
-	}
-}, new Realm.Transaction.OnError() {
-	@Override
-	public void onError(Throwable error) {
-		Toast.makeText(PersonListAsyncActivity.this, "更新失败---" + error.getMessage(), Toast.LENGTH_SHORT).show();
-	}
-});
+updateTask = mRealm.executeTransactionAsync(
+	new Realm.Transaction() {
+		@Override
+		public void execute(Realm realm) {
+			Person person = realm.where(Person.class).equalTo("id", item.getId()).findFirst();
+			person.setName("神户牛肉" + position);
+			item.setName(person.getName());
+		}
+	}, 
+	new Realm.Transaction.OnSuccess() {
+		@Override
+		public void onSuccess() {
+			mAdapter.notifyItemChanged(position);
+			Toast.makeText(PersonListAsyncActivity.this, "更新成功", Toast.LENGTH_SHORT).show();
+		}
+	}, 
+	new Realm.Transaction.OnError() {
+		@Override
+		public void onError(Throwable error) {
+			Toast.makeText(PersonListAsyncActivity.this, "更新失败---" + error.getMessage(), Toast.LENGTH_SHORT).show();
+		}
+	});
 
 //取消task
 @Override
@@ -397,24 +406,27 @@ mRealm.executeTransaction(new Realm.Transaction() {
 
 //异步删除
 Realm mRealm = Realm.getDefaultInstance();
-deleteTask = mRealm.executeTransactionAsync(new Realm.Transaction() {
-	@Override
-	public void execute(Realm realm) {
-		Person person = realm.where(Person.class).equalTo("id", item.getId()).findFirst();
-		person.deleteFromRealm();
-	}
-}, new Realm.Transaction.OnSuccess() {
-	@Override
-	public void onSuccess() {
-		mAdapter.remove(position);
-		Toast.makeText(PersonListAsyncActivity.this, "删除成功", Toast.LENGTH_SHORT).show();
-	}
-}, new Realm.Transaction.OnError() {
-	@Override
-	public void onError(Throwable error) {
-		Toast.makeText(PersonListAsyncActivity.this, "删除失败---" + error.getMessage(), Toast.LENGTH_SHORT).show();
-	}
-});
+deleteTask = mRealm.executeTransactionAsync(
+	new Realm.Transaction() {
+		@Override
+		public void execute(Realm realm) {
+			Person person = realm.where(Person.class).equalTo("id", item.getId()).findFirst();
+			person.deleteFromRealm();
+		}
+	}, 
+	new Realm.Transaction.OnSuccess() {
+		@Override
+		public void onSuccess() {
+			mAdapter.remove(position);
+			Toast.makeText(PersonListAsyncActivity.this, "删除成功", Toast.LENGTH_SHORT).show();
+		}
+	}, 
+	new Realm.Transaction.OnError() {
+		@Override
+		public void onError(Throwable error) {
+			Toast.makeText(PersonListAsyncActivity.this, "删除失败---" + error.getMessage(), Toast.LENGTH_SHORT).show();
+		}
+	});
 
 //取消task
 @Override
