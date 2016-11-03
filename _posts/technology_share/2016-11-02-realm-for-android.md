@@ -308,15 +308,15 @@ public void queryAll() {
 
 常用的几个条件查询：
 
-- between(),greaterThan(),lessThan(),greaterThanOrEqualTo() & lessThanOrEqualTo()
+- between(),greaterThan(),lessThan(),greaterThanEqualTo(),lessThanOrEqualTo()
 
-- equalTo() & notEqualTo()
+- equalTo(),notEqualTo()
 
-- contains(), beginsWith() & endsWith()
+- contains(),beginsWith(),endsWith()
 
-- isNull() & isNotNull()
+- isNull(),isNotNull()
 
-- isEmpty() & isNotEmpty()
+- isEmpty(),isNotEmpty()
 
 还可以组合使用
 
