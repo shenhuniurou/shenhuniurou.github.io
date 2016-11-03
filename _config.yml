@@ -35,7 +35,7 @@ filter: 'category'
 highlighter: rouge
 markdown: kramdown
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "tables"]
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
   
 sass:
   style: compressed
