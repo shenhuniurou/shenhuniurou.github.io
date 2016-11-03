@@ -55,6 +55,7 @@ buildscript {
 RealmConfiguration对象是用来控制Realm的创建。
 
 默认配置：
+
 ```java
 RealmConfiguration config = new RealmConfiguration.Builder().build();
 ```
@@ -62,6 +63,7 @@ RealmConfiguration config = new RealmConfiguration.Builder().build();
 以上的默认配置会在`Context.getFilesDir()`路径下生成一个`default.realm`文件。
 
 自定义配置：
+
 ```java
 // The RealmConfiguration is created using the builder pattern.
 // The Realm file will be located in Context.getFilesDir() with name "myrealm.realm"
