@@ -232,11 +232,8 @@ mMatrixImageView.setImageMatrix(matrix);
 ## 参考文章
 
 - [理解矩阵乘法](http://www.ruanyifeng.com/blog/2015/09/matrix-multiplication.html)
-
 - [Android中图像变换Matrix的原理、代码验证和应用](http://biandroid.iteye.com/blog/1399462)
-
 - [安卓自定义View进阶-Matrix原理](http://www.gcssloop.com/customview/Matrix_Basic)
-
 - [安卓自定义View进阶-Matrix详解](http://www.gcssloop.com/customview/Matrix_Method)
 
 
