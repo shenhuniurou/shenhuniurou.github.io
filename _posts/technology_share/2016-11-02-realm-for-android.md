@@ -13,7 +13,7 @@ Realm官方文档在Introduction是这样说的：The Realm Mobile Database work
 
 ## Gifs
 
-<img src="http://offfjcibp.bkt.clouddn.com/realmdemo.gif" width="30%" />
+<img src="http://offfjcibp.bkt.clouddn.com/realmdemo.gif" width="50%" />
 
 ## Prerequisites
 
