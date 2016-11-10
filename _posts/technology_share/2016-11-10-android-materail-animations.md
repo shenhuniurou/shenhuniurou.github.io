@@ -17,7 +17,7 @@ Material Design中的动画将为用户提供操作反馈并在用户与您的�
 
 <img src="http://offfjcibp.bkt.clouddn.com/ripple.gif" width="30%" />
 
-Material Design的触摸反馈可在用户与 UI 元素互动时，在接触点上提供即时视觉确认。 适用于按钮的默认触摸动画使用全新?[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)类别，以波纹效果实现不同状态间的转换。
+Material Design的触摸反馈可在用户与 UI 元素互动时，在接触点上提供即时视觉确认。 适用于按钮的默认触摸动画使用全新[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)类别，以波纹效果实现不同状态间的转换。
 在大多数情况下，应以下列方式指定视图背景，在您的视图 XML 中应用此功能：
 
 - ?android:attr/selectableItemBackground 指定有界的波纹。
@@ -35,9 +35,9 @@ view.setBackground(rippleDrawable);
 
 > **注意：**selectableItemBackgroundBorderless是 API Level 21 中推出的新属性。
 
-此外，您可利用?ripple元素将?[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)定义为一个 XML 资源。
-您可以为?[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)对象指定一种颜色。如果要改变默认触摸反馈颜色，请使用主题的?android:colorControlHighlight属性。
-如果要了解更多信息，请参阅?[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)类别的 API 参考文档。
+此外，您可利用ripple元素将[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)定义为一个 XML 资源。
+您可以为[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)对象指定一种颜色。如果要改变默认触摸反馈颜色，请使用主题的android:colorControlHighlight属性。
+如果要了解更多信息，请参阅[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)类别的 API 参考文档。
 
 我们来看看系统自带的触摸反馈动画是怎么实现的，为什么只需要在view的`background`或者`foreground`属性设置成`?android:attr/selectableItemBackground`或者`?android:attr/selectableItemBackgroundBorderless`就可以实现波纹动画的效果？这两个属性点进去，可以看到在路径`sdk/platforms/android-xx/data/res/values/attrs.xml`文件中有定义这么两个属性：
 
@@ -84,7 +84,7 @@ item_background_borderless_material的内容是：
     android:color="?attr/colorControlHighlight" />
 ```
 
-系统的做法是用ripple元素将?RippleDrawable定义为一个 XML 资源，而通过看View的源码中在构造方法中是这样获取background属性的：
+系统的做法是用ripple元素将RippleDrawable定义为一个 XML 资源，而通过看View的源码中在构造方法中是这样获取background属性的：
 
 ```java
 public View(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
@@ -113,7 +113,7 @@ public View(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int
 也就是说，这个background实际上就是RippleDrawable类。那我们就来看看这个RippleDrawable内部到底是怎么做的吧。
 
 首先官方文档对RippleDrawable解释是
-Drawable that shows a ripple effect in response to state changes. The anchoring position of the ripple for a given state may be specified by calling?`setHotspot(float, float)`with the corresponding state attribute identifier.
+Drawable that shows a ripple effect in response to state changes. The anchoring position of the ripple for a given state may be specified by calling`setHotspot(float, float)`with the corresponding state attribute identifier.
 通过显示出波纹效果来响应状态的改变，对于给定状态的波纹的锚定位置可以通过调用具有对应的状态属性标识符的`setHotspot（float，float）`来指定。
 
 RippleDrawable继承自`LayerDrawable`，而`LayerDrawable`是继承`Drawable`，RippleDrawable又是为了响应View的statechange，那就看看Drawable类中对点击时的状态处理吧。
@@ -421,16 +421,16 @@ MaterialDesign应用中的操作行为转换透过通用元素之间的移动和
 
 Android 5.0（API Level 21）支持这些进入与退出转换：（普通过渡动画）
 
-- *分解*?- 从场景中心移入或移出视图。
-- *滑动*?- 从场景边缘移入或移出视图。
-- *淡入淡出*?- 通过调整透明度在场景中增添或移除视图。
+- *分解* - 从场景中心移入或移出视图。
+- *滑动* - 从场景边缘移入或移出视图。
+- *淡入淡出* - 通过调整透明度在场景中增添或移除视图。
 
 也支持这些共享元素转换：（共享元素的过渡动画）
 
-- *changeBounds*?- 为目标视图的大小添加动画。
-- *changeClipBounds*?- 为目标视图的裁剪大小添加动画。
-- *changeTransform*?- 为目标视图的缩放、旋转和位移添加动画。
-- *changeImageTransform*?- 为目标图片的缩放、旋转和位移添加动画。
+- *changeBounds*- 为 目标视图的大小添加动画。
+- *changeClipBounds* - 为目标视图的裁剪大小添加动画。
+- *changeTransform* - 为目标视图的缩放、旋转和位移添加动画。
+- *changeImageTransform* - 为目标图片的缩放、旋转和位移添加动画。
 
 #### 指定转场动画
 
@@ -493,7 +493,7 @@ getWindow().setSharedElementReenterTransition(new ChangeTransform());
 ```xml
 <transition class="my.app.transition.CustomTransition"/>
 ```
-?
+
 > **注意**：其中CustomTransition是我们自定义的动画，它必须继承自Visibility。
 
 想以普通转场动画的方式启动一个Activity，必须在startActivity函数中传递一个ActivityOptions的Bundle对象：
@@ -512,8 +512,8 @@ startActivity(intent, options.toBundle());
 - 1、在题中启用窗口内容转换。android:windowContentTransitions
 - 2、在Theme中指定一个共享元素转换。
 - 3、将transitions定义为xml资源。
-- 4、利用?android:transitionName属性对两个布局中的共享元素指定一个通用名称。
-- 5、使用?`ActivityOptions.makeSceneTransitionAnimation()`方法。
+- 4、利用android:transitionName属性对两个布局中的共享元素指定一个通用名称。
+- 5、使用`ActivityOptions.makeSceneTransitionAnimation()`方法。
 
 ```java
 // get the element that receives the click event
