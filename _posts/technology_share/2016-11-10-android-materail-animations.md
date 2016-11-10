@@ -1,31 +1,31 @@
 ---
 layout: post
-title: Material DesignÖĞÈ«ĞÂµÄ¶¯»­
-category: ¼¼Êõ·ÖÏí
-tags: Android¶¯»­
+title: Material Designä¸­å…¨æ–°çš„åŠ¨ç”»
+category: æŠ€æœ¯åˆ†äº«
+tags: AndroidåŠ¨ç”»
 ---
 
 
 
-[ÎÄµµµØÖ·](https://developer.android.com/training/material/animations.html#Reveal)
+[æ–‡æ¡£åœ°å€](https://developer.android.com/training/material/animations.html#Reveal)
 
-Material DesignÖĞµÄ¶¯»­½«ÎªÓÃ»§Ìá¹©²Ù×÷·´À¡²¢ÔÚÓÃ»§ÓëÄúµÄÓ¦ÓÃ½øĞĞ»¥¶¯Ê±Ìá¹©ÊÓ¾õÁ¬ĞøĞÔ¡£ Material Design½«Îª°´Å¥Óë²Ù×÷ĞĞÎª×ª»»Ìá¹©Ò»Ğ©Ä¬ÈÏ¶¯»­£¬¶ø Android 5.0£¨API Level 21£©¼°¸ü¸ß°æ±¾¿ÉÈÃÄú¶¨ÖÆÕâĞ©¶¯»­£¬Í¬Ê±Ò²¿É´´½¨ĞÂ¶¯»­£º
+Material Designä¸­çš„åŠ¨ç”»å°†ä¸ºç”¨æˆ·æä¾›æ“ä½œåé¦ˆå¹¶åœ¨ç”¨æˆ·ä¸æ‚¨çš„åº”ç”¨è¿›è¡Œäº’åŠ¨æ—¶æä¾›è§†è§‰è¿ç»­æ€§ã€‚ Material Designå°†ä¸ºæŒ‰é’®ä¸æ“ä½œè¡Œä¸ºè½¬æ¢æä¾›ä¸€äº›é»˜è®¤åŠ¨ç”»ï¼Œè€Œ Android 5.0ï¼ˆAPI Level 21ï¼‰åŠæ›´é«˜ç‰ˆæœ¬å¯è®©æ‚¨å®šåˆ¶è¿™äº›åŠ¨ç”»ï¼ŒåŒæ—¶ä¹Ÿå¯åˆ›å»ºæ–°åŠ¨ç”»ï¼š
 
-### Ò»¡¢´¥Ãş·´À¡¶¯»­
+### ä¸€ã€è§¦æ‘¸åé¦ˆåŠ¨ç”»
 
-Ğ§¹ûÍ¼£º
+æ•ˆæœå›¾ï¼š
 
 <img src="http://offfjcibp.bkt.clouddn.com/ripple.gif" width="30%" />
 
-Material DesignµÄ´¥Ãş·´À¡¿ÉÔÚÓÃ»§Óë UI ÔªËØ»¥¶¯Ê±£¬ÔÚ½Ó´¥µãÉÏÌá¹©¼´Ê±ÊÓ¾õÈ·ÈÏ¡£ ÊÊÓÃÓÚ°´Å¥µÄÄ¬ÈÏ´¥Ãş¶¯»­Ê¹ÓÃÈ«ĞÂ?[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)Àà±ğ£¬ÒÔ²¨ÎÆĞ§¹ûÊµÏÖ²»Í¬×´Ì¬¼äµÄ×ª»»¡£
-ÔÚ´ó¶àÊıÇé¿öÏÂ£¬Ó¦ÒÔÏÂÁĞ·½Ê½Ö¸¶¨ÊÓÍ¼±³¾°£¬ÔÚÄúµÄÊÓÍ¼ XML ÖĞÓ¦ÓÃ´Ë¹¦ÄÜ£º
+Material Designçš„è§¦æ‘¸åé¦ˆå¯åœ¨ç”¨æˆ·ä¸ UI å…ƒç´ äº’åŠ¨æ—¶ï¼Œåœ¨æ¥è§¦ç‚¹ä¸Šæä¾›å³æ—¶è§†è§‰ç¡®è®¤ã€‚ é€‚ç”¨äºæŒ‰é’®çš„é»˜è®¤è§¦æ‘¸åŠ¨ç”»ä½¿ç”¨å…¨æ–°?[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)ç±»åˆ«ï¼Œä»¥æ³¢çº¹æ•ˆæœå®ç°ä¸åŒçŠ¶æ€é—´çš„è½¬æ¢ã€‚
+åœ¨å¤§å¤šæ•°æƒ…å†µä¸‹ï¼Œåº”ä»¥ä¸‹åˆ—æ–¹å¼æŒ‡å®šè§†å›¾èƒŒæ™¯ï¼Œåœ¨æ‚¨çš„è§†å›¾ XML ä¸­åº”ç”¨æ­¤åŠŸèƒ½ï¼š
 
-- ?android:attr/selectableItemBackground Ö¸¶¨ÓĞ½çµÄ²¨ÎÆ¡£
-- ?android:attr/selectableItemBackgroundBorderless Ö¸¶¨Ô½¹ıÊÓÍ¼±ß½çµÄ²¨ÎÆ¡£ Ëü½«ÓÉÒ»¸ö·Ç¿Õ±³¾°µÄÊÓÍ¼µÄ×î½ü¸¸ÏîËù»æÖÆºÍÉè¶¨±ß½ç¡£
+- ?android:attr/selectableItemBackground æŒ‡å®šæœ‰ç•Œçš„æ³¢çº¹ã€‚
+- ?android:attr/selectableItemBackgroundBorderless æŒ‡å®šè¶Šè¿‡è§†å›¾è¾¹ç•Œçš„æ³¢çº¹ã€‚ å®ƒå°†ç”±ä¸€ä¸ªéç©ºèƒŒæ™¯çš„è§†å›¾çš„æœ€è¿‘çˆ¶é¡¹æ‰€ç»˜åˆ¶å’Œè®¾å®šè¾¹ç•Œã€‚
 
-ÈÎºÎview´¦ÓÚ**¿Éµã»÷×´Ì¬**£¬¶¼¿ÉÒÔÊ¹ÓÃRippleDrawableÀ´´ïµ½Ë®²¨ÎÆÌØĞ§£¬¶øÇÒ±ØĞë´¦ÓÚ¿Éµã»÷×´Ì¬£¬²Å»á³öÏÖ²¨ÎÆ¶¯»­Ğ§¹û¡£
+ä»»ä½•viewå¤„äº**å¯ç‚¹å‡»çŠ¶æ€**ï¼Œéƒ½å¯ä»¥ä½¿ç”¨RippleDrawableæ¥è¾¾åˆ°æ°´æ³¢çº¹ç‰¹æ•ˆï¼Œè€Œä¸”å¿…é¡»å¤„äºå¯ç‚¹å‡»çŠ¶æ€ï¼Œæ‰ä¼šå‡ºç°æ³¢çº¹åŠ¨ç”»æ•ˆæœã€‚
 
-ÔÚ´úÂëÖĞ¿ÉÒÔÕâÑùÉèÖÃ£º
+åœ¨ä»£ç ä¸­å¯ä»¥è¿™æ ·è®¾ç½®ï¼š
 
 ```java
 RippleDrawableColorStateList stateList = getResources().getColorStateList(R.color.tint_state_color);
@@ -33,13 +33,13 @@ RippleDrawable rippleDrawable = new RippleDrawable(stateList, null, null);
 view.setBackground(rippleDrawable);
 ```
 
-> **×¢Òâ£º**selectableItemBackgroundBorderlessÊÇ API Level 21 ÖĞÍÆ³öµÄĞÂÊôĞÔ¡£
+> **æ³¨æ„ï¼š**selectableItemBackgroundBorderlessæ˜¯ API Level 21 ä¸­æ¨å‡ºçš„æ–°å±æ€§ã€‚
 
-´ËÍâ£¬Äú¿ÉÀûÓÃ?rippleÔªËØ½«?[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)¶¨ÒåÎªÒ»¸ö XML ×ÊÔ´¡£
-Äú¿ÉÒÔÎª?[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)¶ÔÏóÖ¸¶¨Ò»ÖÖÑÕÉ«¡£Èç¹ûÒª¸Ä±äÄ¬ÈÏ´¥Ãş·´À¡ÑÕÉ«£¬ÇëÊ¹ÓÃÖ÷ÌâµÄ?android:colorControlHighlightÊôĞÔ¡£
-Èç¹ûÒªÁË½â¸ü¶àĞÅÏ¢£¬Çë²ÎÔÄ?[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)Àà±ğµÄ API ²Î¿¼ÎÄµµ¡£
+æ­¤å¤–ï¼Œæ‚¨å¯åˆ©ç”¨?rippleå…ƒç´ å°†?[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)å®šä¹‰ä¸ºä¸€ä¸ª XML èµ„æºã€‚
+æ‚¨å¯ä»¥ä¸º?[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)å¯¹è±¡æŒ‡å®šä¸€ç§é¢œè‰²ã€‚å¦‚æœè¦æ”¹å˜é»˜è®¤è§¦æ‘¸åé¦ˆé¢œè‰²ï¼Œè¯·ä½¿ç”¨ä¸»é¢˜çš„?android:colorControlHighlightå±æ€§ã€‚
+å¦‚æœè¦äº†è§£æ›´å¤šä¿¡æ¯ï¼Œè¯·å‚é˜…?[RippleDrawable](https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html)ç±»åˆ«çš„ API å‚è€ƒæ–‡æ¡£ã€‚
 
-ÎÒÃÇÀ´¿´¿´ÏµÍ³×Ô´øµÄ´¥Ãş·´À¡¶¯»­ÊÇÔõÃ´ÊµÏÖµÄ£¬ÎªÊ²Ã´Ö»ĞèÒªÔÚviewµÄ`background`»òÕß`foreground`ÊôĞÔÉèÖÃ³É`?android:attr/selectableItemBackground`»òÕß`?android:attr/selectableItemBackgroundBorderless`¾Í¿ÉÒÔÊµÏÖ²¨ÎÆ¶¯»­µÄĞ§¹û£¿ÕâÁ½¸öÊôĞÔµã½øÈ¥£¬¿ÉÒÔ¿´µ½ÔÚÂ·¾¶`sdk/platforms/android-xx/data/res/values/attrs.xml`ÎÄ¼şÖĞÓĞ¶¨ÒåÕâÃ´Á½¸öÊôĞÔ£º
+æˆ‘ä»¬æ¥çœ‹çœ‹ç³»ç»Ÿè‡ªå¸¦çš„è§¦æ‘¸åé¦ˆåŠ¨ç”»æ˜¯æ€ä¹ˆå®ç°çš„ï¼Œä¸ºä»€ä¹ˆåªéœ€è¦åœ¨viewçš„`background`æˆ–è€…`foreground`å±æ€§è®¾ç½®æˆ`?android:attr/selectableItemBackground`æˆ–è€…`?android:attr/selectableItemBackgroundBorderless`å°±å¯ä»¥å®ç°æ³¢çº¹åŠ¨ç”»çš„æ•ˆæœï¼Ÿè¿™ä¸¤ä¸ªå±æ€§ç‚¹è¿›å»ï¼Œå¯ä»¥çœ‹åˆ°åœ¨è·¯å¾„`sdk/platforms/android-xx/data/res/values/attrs.xml`æ–‡ä»¶ä¸­æœ‰å®šä¹‰è¿™ä¹ˆä¸¤ä¸ªå±æ€§ï¼š
 
 ```xml
 <!-- Background drawable for bordered standalone items that need focus/pressed states. -->
@@ -48,25 +48,25 @@ view.setBackground(rippleDrawable);
 <attr name="selectableItemBackgroundBorderless" format="reference" />
 ```
 
-ÎÒÃÇÏëµ½£¬ÕâÁ½¸öÊôĞÔ¼ÈÈ»ÊÇÕû¸öappÖĞÓĞĞ§µÄ£¬ÄÇ¿ÉÄÜ»áÊÇÔÚThemeÖĞµÄÊôĞÔ°É£¬ÄÇ¾ÍÈ¥AndroidManifestÎÄ¼şÖĞ¸úÕâ¸öThemeÒ»²½²½¿´ÏÂÈ¥£¬×îºóÔÚ`Base.V21.Theme.AppCompat.Light`Õâ¸östyleÖĞ¿´µ½È·ÊµÊÇÓĞÕâÁ½¸öitemÊôĞÔ£º
+æˆ‘ä»¬æƒ³åˆ°ï¼Œè¿™ä¸¤ä¸ªå±æ€§æ—¢ç„¶æ˜¯æ•´ä¸ªappä¸­æœ‰æ•ˆçš„ï¼Œé‚£å¯èƒ½ä¼šæ˜¯åœ¨Themeä¸­çš„å±æ€§å§ï¼Œé‚£å°±å»AndroidManifestæ–‡ä»¶ä¸­è·Ÿè¿™ä¸ªThemeä¸€æ­¥æ­¥çœ‹ä¸‹å»ï¼Œæœ€ååœ¨`Base.V21.Theme.AppCompat.Light`è¿™ä¸ªstyleä¸­çœ‹åˆ°ç¡®å®æ˜¯æœ‰è¿™ä¸¤ä¸ªitemå±æ€§ï¼š
 
 ```xml
 <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
 <item name="selectableItemBackgroundBorderless">?android:attr/selectableItemBackgroundBorderless</item>
 ```
 
-µ«ÊÇÕâÀï»¹ÊÇµ÷ÓÃµÄÏµÍ³µÄ¶¨ÒåµÄÊôĞÔ£¬¼ÌĞøÍùÏÂ×·£¬ÔÚ`android:Theme.Material`ºÍ`android:Theme.Material.Light`ÖĞ£¬¿ÉÒÔ¿´µ½£º
+ä½†æ˜¯è¿™é‡Œè¿˜æ˜¯è°ƒç”¨çš„ç³»ç»Ÿçš„å®šä¹‰çš„å±æ€§ï¼Œç»§ç»­å¾€ä¸‹è¿½ï¼Œåœ¨`android:Theme.Material`å’Œ`android:Theme.Material.Light`ä¸­ï¼Œå¯ä»¥çœ‹åˆ°ï¼š
 
 ```xml
 <item name="selectableItemBackground">@drawable/item_background_material</item>
 <item name="selectableItemBackgroundBorderless">@drawable/item_background_borderless_material</item>
 ```
 
-È»ºósdkÂ·¾¶ÏÂplatforms\\\\android-xx\\\\data\\\\res\\\\drawable¿ÉÒÔÕÒµ½ÕâĞ©×ÊÔ´ÎÄ¼şÈçÏÂÍ¼£º
+ç„¶åsdkè·¯å¾„ä¸‹platforms\\\\android-xx\\\\data\\\\res\\\\drawableå¯ä»¥æ‰¾åˆ°è¿™äº›èµ„æºæ–‡ä»¶å¦‚ä¸‹å›¾ï¼š
 
 ![](http://offfjcibp.bkt.clouddn.com/ripple_theme.png)
 
-item_background_materialµÄÄÚÈİÊÇ£º
+item_background_materialçš„å†…å®¹æ˜¯ï¼š
 
 ```xml
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
@@ -77,14 +77,14 @@ item_background_materialµÄÄÚÈİÊÇ£º
 </ripple>
 ```
 
-item_background_borderless_materialµÄÄÚÈİÊÇ£º
+item_background_borderless_materialçš„å†…å®¹æ˜¯ï¼š
 
 ```xml
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
     android:color="?attr/colorControlHighlight" />
 ```
 
-ÏµÍ³µÄ×ö·¨ÊÇÓÃrippleÔªËØ½«?RippleDrawable¶¨ÒåÎªÒ»¸ö XML ×ÊÔ´£¬¶øÍ¨¹ı¿´ViewµÄÔ´ÂëÖĞÔÚ¹¹Ôì·½·¨ÖĞÊÇÕâÑù»ñÈ¡backgroundÊôĞÔµÄ£º
+ç³»ç»Ÿçš„åšæ³•æ˜¯ç”¨rippleå…ƒç´ å°†?RippleDrawableå®šä¹‰ä¸ºä¸€ä¸ª XML èµ„æºï¼Œè€Œé€šè¿‡çœ‹Viewçš„æºç ä¸­åœ¨æ„é€ æ–¹æ³•ä¸­æ˜¯è¿™æ ·è·å–backgroundå±æ€§çš„ï¼š
 
 ```java
 public View(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
@@ -110,13 +110,13 @@ public View(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int
 }
 ```
 
-Ò²¾ÍÊÇËµ£¬Õâ¸öbackgroundÊµ¼ÊÉÏ¾ÍÊÇRippleDrawableÀà¡£ÄÇÎÒÃÇ¾ÍÀ´¿´¿´Õâ¸öRippleDrawableÄÚ²¿µ½µ×ÊÇÔõÃ´×öµÄ°É¡£
+ä¹Ÿå°±æ˜¯è¯´ï¼Œè¿™ä¸ªbackgroundå®é™…ä¸Šå°±æ˜¯RippleDrawableç±»ã€‚é‚£æˆ‘ä»¬å°±æ¥çœ‹çœ‹è¿™ä¸ªRippleDrawableå†…éƒ¨åˆ°åº•æ˜¯æ€ä¹ˆåšçš„å§ã€‚
 
-Ê×ÏÈ¹Ù·½ÎÄµµ¶ÔRippleDrawable½âÊÍÊÇ
+é¦–å…ˆå®˜æ–¹æ–‡æ¡£å¯¹RippleDrawableè§£é‡Šæ˜¯
 Drawable that shows a ripple effect in response to state changes. The anchoring position of the ripple for a given state may be specified by calling?`setHotspot(float, float)`with the corresponding state attribute identifier.
-Í¨¹ıÏÔÊ¾³ö²¨ÎÆĞ§¹ûÀ´ÏìÓ¦×´Ì¬µÄ¸Ä±ä£¬¶ÔÓÚ¸ø¶¨×´Ì¬µÄ²¨ÎÆµÄÃª¶¨Î»ÖÃ¿ÉÒÔÍ¨¹ıµ÷ÓÃ¾ßÓĞ¶ÔÓ¦µÄ×´Ì¬ÊôĞÔ±êÊ¶·ûµÄ`setHotspot£¨float£¬float£©`À´Ö¸¶¨¡£
+é€šè¿‡æ˜¾ç¤ºå‡ºæ³¢çº¹æ•ˆæœæ¥å“åº”çŠ¶æ€çš„æ”¹å˜ï¼Œå¯¹äºç»™å®šçŠ¶æ€çš„æ³¢çº¹çš„é”šå®šä½ç½®å¯ä»¥é€šè¿‡è°ƒç”¨å…·æœ‰å¯¹åº”çš„çŠ¶æ€å±æ€§æ ‡è¯†ç¬¦çš„`setHotspotï¼ˆfloatï¼Œfloatï¼‰`æ¥æŒ‡å®šã€‚
 
-RippleDrawable¼Ì³Ğ×Ô`LayerDrawable`£¬¶ø`LayerDrawable`ÊÇ¼Ì³Ğ`Drawable`£¬RippleDrawableÓÖÊÇÎªÁËÏìÓ¦ViewµÄstatechange£¬ÄÇ¾Í¿´¿´DrawableÀàÖĞ¶Ôµã»÷Ê±µÄ×´Ì¬´¦Àí°É¡£
+RippleDrawableç»§æ‰¿è‡ª`LayerDrawable`ï¼Œè€Œ`LayerDrawable`æ˜¯ç»§æ‰¿`Drawable`ï¼ŒRippleDrawableåˆæ˜¯ä¸ºäº†å“åº”Viewçš„statechangeï¼Œé‚£å°±çœ‹çœ‹Drawableç±»ä¸­å¯¹ç‚¹å‡»æ—¶çš„çŠ¶æ€å¤„ç†å§ã€‚
 
 ```java
 public boolean setState(@NonNull final int[] stateSet) {
@@ -128,7 +128,7 @@ public boolean setState(@NonNull final int[] stateSet) {
 }
 ```
 
-¸øDrawableÉèÖÃ×´Ì¬ÊôĞÔÊ±£¬»á°Ñ×´Ì¬µÄÊı×é´«¸øonStateChange·½·¨£¬ÔÚRippleDrawableÖĞÖØĞ´ÁËonStateChange¡£
+ç»™Drawableè®¾ç½®çŠ¶æ€å±æ€§æ—¶ï¼Œä¼šæŠŠçŠ¶æ€çš„æ•°ç»„ä¼ ç»™onStateChangeæ–¹æ³•ï¼Œåœ¨RippleDrawableä¸­é‡å†™äº†onStateChangeã€‚
 
 ```java
 @Override
@@ -159,7 +159,7 @@ protected boolean onStateChange(int[] stateSet) {
 }
 ```
 
-¿´µ½`setRippleActive`ºÍ`setBackgroundActive`ÕâÁ½¸ö·½·¨Ó¦¸Ã¿ÉÒÔ²Âµ½ÊÇÊ²Ã´ÒâË¼ÁË£¬½Ó×Å¿´¡£
+çœ‹åˆ°`setRippleActive`å’Œ`setBackgroundActive`è¿™ä¸¤ä¸ªæ–¹æ³•åº”è¯¥å¯ä»¥çŒœåˆ°æ˜¯ä»€ä¹ˆæ„æ€äº†ï¼Œæ¥ç€çœ‹ã€‚
 
 ```java
 private void setRippleActive(boolean active) {
@@ -174,7 +174,7 @@ private void setRippleActive(boolean active) {
 }
 ```
 
-Èç¹ûDrawableÊÇenable=trueÇÒpressd=trueÊ±£¬»áµ÷ÓÃ`tryRippleEnter`·½·¨
+å¦‚æœDrawableæ˜¯enable=trueä¸”pressd=trueæ—¶ï¼Œä¼šè°ƒç”¨`tryRippleEnter`æ–¹æ³•
 
 ```java
 /**
@@ -209,7 +209,7 @@ private void tryRippleEnter() {
 }
 ```
 
-¿´µ½ÕâÀï£¬ÎÒÃÇ¿ÉÒÔÖªµÀÒª¿ªÊ¼×ö²¨ÎÆ¶¯»­µÄĞ§¹ûÁË¡£mRipple ÊÇRippleForegroundÀàµÄÊµÀı£¬È»¶øÎÒÃ»ÓĞÔÚRippleForegroundÀàÖĞÕÒµ½setupºÍenter·½·¨£¬µ«ÊÇRippleForeground¼Ì³Ğ×ÔRippleComponentÀà£¬ÓÚÊÇ£¬ÎÒÔÚÕâ¸öÀàÖĞ·¢ÏÖÁËÕâÁ½¸ö·½·¨¡£
+çœ‹åˆ°è¿™é‡Œï¼Œæˆ‘ä»¬å¯ä»¥çŸ¥é“è¦å¼€å§‹åšæ³¢çº¹åŠ¨ç”»çš„æ•ˆæœäº†ã€‚mRipple æ˜¯RippleForegroundç±»çš„å®ä¾‹ï¼Œç„¶è€Œæˆ‘æ²¡æœ‰åœ¨RippleForegroundç±»ä¸­æ‰¾åˆ°setupå’Œenteræ–¹æ³•ï¼Œä½†æ˜¯RippleForegroundç»§æ‰¿è‡ªRippleComponentç±»ï¼Œäºæ˜¯ï¼Œæˆ‘åœ¨è¿™ä¸ªç±»ä¸­å‘ç°äº†è¿™ä¸¤ä¸ªæ–¹æ³•ã€‚
 
 ```java
 public final void setup(float maxRadius, int densityDpi) {
@@ -243,7 +243,7 @@ public final void enter(boolean fast) {
 }
 ```
 
-setupÊÇ³õÊ¼»¯Ò»ÏµÁĞ²ÎÊı£¬enter´´½¨Ò»¸ö¶¯»­²¢¿ªÊ¼¶¯»­¡£
+setupæ˜¯åˆå§‹åŒ–ä¸€ç³»åˆ—å‚æ•°ï¼Œenteråˆ›å»ºä¸€ä¸ªåŠ¨ç”»å¹¶å¼€å§‹åŠ¨ç”»ã€‚
 
 ```java
 @Override
@@ -279,7 +279,7 @@ protected Animator createSoftwareEnter(boolean fast) {
 }
 ```
 
-´ÓÉÏÃæ´´½¨¶¯»­µÄ´úÂë¿ÉÒÔ¿´µ½£¬Êµ¼ÊÉÏÊÇÒ»¸ö×éºÏµÄÊôĞÔ¶¯»­£¬È»ºó×Ô¶¨ÒåÁËÈı¸öÊôĞÔ²¨ÎÆ°ë¾¶`TWEEN_RADIUS`¡¢²¨ÎÆÖĞĞÄµã`TWEEN_ORIGIN`ºÍ²¨ÎÆµÄ²»Í¸Ã÷¶È`OPACITY`¡£Í¨¹ıÕâÈı¸öÊôĞÔµÄ¹ı¶É±ä»¯µÃµ½Ò»¸ö¸´ºÏµÄ¶¯»­¡£ÒÔÉÏ¾ÍÊÇÇ°¾°²¨ÎÆ¶¯»­Ğ§¹ûµÄÊµÏÖ¹ı³Ì¡£
+ä»ä¸Šé¢åˆ›å»ºåŠ¨ç”»çš„ä»£ç å¯ä»¥çœ‹åˆ°ï¼Œå®é™…ä¸Šæ˜¯ä¸€ä¸ªç»„åˆçš„å±æ€§åŠ¨ç”»ï¼Œç„¶åè‡ªå®šä¹‰äº†ä¸‰ä¸ªå±æ€§æ³¢çº¹åŠå¾„`TWEEN_RADIUS`ã€æ³¢çº¹ä¸­å¿ƒç‚¹`TWEEN_ORIGIN`å’Œæ³¢çº¹çš„ä¸é€æ˜åº¦`OPACITY`ã€‚é€šè¿‡è¿™ä¸‰ä¸ªå±æ€§çš„è¿‡æ¸¡å˜åŒ–å¾—åˆ°ä¸€ä¸ªå¤åˆçš„åŠ¨ç”»ã€‚ä»¥ä¸Šå°±æ˜¯å‰æ™¯æ³¢çº¹åŠ¨ç”»æ•ˆæœçš„å®ç°è¿‡ç¨‹ã€‚
 
 
 ```java
@@ -295,7 +295,7 @@ private void setBackgroundActive(boolean active, boolean focused) {
 }
 ```
 
-`mBackground`ÊÇRippleBackgroundÀàµÄÊµÀı£¬ÓëRippleForeground²»Í¬µÄÊÇ£¬±³¾°¶¯»­Ö»ÊÇ¸Ä±äÁË²»Í¸Ã÷¶È¡£
+`mBackground`æ˜¯RippleBackgroundç±»çš„å®ä¾‹ï¼Œä¸RippleForegroundä¸åŒçš„æ˜¯ï¼ŒèƒŒæ™¯åŠ¨ç”»åªæ˜¯æ”¹å˜äº†ä¸é€æ˜åº¦ã€‚
 
 ```java
 @Override
@@ -313,31 +313,31 @@ protected Animator createSoftwareEnter(boolean fast) {
 }
 ```
 
-ÒÔÉÏ·ÖÎöµÄ¶¼ÊÇÊÖÖ¸´¥ÃşviewÊ±²úÉúµÄenter²¨ÎÆ¶¯»­£¬µ±ÊÖÖ¸Ì§ÆğÊ±stateÒ²»á¸Ä±ä£¬»á²úÉúÒ»¸öexit¶¯»­£¬ÕâÀï¾Í²»ÏêÏ¸·ÖÎöÁË¡£
+ä»¥ä¸Šåˆ†æçš„éƒ½æ˜¯æ‰‹æŒ‡è§¦æ‘¸viewæ—¶äº§ç”Ÿçš„enteræ³¢çº¹åŠ¨ç”»ï¼Œå½“æ‰‹æŒ‡æŠ¬èµ·æ—¶stateä¹Ÿä¼šæ”¹å˜ï¼Œä¼šäº§ç”Ÿä¸€ä¸ªexitåŠ¨ç”»ï¼Œè¿™é‡Œå°±ä¸è¯¦ç»†åˆ†æäº†ã€‚
 
-### ¶ş¡¢Ê¹ÓÃ½ÒÂ¶Ğ§¹û
+### äºŒã€ä½¿ç”¨æ­éœ²æ•ˆæœ
 
-Ğ§¹ûÍ¼£º
+æ•ˆæœå›¾ï¼š
 
 <img src="http://offfjcibp.bkt.clouddn.com/circle.gif" width="30%" />
 
-µ±ĞèÒªÏÔÊ¾»òÒş²ØÒ»×éUIÔªËØÊ±£¬½ÒÂ¶¶¯»­¿ÉÎªÓÃ»§Ìá¹©ÊÓ¾õÁ¬ĞøĞÔ¡£[ViewAnimationUtils.createCircularReveal()](https://developer.android.com/reference/android/view/ViewAnimationUtils.html#createCircularReveal(android.view.View, int, int, float, float))·½·¨ÄÜ¹»Îª²Ã¼ôÇøÓòÌí¼Ó¶¯»­ÒÔ½ÒÂ¶»òÒş²ØÊÓÍ¼¡£
+å½“éœ€è¦æ˜¾ç¤ºæˆ–éšè—ä¸€ç»„UIå…ƒç´ æ—¶ï¼Œæ­éœ²åŠ¨ç”»å¯ä¸ºç”¨æˆ·æä¾›è§†è§‰è¿ç»­æ€§ã€‚[ViewAnimationUtils.createCircularReveal()](https://developer.android.com/reference/android/view/ViewAnimationUtils.html#createCircularReveal(android.view.View, int, int, float, float))æ–¹æ³•èƒ½å¤Ÿä¸ºè£å‰ªåŒºåŸŸæ·»åŠ åŠ¨ç”»ä»¥æ­éœ²æˆ–éšè—è§†å›¾ã€‚
 
 ```java
-/* @param view The View will be clipped to the animating circle.ÒªÒş²Ø»òÏÔÊ¾µÄview
- * @param centerX The x coordinate of the center of the animating circle, relative to <code>view</code>.¶¯»­¿ªÊ¼µÄÖĞĞÄµãX
- * @param centerY The y coordinate of the center of the animating circle, relative to <code>view</code>.¶¯»­¿ªÊ¼µÄÖĞĞÄµãY
- * @param startRadius The starting radius of the animating circle.¶¯»­¿ªÊ¼°ë¾¶
- * @param endRadius The ending radius of the animating circle.¶¯»­½áÊø°ë¾¶
+/* @param view The View will be clipped to the animating circle.è¦éšè—æˆ–æ˜¾ç¤ºçš„view
+ * @param centerX The x coordinate of the center of the animating circle, relative to <code>view</code>.åŠ¨ç”»å¼€å§‹çš„ä¸­å¿ƒç‚¹X
+ * @param centerY The y coordinate of the center of the animating circle, relative to <code>view</code>.åŠ¨ç”»å¼€å§‹çš„ä¸­å¿ƒç‚¹Y
+ * @param startRadius The starting radius of the animating circle.åŠ¨ç”»å¼€å§‹åŠå¾„
+ * @param endRadius The ending radius of the animating circle.åŠ¨ç”»ç»“æŸåŠå¾„
  */
 public static Animator createCircularReveal(View view,
 		int centerX,  int centerY, float startRadius, float endRadius) {
 	return new RevealAnimator(view, centerX, centerY, startRadius, endRadius);
 }
 ```
-RevealAnimatorºÍÖ®Ç°µÄ¶¯»­Ê¹ÓÃÃ»Ê²Ã´Çø±ğ£¬Í¬Ñù¿ÉÒÔÉèÖÃ¼àÌıÆ÷ºÍ¼ÓËÙÆ÷À´ÊµÏÖ¸÷ÖÖ¸÷ÑùµÄÌØĞ§£¬¸Ã¶¯»­Ö÷ÒªÓÃÔÚÒş²Ø»òÕßÏÔÊ¾Ò»¸öview£¬¸Ä±äviewµÄ´óĞ¡µÈ¹ı¶ÉĞ§¹û¡£
+RevealAnimatorå’Œä¹‹å‰çš„åŠ¨ç”»ä½¿ç”¨æ²¡ä»€ä¹ˆåŒºåˆ«ï¼ŒåŒæ ·å¯ä»¥è®¾ç½®ç›‘å¬å™¨å’ŒåŠ é€Ÿå™¨æ¥å®ç°å„ç§å„æ ·çš„ç‰¹æ•ˆï¼Œè¯¥åŠ¨ç”»ä¸»è¦ç”¨åœ¨éšè—æˆ–è€…æ˜¾ç¤ºä¸€ä¸ªviewï¼Œæ”¹å˜viewçš„å¤§å°ç­‰è¿‡æ¸¡æ•ˆæœã€‚
 
-ÏÔÊ¾view£º
+æ˜¾ç¤ºviewï¼š
 
 ```java
 final TextView tv9 = (TextView) findViewById(R.id.tv9);
@@ -361,7 +361,7 @@ findViewById(R.id.content_main).setOnClickListener(new View.OnClickListener() {
 });
 ```
 
-Òş²Øview£º
+éšè—viewï¼š
 
 ```java
 final TextView tv9 = (TextView) findViewById(R.id.tv9);
@@ -390,7 +390,7 @@ tv9.setOnClickListener(new View.OnClickListener() {
 });
 ```
 
-ÑØ×ÅÖĞĞÄËõĞ¡£º
+æ²¿ç€ä¸­å¿ƒç¼©å°ï¼š
 
 ```java
 Animator animator = ViewAnimationUtils.createCircularReveal(view, view.getWidth() / 2, view.getHeight() / 2, view.getWidth(), 0);
@@ -399,7 +399,7 @@ animator.setDuration(1000);
 animator.start();
 ```
 
-´Ó×óÉÏ½ÇÀ©Õ¹£º
+ä»å·¦ä¸Šè§’æ‰©å±•ï¼š
 
 ```java
 Animator animator = ViewAnimationUtils.createCircularReveal(view,0,0,0,(float) Math.hypot(view.getWidth(), view.getHeight()));
@@ -407,51 +407,51 @@ animator.setDuration(1000);
 animator.start();
 ```
 
-### Èı¡¢Ê¹ÓÃ×ª³¡¶¯»­
+### ä¸‰ã€ä½¿ç”¨è½¬åœºåŠ¨ç”»
 
-Ğ§¹ûÍ¼ÒÔ¹²ÏíÔªËØµÄ×ª³¡¶¯»­ÎªÀı£º
+æ•ˆæœå›¾ä»¥å…±äº«å…ƒç´ çš„è½¬åœºåŠ¨ç”»ä¸ºä¾‹ï¼š
 
 <img src="http://offfjcibp.bkt.clouddn.com/share.gif" width="30%" />
 
-MaterialDesignÓ¦ÓÃÖĞµÄ²Ù×÷ĞĞÎª×ª»»Í¸¹ıÍ¨ÓÃÔªËØÖ®¼äµÄÒÆ¶¯ºÍ×ª»»Ìá¹©²»Í¬×´Ì¬Ö®¼äµÄÊÓ¾õÁ¬½Ó¡£¿ÉÎª½øÈë¡¢ÍË³ö×ª»»ÒÔ¼°²Ù×÷ĞĞÎªÖ®¼äµÄ¹²ÏíÔªËØ×ª»»Ö¸¶¨¶¨ÖÆ¶¯»­¡£ÔÚ5.0Ö®Ç°£¬ÎÒÃÇ¿ÉÒÔÔÚstartActivityÖ®ºóµ÷ÓÃoverridePendingTransitionÀ´Ö¸¶¨ActivityµÄ×ª³¡¶¯»­¡£
+MaterialDesignåº”ç”¨ä¸­çš„æ“ä½œè¡Œä¸ºè½¬æ¢é€è¿‡é€šç”¨å…ƒç´ ä¹‹é—´çš„ç§»åŠ¨å’Œè½¬æ¢æä¾›ä¸åŒçŠ¶æ€ä¹‹é—´çš„è§†è§‰è¿æ¥ã€‚å¯ä¸ºè¿›å…¥ã€é€€å‡ºè½¬æ¢ä»¥åŠæ“ä½œè¡Œä¸ºä¹‹é—´çš„å…±äº«å…ƒç´ è½¬æ¢æŒ‡å®šå®šåˆ¶åŠ¨ç”»ã€‚åœ¨5.0ä¹‹å‰ï¼Œæˆ‘ä»¬å¯ä»¥åœ¨startActivityä¹‹åè°ƒç”¨overridePendingTransitionæ¥æŒ‡å®šActivityçš„è½¬åœºåŠ¨ç”»ã€‚
 
-- **½øÈë**×ª»»½«¾ö¶¨²Ù×÷ĞĞÎªÖĞÊÓÍ¼ÈçºÎ½øÈë³¡¾°¡£ÀıÈç£¬ÔÚ**·Ö½â**½øÈë×ª»»ÖĞ£¬ÊÓÍ¼½«´ÓÆÁÄ»Íâ½øÈë³¡¾°²¢·ÉÍùÆÁÄ»ÖĞĞÄ¡£
-- **ÍË³ö**×ª»»½«¾ö¶¨²Ù×÷ĞĞÎªÖĞÓ¦ÓÃĞĞÎªµÄÏÔÊ¾ÊÓÍ¼ÈçºÎÍË³ö³¡¾°¡£ÀıÈç£¬ÔÚ**·Ö½â**ÍË³ö×ª»»ÖĞ£¬ÊÓÍ¼½«´ÓÆÁÄ»ÖĞĞÄÍË³ö³¡¾°¡£
-- **¹²ÏíÔªËØ**×ª»»½«¾ö¶¨Á½¸ö²Ù×÷ĞĞÎª×ª»»Ö®¼ä¹²ÏíµÄÊÓÍ¼ÈçºÎÔÚÕâĞ©²Ù×÷ĞĞÎªÖĞ×ª»»¡£ ÀıÈç£¬Èç¹ûÁ½¸ö²Ù×÷ĞĞÎªÓµÓĞÏàÍ¬µÄÍ¼Ïñ£¬µ«ÆäÎ»ÖÃÓë´óĞ¡²»Í¬£¬**changeImageTransform**¹²ÏíÔªËØ×ª»»½«ÔÚÕâĞ©²Ù×÷ĞĞÎªÖ®¼äÆ½»¬µØ×ª»»ÓëËõ·ÅÍ¼Ïñ¡£
+- **è¿›å…¥**è½¬æ¢å°†å†³å®šæ“ä½œè¡Œä¸ºä¸­è§†å›¾å¦‚ä½•è¿›å…¥åœºæ™¯ã€‚ä¾‹å¦‚ï¼Œåœ¨**åˆ†è§£**è¿›å…¥è½¬æ¢ä¸­ï¼Œè§†å›¾å°†ä»å±å¹•å¤–è¿›å…¥åœºæ™¯å¹¶é£å¾€å±å¹•ä¸­å¿ƒã€‚
+- **é€€å‡º**è½¬æ¢å°†å†³å®šæ“ä½œè¡Œä¸ºä¸­åº”ç”¨è¡Œä¸ºçš„æ˜¾ç¤ºè§†å›¾å¦‚ä½•é€€å‡ºåœºæ™¯ã€‚ä¾‹å¦‚ï¼Œåœ¨**åˆ†è§£**é€€å‡ºè½¬æ¢ä¸­ï¼Œè§†å›¾å°†ä»å±å¹•ä¸­å¿ƒé€€å‡ºåœºæ™¯ã€‚
+- **å…±äº«å…ƒç´ **è½¬æ¢å°†å†³å®šä¸¤ä¸ªæ“ä½œè¡Œä¸ºè½¬æ¢ä¹‹é—´å…±äº«çš„è§†å›¾å¦‚ä½•åœ¨è¿™äº›æ“ä½œè¡Œä¸ºä¸­è½¬æ¢ã€‚ ä¾‹å¦‚ï¼Œå¦‚æœä¸¤ä¸ªæ“ä½œè¡Œä¸ºæ‹¥æœ‰ç›¸åŒçš„å›¾åƒï¼Œä½†å…¶ä½ç½®ä¸å¤§å°ä¸åŒï¼Œ**changeImageTransform**å…±äº«å…ƒç´ è½¬æ¢å°†åœ¨è¿™äº›æ“ä½œè¡Œä¸ºä¹‹é—´å¹³æ»‘åœ°è½¬æ¢ä¸ç¼©æ”¾å›¾åƒã€‚
 
-Android 5.0£¨API Level 21£©Ö§³ÖÕâĞ©½øÈëÓëÍË³ö×ª»»£º£¨ÆÕÍ¨¹ı¶É¶¯»­£©
+Android 5.0ï¼ˆAPI Level 21ï¼‰æ”¯æŒè¿™äº›è¿›å…¥ä¸é€€å‡ºè½¬æ¢ï¼šï¼ˆæ™®é€šè¿‡æ¸¡åŠ¨ç”»ï¼‰
 
-- *·Ö½â*?- ´Ó³¡¾°ÖĞĞÄÒÆÈë»òÒÆ³öÊÓÍ¼¡£
-- *»¬¶¯*?- ´Ó³¡¾°±ßÔµÒÆÈë»òÒÆ³öÊÓÍ¼¡£
-- *µ­Èëµ­³ö*?- Í¨¹ıµ÷ÕûÍ¸Ã÷¶ÈÔÚ³¡¾°ÖĞÔöÌí»òÒÆ³ıÊÓÍ¼¡£
+- *åˆ†è§£*?- ä»åœºæ™¯ä¸­å¿ƒç§»å…¥æˆ–ç§»å‡ºè§†å›¾ã€‚
+- *æ»‘åŠ¨*?- ä»åœºæ™¯è¾¹ç¼˜ç§»å…¥æˆ–ç§»å‡ºè§†å›¾ã€‚
+- *æ·¡å…¥æ·¡å‡º*?- é€šè¿‡è°ƒæ•´é€æ˜åº¦åœ¨åœºæ™¯ä¸­å¢æ·»æˆ–ç§»é™¤è§†å›¾ã€‚
 
-Ò²Ö§³ÖÕâĞ©¹²ÏíÔªËØ×ª»»£º£¨¹²ÏíÔªËØµÄ¹ı¶É¶¯»­£©
+ä¹Ÿæ”¯æŒè¿™äº›å…±äº«å…ƒç´ è½¬æ¢ï¼šï¼ˆå…±äº«å…ƒç´ çš„è¿‡æ¸¡åŠ¨ç”»ï¼‰
 
-- *changeBounds*?- ÎªÄ¿±êÊÓÍ¼µÄ´óĞ¡Ìí¼Ó¶¯»­¡£
-- *changeClipBounds*?- ÎªÄ¿±êÊÓÍ¼µÄ²Ã¼ô´óĞ¡Ìí¼Ó¶¯»­¡£
-- *changeTransform*?- ÎªÄ¿±êÊÓÍ¼µÄËõ·Å¡¢Ğı×ªºÍÎ»ÒÆÌí¼Ó¶¯»­¡£
-- *changeImageTransform*?- ÎªÄ¿±êÍ¼Æ¬µÄËõ·Å¡¢Ğı×ªºÍÎ»ÒÆÌí¼Ó¶¯»­¡£
+- *changeBounds*?- ä¸ºç›®æ ‡è§†å›¾çš„å¤§å°æ·»åŠ åŠ¨ç”»ã€‚
+- *changeClipBounds*?- ä¸ºç›®æ ‡è§†å›¾çš„è£å‰ªå¤§å°æ·»åŠ åŠ¨ç”»ã€‚
+- *changeTransform*?- ä¸ºç›®æ ‡è§†å›¾çš„ç¼©æ”¾ã€æ—‹è½¬å’Œä½ç§»æ·»åŠ åŠ¨ç”»ã€‚
+- *changeImageTransform*?- ä¸ºç›®æ ‡å›¾ç‰‡çš„ç¼©æ”¾ã€æ—‹è½¬å’Œä½ç§»æ·»åŠ åŠ¨ç”»ã€‚
 
-#### Ö¸¶¨×ª³¡¶¯»­
+#### æŒ‡å®šè½¬åœºåŠ¨ç”»
 
-ÒªÏëÊ¹ÓÃĞÂµÄ×ª³¡¶¯»­£¬¿ÉÒÔ¼Ì³ĞMaterial DesignÖ÷ÌâºóÔÚstyle·ç¸ñÖĞÖ¸¶¨£º
+è¦æƒ³ä½¿ç”¨æ–°çš„è½¬åœºåŠ¨ç”»ï¼Œå¯ä»¥ç»§æ‰¿Material Designä¸»é¢˜ååœ¨styleé£æ ¼ä¸­æŒ‡å®šï¼š
 
 ```xml
-<!-- ÔÊĞíÊ¹ÓÃtransitions -->
+<!-- å…è®¸ä½¿ç”¨transitions -->
 <item name="android:windowContentTransitions">true</item>
-<!-- Ö¸¶¨½øÈë¡¢ÍË³ö¡¢·µ»Ø¡¢ÖØĞÂ½øÈëÊ±µÄtransitions -->
+<!-- æŒ‡å®šè¿›å…¥ã€é€€å‡ºã€è¿”å›ã€é‡æ–°è¿›å…¥æ—¶çš„transitions -->
 <item name="android:windowEnterTransition">@transition/explode</item>
 <item name="android:windowExitTransition">@transition/explode</item>
 <item name="android:windowReturnTransition">@transition/explode</item>
 <item name="android:windowReenterTransition">@transition/explode</item>
-<!-- Ö¸¶¨½øÈë¡¢ÍË³ö¡¢·µ»Ø¡¢ÖØĞÂ½øÈëÊ±µÄ¹²Ïítransitions -->
+<!-- æŒ‡å®šè¿›å…¥ã€é€€å‡ºã€è¿”å›ã€é‡æ–°è¿›å…¥æ—¶çš„å…±äº«transitions -->
 <item name="android:windowSharedElementEnterTransition">@transition/change_image_transform</item>
 <item name="android:windowSharedElementExitTransition">@transition/change_image_transform</item>
 <item name="android:windowSharedElementReturnTransition">@transition/change_image_transform</item>
 <item name="android:windowSharedElementReenterTransition">@transition/change_image_transform</item>
 ```
 
-ÆäÖĞ£¬change_image_transform¶¨ÒåÈçÏÂ£º
+å…¶ä¸­ï¼Œchange_image_transformå®šä¹‰å¦‚ä¸‹ï¼š
 
 ```xml
 <!-- res/transition/change_image_transform.xml -->
@@ -461,59 +461,59 @@ Android 5.0£¨API Level 21£©Ö§³ÖÕâĞ©½øÈëÓëÍË³ö×ª»»£º£¨ÆÕÍ¨¹ı¶É¶¯»­£©
 </transitionSet>
 ```
 
-Èç¹ûÒª´ø´úÂëÖĞ¿ªÆô´°¿ÚÄÚÈİ×ª»»£¬ĞèÒªµ÷ÓÃ`Window.requestFeature()`·½·¨¡£
+å¦‚æœè¦å¸¦ä»£ç ä¸­å¼€å¯çª—å£å†…å®¹è½¬æ¢ï¼Œéœ€è¦è°ƒç”¨`Window.requestFeature()`æ–¹æ³•ã€‚
 
 ```java
-// ÔÊĞíÊ¹ÓÃtransitions
+// å…è®¸ä½¿ç”¨transitions
 getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
 
-// Ö¸¶¨½øÈë¡¢ÍË³ö¡¢·µ»Ø¡¢ÖØĞÂ½øÈëÊ±µÄtransitions
+// æŒ‡å®šè¿›å…¥ã€é€€å‡ºã€è¿”å›ã€é‡æ–°è¿›å…¥æ—¶çš„transitions
 getWindow().setEnterTransition(new Explode());
 getWindow().setExitTransition(new Explode());
 getWindow().setReturnTransition(new Explode());
 getWindow().setReenterTransition(new Explode());
 
-// Ö¸¶¨½øÈë¡¢ÍË³ö¡¢·µ»Ø¡¢ÖØĞÂ½øÈëÊ±µÄ¹²Ïítransitions
+// æŒ‡å®šè¿›å…¥ã€é€€å‡ºã€è¿”å›ã€é‡æ–°è¿›å…¥æ—¶çš„å…±äº«transitions
 getWindow().setSharedElementEnterTransition(new ChangeTransform());
 getWindow().setSharedElementExitTransition(new ChangeTransform());
 getWindow().setSharedElementReturnTransition(new ChangeTransform());
 getWindow().setSharedElementReenterTransition(new ChangeTransform());
 ```
 
-ÆÕÍ¨×ª³¡¶¯»­£º
+æ™®é€šè½¬åœºåŠ¨ç”»ï¼š
 
-ËùÓĞ¼Ì³Ğ×ÔvisibilityÀà¶¼¿ÉÒÔ×÷Îª½øÈë¡¢ÍË³öµÄ¹ı¶È¶¯»­¡£Èç¹ûÎÒÃÇÏë×Ô¶¨Òå½øÈëºÍÍË³öÊ±µÄ¶¯»­Ğ§¹û£¬Ö»ĞèÒª¼Ì³ĞVisibility£¬ÖØÔØonAppearºÍonDisappear·½·¨À´¶¨Òå½øÈëºÈÍË³öµÄ¶¯»­¡£ÏµÍ³Ìá¹©ÁËÈıÖÖÄ¬ÈÏ·½Ê½£º
+æ‰€æœ‰ç»§æ‰¿è‡ªvisibilityç±»éƒ½å¯ä»¥ä½œä¸ºè¿›å…¥ã€é€€å‡ºçš„è¿‡åº¦åŠ¨ç”»ã€‚å¦‚æœæˆ‘ä»¬æƒ³è‡ªå®šä¹‰è¿›å…¥å’Œé€€å‡ºæ—¶çš„åŠ¨ç”»æ•ˆæœï¼Œåªéœ€è¦ç»§æ‰¿Visibilityï¼Œé‡è½½onAppearå’ŒonDisappearæ–¹æ³•æ¥å®šä¹‰è¿›å…¥å–é€€å‡ºçš„åŠ¨ç”»ã€‚ç³»ç»Ÿæä¾›äº†ä¸‰ç§é»˜è®¤æ–¹å¼ï¼š
 
-- explode ´ÓÆÁÄ»ÖĞĞÄÒÆÈë»òÒÆ³öÊÓÍ¼
-- slide ´ÓÆÁÄ»±ßÔµÒÆÈë»òÒÆ³öÊÓÍ¼
-- fade ¸Ä±äÊÓÍ¼µÄÍ¸Ã÷¶È
+- explode ä»å±å¹•ä¸­å¿ƒç§»å…¥æˆ–ç§»å‡ºè§†å›¾
+- slide ä»å±å¹•è¾¹ç¼˜ç§»å…¥æˆ–ç§»å‡ºè§†å›¾
+- fade æ”¹å˜è§†å›¾çš„é€æ˜åº¦
 
-ÏëÔÚxmlÖĞÖ¸¶¨×Ô¶¨ÒåµÄ½øÈë¡¢ÍË³öµÄ¹ı¶È¶¯»­ĞèÒªÏÈ¶Ô¶¯»­½øĞĞ¶¨Òå£º
+æƒ³åœ¨xmlä¸­æŒ‡å®šè‡ªå®šä¹‰çš„è¿›å…¥ã€é€€å‡ºçš„è¿‡åº¦åŠ¨ç”»éœ€è¦å…ˆå¯¹åŠ¨ç”»è¿›è¡Œå®šä¹‰ï¼š
 
 ```xml
 <transition class="my.app.transition.CustomTransition"/>
 ```
 ?
-> **×¢Òâ**£ºÆäÖĞCustomTransitionÊÇÎÒÃÇ×Ô¶¨ÒåµÄ¶¯»­£¬Ëü±ØĞë¼Ì³Ğ×ÔVisibility¡£
+> **æ³¨æ„**ï¼šå…¶ä¸­CustomTransitionæ˜¯æˆ‘ä»¬è‡ªå®šä¹‰çš„åŠ¨ç”»ï¼Œå®ƒå¿…é¡»ç»§æ‰¿è‡ªVisibilityã€‚
 
-ÏëÒÔÆÕÍ¨×ª³¡¶¯»­µÄ·½Ê½Æô¶¯Ò»¸öActivity£¬±ØĞëÔÚstartActivityº¯ÊıÖĞ´«µİÒ»¸öActivityOptionsµÄBundle¶ÔÏó£º
+æƒ³ä»¥æ™®é€šè½¬åœºåŠ¨ç”»çš„æ–¹å¼å¯åŠ¨ä¸€ä¸ªActivityï¼Œå¿…é¡»åœ¨startActivityå‡½æ•°ä¸­ä¼ é€’ä¸€ä¸ªActivityOptionsçš„Bundleå¯¹è±¡ï¼š
 
 ```java
 ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(activity); 
 startActivity(intent, options.toBundle());
 ```
 
-Èç¹ûÏëÈÃ·µ»ØÒ²¾ß±¸×ª³¡Ğ§¹û£¬ÄÇÃ´ÔÚ·µ»ØµÄActivityÖĞ²»ÒªÔÙµ÷ÓÃfinishº¯Êı£¬¶øÊÇÓ¦¸ÃÊ¹finishAfterTransitionÀ´½áÊøÒ»¸öActivity£¬¸Ãº¯Êı»áµÈ´ı¶¯»­Ö´ĞĞÍê±Ï²Å½áÊø¸ÃActivity¡£
+å¦‚æœæƒ³è®©è¿”å›ä¹Ÿå…·å¤‡è½¬åœºæ•ˆæœï¼Œé‚£ä¹ˆåœ¨è¿”å›çš„Activityä¸­ä¸è¦å†è°ƒç”¨finishå‡½æ•°ï¼Œè€Œæ˜¯åº”è¯¥ä½¿finishAfterTransitionæ¥ç»“æŸä¸€ä¸ªActivityï¼Œè¯¥å‡½æ•°ä¼šç­‰å¾…åŠ¨ç”»æ‰§è¡Œå®Œæ¯•æ‰ç»“æŸè¯¥Activityã€‚
 
-¹²Ïí×ª³¡¶¯»­£º
+å…±äº«è½¬åœºåŠ¨ç”»ï¼š
 
-Èç¹ûÒªÔÚÁ½¸ö¾ßÓĞ¹²ÏíÔªËØµÄActivityÖ®¼äÊ¹ÓÃ×ª³¡¶¯»­£¬ÄÇÃ´£º
+å¦‚æœè¦åœ¨ä¸¤ä¸ªå…·æœ‰å…±äº«å…ƒç´ çš„Activityä¹‹é—´ä½¿ç”¨è½¬åœºåŠ¨ç”»ï¼Œé‚£ä¹ˆï¼š
 
-- 1¡¢ÔÚÌâÖĞÆôÓÃ´°¿ÚÄÚÈİ×ª»»¡£android:windowContentTransitions
-- 2¡¢ÔÚThemeÖĞÖ¸¶¨Ò»¸ö¹²ÏíÔªËØ×ª»»¡£
-- 3¡¢½«transitions¶¨ÒåÎªxml×ÊÔ´¡£
-- 4¡¢ÀûÓÃ?android:transitionNameÊôĞÔ¶ÔÁ½¸ö²¼¾ÖÖĞµÄ¹²ÏíÔªËØÖ¸¶¨Ò»¸öÍ¨ÓÃÃû³Æ¡£
-- 5¡¢Ê¹ÓÃ?`ActivityOptions.makeSceneTransitionAnimation()`·½·¨¡£
+- 1ã€åœ¨é¢˜ä¸­å¯ç”¨çª—å£å†…å®¹è½¬æ¢ã€‚android:windowContentTransitions
+- 2ã€åœ¨Themeä¸­æŒ‡å®šä¸€ä¸ªå…±äº«å…ƒç´ è½¬æ¢ã€‚
+- 3ã€å°†transitionså®šä¹‰ä¸ºxmlèµ„æºã€‚
+- 4ã€åˆ©ç”¨?android:transitionNameå±æ€§å¯¹ä¸¤ä¸ªå¸ƒå±€ä¸­çš„å…±äº«å…ƒç´ æŒ‡å®šä¸€ä¸ªé€šç”¨åç§°ã€‚
+- 5ã€ä½¿ç”¨?`ActivityOptions.makeSceneTransitionAnimation()`æ–¹æ³•ã€‚
 
 ```java
 // get the element that receives the click event
@@ -537,28 +537,28 @@ imgContainerView.setOnClickListener(new View.OnClickListener() {
 });
 ```
 
-Èç¹ûÒªÔÚ´úÂëÖĞÉú³É¹²Ïíview£¬ÄÇÃ´ĞèÒªµ÷ÓÃ`View.setTransitionName()`·½·¨¶ÔÁ½¸ö²¼¾ÖÖĞµÄ¹²ÏíÔªËØÖ¸¶¨Ò»¸öÍ¨ÓÃÃû³Æ¡£
-Èç¹ûÓĞ¶à¸ö¹²ÏíÔªËØ£¬Ôò¿ÉÒÔÍ¨¹ıPair½øĞĞ°ü×°´¦Àí£º
+å¦‚æœè¦åœ¨ä»£ç ä¸­ç”Ÿæˆå…±äº«viewï¼Œé‚£ä¹ˆéœ€è¦è°ƒç”¨`View.setTransitionName()`æ–¹æ³•å¯¹ä¸¤ä¸ªå¸ƒå±€ä¸­çš„å…±äº«å…ƒç´ æŒ‡å®šä¸€ä¸ªé€šç”¨åç§°ã€‚
+å¦‚æœæœ‰å¤šä¸ªå…±äº«å…ƒç´ ï¼Œåˆ™å¯ä»¥é€šè¿‡Pairè¿›è¡ŒåŒ…è£…å¤„ç†ï¼š
 
 ```java
 ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(activity,
-      Pair.create(view1, "name1"),//ÕâÀïview1¡¢view2Èç¹ûÊÇTextView»òÕßImageViewµÈ£¬ĞèÒª×ª³ÉViewÀàĞÍ²Å¿ÉÒÔ
+      Pair.create(view1, "name1"),//è¿™é‡Œview1ã€view2å¦‚æœæ˜¯TextViewæˆ–è€…ImageViewç­‰ï¼Œéœ€è¦è½¬æˆViewç±»å‹æ‰å¯ä»¥
       Pair.create(view2, "name2"));      
 startActivity(intent,.toBundle());
 ```
 
-·µ»ØÊ±Èç¹ûĞèÒª¾ß±¸×ª³¡¶¯»­£¬ÄÇÃ´Ò²ĞèÒªÓÃfinishº¯ÊıÌæ´úfinishAfterTransitionÀ´½áÊøÒ»¸öActivity¡£
+è¿”å›æ—¶å¦‚æœéœ€è¦å…·å¤‡è½¬åœºåŠ¨ç”»ï¼Œé‚£ä¹ˆä¹Ÿéœ€è¦ç”¨finishå‡½æ•°æ›¿ä»£finishAfterTransitionæ¥ç»“æŸä¸€ä¸ªActivityã€‚
 
 
-### Ê¹ÓÃÇúÏßÔË¶¯
+### ä½¿ç”¨æ›²çº¿è¿åŠ¨
 
-ÒòÎªÇúÏßÔË¶¯ºÍÊôĞÔ¶¯»­ÒÔ¼°±´Èû¶ûÇúÏßÕâĞ©¶«Î÷»ìÔÓÔÚÒ»Æğ£¬ËùÒÔ×¼±¸°ÑÕâ½ÚÄÃ³öÀ´µ¥¶ÀĞ´¡£ÕâÀï¾Í²»¶àËµÁË¡£
+å› ä¸ºæ›²çº¿è¿åŠ¨å’Œå±æ€§åŠ¨ç”»ä»¥åŠè´å¡å°”æ›²çº¿è¿™äº›ä¸œè¥¿æ··æ‚åœ¨ä¸€èµ·ï¼Œæ‰€ä»¥å‡†å¤‡æŠŠè¿™èŠ‚æ‹¿å‡ºæ¥å•ç‹¬å†™ã€‚è¿™é‡Œå°±ä¸å¤šè¯´äº†ã€‚
 
-### ÊÓÍ¼×´Ì¬¸Ä±ä
+### è§†å›¾çŠ¶æ€æ”¹å˜
 
-Android 5.0ÔÚÔ­ÓĞµÄÍ¼Æ¬Ñ¡ÔñÆ÷ºÍÑÕÉ«Ñ¡ÔñÆ÷ÉÏ½øĞĞÁËÔöÇ¿£¬²»½öÊÇ¿Ø¼şÄÜ¸ù¾İ²»Í¬µÄ×´Ì¬ÏÔÊ¾²»Í¬µÄ±³¾°Í¼Æ¬£¬»¹ÄÜÔÚÁ½ÖÖ×´Ì¬ÇĞ»»Ê±Ö¸¶¨Ò»¸ö¶¯»­£¬À´Ôö¼Ó¹ı¶ÉĞ§¹û£¬ÎüÒıÓÃ»§ÑÛÇò£¬ÒÔÍ»³öÖØµãÄÚÈİ¡£
+Android 5.0åœ¨åŸæœ‰çš„å›¾ç‰‡é€‰æ‹©å™¨å’Œé¢œè‰²é€‰æ‹©å™¨ä¸Šè¿›è¡Œäº†å¢å¼ºï¼Œä¸ä»…æ˜¯æ§ä»¶èƒ½æ ¹æ®ä¸åŒçš„çŠ¶æ€æ˜¾ç¤ºä¸åŒçš„èƒŒæ™¯å›¾ç‰‡ï¼Œè¿˜èƒ½åœ¨ä¸¤ç§çŠ¶æ€åˆ‡æ¢æ—¶æŒ‡å®šä¸€ä¸ªåŠ¨ç”»ï¼Œæ¥å¢åŠ è¿‡æ¸¡æ•ˆæœï¼Œå¸å¼•ç”¨æˆ·çœ¼çƒï¼Œä»¥çªå‡ºé‡ç‚¹å†…å®¹ã€‚
 
-StateListAnimatorÀàºÍÍ¼Æ¬Ñ¡ÔñÆ÷£¬ÑÕÉ«Ñ¡ÔñÆ÷ÀàËÆ£¬¿ÉÒÔ¸ù¾İviewµÄ×´Ì¬¸Ä±ä³ÊÏÖ²»Í¬µÄ¶¯»­Ğ§¹û£¬Í¨¹ıxmlÎÒÃÇ¿ÉÒÔ¹¹½¨¶ÔÓ¦²»Í¬×´Ì¬µÄ¶¯»­ºÏ¼¯£¬ÆäÊ¹ÓÃ·½Ê½Ò²·Ç³£¼òµ¥£¬ÔÚ¶ÔÓ¦µÄ×´Ì¬Ö¸¶¨Ò»¸öÊôĞÔ¶¯»­¼´¿É£º
+StateListAnimatorç±»å’Œå›¾ç‰‡é€‰æ‹©å™¨ï¼Œé¢œè‰²é€‰æ‹©å™¨ç±»ä¼¼ï¼Œå¯ä»¥æ ¹æ®viewçš„çŠ¶æ€æ”¹å˜å‘ˆç°ä¸åŒçš„åŠ¨ç”»æ•ˆæœï¼Œé€šè¿‡xmlæˆ‘ä»¬å¯ä»¥æ„å»ºå¯¹åº”ä¸åŒçŠ¶æ€çš„åŠ¨ç”»åˆé›†ï¼Œå…¶ä½¿ç”¨æ–¹å¼ä¹Ÿéå¸¸ç®€å•ï¼Œåœ¨å¯¹åº”çš„çŠ¶æ€æŒ‡å®šä¸€ä¸ªå±æ€§åŠ¨ç”»å³å¯ï¼š
 
 ```xml
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
@@ -581,7 +581,7 @@ StateListAnimatorÀàºÍÍ¼Æ¬Ñ¡ÔñÆ÷£¬ÑÕÉ«Ñ¡ÔñÆ÷ÀàËÆ£¬¿ÉÒÔ¸ù¾İviewµÄ×´Ì¬¸Ä±ä³ÊÏÖ²»Í¬µ
 </selector>
 ```
 
-´úÂëÖĞÕâÑù¼ÓÔØ¼´¿É£º
+ä»£ç ä¸­è¿™æ ·åŠ è½½å³å¯ï¼š
 
 ```java
 TextView tv11 = (TextView) findViewById(R.id.tv11);
@@ -589,9 +589,9 @@ StateListAnimator stateLAnim = AnimatorInflater.loadStateListAnimator(this,R.dra
 tv11.setStateListAnimator(stateLAnim);
 ```
 
-¼Ì³ĞÁËMaterialÖ÷Ìâºó£¬°´Å¥Ä¬ÈÏÓµÓĞÁËzÊôĞÔ¶¯»­¡£Èç¹ûÏëÈ¡ÏûÕâÖÖÄ¬ÈÏ×´Ì¬£¬¿ÉÒÔ°Ñ×´Ì¬¶¯»­Ö¸¶¨Îªnull¡£
+ç»§æ‰¿äº†Materialä¸»é¢˜åï¼ŒæŒ‰é’®é»˜è®¤æ‹¥æœ‰äº†zå±æ€§åŠ¨ç”»ã€‚å¦‚æœæƒ³å–æ¶ˆè¿™ç§é»˜è®¤çŠ¶æ€ï¼Œå¯ä»¥æŠŠçŠ¶æ€åŠ¨ç”»æŒ‡å®šä¸ºnullã€‚
 
-³ıÁËStateListAnimatorÀàÖ¸¶¨×´Ì¬ÇĞ»»µÄÊôĞÔ¶¯»­Íâ£¬»¹¿ÉÒÔÍ¨¹ıAnimatedStateListDrawableÀ´Ö¸¶¨×´Ì¬ÇĞ»»µÄÖ¡¶¯»­£º
+é™¤äº†StateListAnimatorç±»æŒ‡å®šçŠ¶æ€åˆ‡æ¢çš„å±æ€§åŠ¨ç”»å¤–ï¼Œè¿˜å¯ä»¥é€šè¿‡AnimatedStateListDrawableæ¥æŒ‡å®šçŠ¶æ€åˆ‡æ¢çš„å¸§åŠ¨ç”»ï¼š
 
 ```xml
 <animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
@@ -607,14 +607,14 @@ tv11.setStateListAnimator(stateLAnim);
 </animated-selector>
 ```
 
-Ö¡¶¯»­µÄ×ÊÔ´ÎÄ¼şÖ±½ÓÔÚxmlÖĞ×÷ÎªviewµÄbackground¼´¿É¡£
+å¸§åŠ¨ç”»çš„èµ„æºæ–‡ä»¶ç›´æ¥åœ¨xmlä¸­ä½œä¸ºviewçš„backgroundå³å¯ã€‚
 
-### Ê¸Á¿Í¼¶¯»­
+### çŸ¢é‡å›¾åŠ¨ç”»
 
-Ğ§¹ûÍ¼:
+æ•ˆæœå›¾:
 <img src="http://offfjcibp.bkt.clouddn.com/vector.gif" width="30%" />
 
-ÏÈÔÚdrawableÖĞ¶¨ÒåÒ»ÕÅÊ¸Á¿Í¼£º
+å…ˆåœ¨drawableä¸­å®šä¹‰ä¸€å¼ çŸ¢é‡å›¾ï¼š
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -623,24 +623,24 @@ tv11.setStateListAnimator(stateLAnim);
     android:width="200dp"
     android:viewportHeight="400"
     android:viewportWidth="400">
-    ¡¡¡¡
+    ã€€ã€€
     <group
         android:name="rotationGroup"
         android:pivotX="0"
         android:pivotY="0">
-        ¡¡¡¡¡¡
+        ã€€ã€€ã€€
         <path
             android:name="star"
             android:pathData="M 100,100 h 200 l -200 150 100 -250 100 250 z"
             android:strokeColor="@color/colorPrimary"
             android:strokeLineCap="round"
             android:strokeWidth="10"/>
-        ¡¡¡¡
+        ã€€ã€€
     </group>
 </vector>
 ```
 
-È»ºóÔÚanimÖĞ¶¨Òå¶¯»­£º
+ç„¶ååœ¨animä¸­å®šä¹‰åŠ¨ç”»ï¼š
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -657,7 +657,7 @@ tv11.setStateListAnimator(stateLAnim);
 </set>
 ```
 
-×îºóÔÚdrawableÖĞ¶¨ÒåÒ»¸ö`animated-vector`£º½«¶¯»­×ÊÔ´Ö¸¶¨¸ødrawableÊôĞÔÖµµÄÊ¸Á¿Í¼¡£
+æœ€ååœ¨drawableä¸­å®šä¹‰ä¸€ä¸ª`animated-vector`ï¼šå°†åŠ¨ç”»èµ„æºæŒ‡å®šç»™drawableå±æ€§å€¼çš„çŸ¢é‡å›¾ã€‚
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -670,9 +670,9 @@ tv11.setStateListAnimator(stateLAnim);
 </animated-vector>
 ```
 
-> **×¢Òâ**£ºÕâÀïdrawableÊôĞÔÖµÊÇÇ°ÃæÎÒÃÇ¶¨ÒåµÄÊ¸Á¿Í¼£¬targetÖĞnameÒªºÍÊ¸Á¿Í¼ÖĞpathµÄnameÒ»Ñù£¬animation¾ÍÊÇÇ°Ãæ¶¨ÒåµÄ¶¯»­×ÊÔ´ÎÄ¼ş¡£
+> **æ³¨æ„**ï¼šè¿™é‡Œdrawableå±æ€§å€¼æ˜¯å‰é¢æˆ‘ä»¬å®šä¹‰çš„çŸ¢é‡å›¾ï¼Œtargetä¸­nameè¦å’ŒçŸ¢é‡å›¾ä¸­pathçš„nameä¸€æ ·ï¼Œanimationå°±æ˜¯å‰é¢å®šä¹‰çš„åŠ¨ç”»èµ„æºæ–‡ä»¶ã€‚
 
-ÔÚviewµÄxmlÖĞÊ¹ÓÃÒÔ¼°ÔÚ´úÂëÖĞ¿ªÊ¼¶¯»­£º
+åœ¨viewçš„xmlä¸­ä½¿ç”¨ä»¥åŠåœ¨ä»£ç ä¸­å¼€å§‹åŠ¨ç”»ï¼š
 
 ```xml
 <ImageView
@@ -692,10 +692,10 @@ if (drawable instanceof Animatable) {
 }
 ```
 
-ÎÄÕÂÖĞÑİÊ¾µÄ[DemoµØÖ·](https://github.com/shenhuniurou/BlogDemos/tree/master/LollipopAnimation)
+æ–‡ç« ä¸­æ¼”ç¤ºçš„[Demoåœ°å€](https://github.com/shenhuniurou/BlogDemos/tree/master/LollipopAnimation)
 
-### ²Î¿¼ÎÄµµ
-- [¶¨Òå¶¨ÖÆ¶¯»­](https://developer.android.com/training/material/animations.html#Transitions)
-- [AndroidMaterialDesign¶¯»­Ö®RippleDrawable](http://blog.csdn.net/huyuchaoheaven/article/details/47103613)
-- [Android5.0ĞÂÌØĞÔ¡ª¡ªÈ«ĞÂµÄ¶¯»­£¨animation£©](http://www.cnblogs.com/McCa/p/4465574.html)
-- [ÓÃsvgÊ¸Á¿Í¼ÊµÏÖ¶¯»­Ğ§¹û](http://www.voidcn.com/blog/qq_17583407/article/p-5928494.html)
+### å‚è€ƒæ–‡æ¡£
+- [å®šä¹‰å®šåˆ¶åŠ¨ç”»](https://developer.android.com/training/material/animations.html#Transitions)
+- [AndroidMaterialDesignåŠ¨ç”»ä¹‹RippleDrawable](http://blog.csdn.net/huyuchaoheaven/article/details/47103613)
+- [Android5.0æ–°ç‰¹æ€§â€”â€”å…¨æ–°çš„åŠ¨ç”»ï¼ˆanimationï¼‰](http://www.cnblogs.com/McCa/p/4465574.html)
+- [ç”¨svgçŸ¢é‡å›¾å®ç°åŠ¨ç”»æ•ˆæœ](http://www.voidcn.com/blog/qq_17583407/article/p-5928494.html)
