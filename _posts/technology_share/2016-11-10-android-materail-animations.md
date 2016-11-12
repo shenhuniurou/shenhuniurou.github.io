@@ -513,7 +513,7 @@ startActivity(intent, options.toBundle());
 - 2、在Theme中指定一个共享元素转换。
 - 3、将transitions定义为xml资源。
 - 4、利用android:transitionName属性对两个布局中的共享元素指定一个通用名称。
-- 5、使用`ActivityOptions.makeSceneTransitionAnimation()`方法。
+- 5、使用ActivityOptions.makeSceneTransitionAnimation()方法。
 
 ```java
 // get the element that receives the click event
