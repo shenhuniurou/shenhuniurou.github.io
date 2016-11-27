@@ -21,6 +21,8 @@ tags: markdown语法
 	- 使用`tab`键上面的那个字符，被这个字符包裹的内容会有一个阴影
 	
 	- `~~删除线~~`，效果是这样的~~删除线~~
+	
+	- 使用“>”，这样后面的文字就会加深背景色
 
 	
 - 代码高亮，代码块用三个tab键上面那个字符加语言名再加三个这种字符来包裹代码，比如:
@@ -53,9 +55,17 @@ tags: markdown语法
 
 - 链接和图片，方式是差不多的
 
-    - 链接是“`[名称](url地址)`”这样的，比如[shenhuniurou‘s bolg](http://shenhuniurou.com)。
+    - 链接是“`[名称](url地址)`”这样的，比如[shenhuniurou‘s blog](http://shenhuniurou.com)。
+	
+	- 另外链接还可以使用"`[名称](url地址 'title名称')`"，比如[shenhuniurou‘s blog](http://shenhuniurou.com "shenhuniurou的博客")。
+	
+	- 除了上面两种，还有"[shenhuniurou's blog]: http://shenhuniurou.com"或者"[shenhuniurou's blog]: http://shenhuniurou.com "shenhuniurou的博客""。
+	
+	- 还有一种使用“<>”的，比如"<http://shenhuniurou.com>"
+	
+	- 链接打开时如果要在新页面打开，只需要在小括号后面加上"{:target="_blank"}"即可。
 
-	- 图片是“`![名称](url地址)`”，还有一个方式，`<img src="http://sjdhfjksdhfksdlfsj" width="40%" />`比如你图片本身尺寸较大，而你又不需要图片显示很大时，可以用这种方式设置width。
+	- 图片是“`![名称](url地址)`”，还有一个方式，`<img src="http://sjdhfjksdhfksdlfsj" width="40%" />`比如你图片本身尺寸较大，而你又不需要图片显示很大时，可以用这种方式设置width。第一种方式如果要控制图片大小，可以使用"`![名称](url地址){:width="300"}`"的方式
 	
 
 
