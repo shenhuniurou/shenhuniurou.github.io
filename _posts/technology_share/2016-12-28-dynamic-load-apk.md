@@ -41,12 +41,15 @@ tags: 动态加载
 
 
 > AndroidManifest配置如上图所示，需要注意的是，让app不在桌面上生成应用图标，需要将启动activity去掉下面的过滤配置：
+
+
 ```xml
 <intent-filter>
 	<action android:name="android.intent.action.MAIN"/>
 	<category android:name="android.intent.category.LAUNCHER"/>
 </intent-filter>
 ```
+
 去掉上述配置后这个工程是无法执行Run操作了，但是不要紧，不影响打包成apk。
 
 
