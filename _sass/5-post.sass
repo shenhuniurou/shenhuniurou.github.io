@@ -77,9 +77,15 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6
 
   blockquote
     border-left: 4px solid #dddddd
+    padding: 0 15px
     position: relative
     color: #777777
     margin: 0 0 $post-paragraph-spacing 2em
+    
+  blockquote:first-child 
+    margin-top: 0
+  blockquote:last-child
+    margin-bottom: 0
     
 
   img
