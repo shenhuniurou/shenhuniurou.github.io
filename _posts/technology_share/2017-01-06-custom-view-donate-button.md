@@ -1,30 +1,30 @@
 ---
 layout: post
-title: ×Ô¶¨ÒåView-·Â»¢ÆËÖ±²¥±ÈÈü½çÃæµÄ´òÉÍ°´Å¥
-category: ¼¼Êõ·ÖÏí
-tags: ×Ô¶¨Òåview
+title: è‡ªå®šä¹‰View-ä»¿è™æ‰‘ç›´æ’­æ¯”èµ›ç•Œé¢çš„æ‰“èµæŒ‰é’®
+category: æŠ€æœ¯åˆ†äº«
+tags: è‡ªå®šä¹‰view
 ---
 
 
-×÷ÎªÒ»¸ö×ÊÉîÀºÇò°®ºÃÕß£¬ÎÒ¾­³£»áÓÃ»¢ÆËapp¿´±ÈÈüÖ±²¥£¬ºóÀ´×¢Òâµ½ÎÄ×ÖÖ±²¥½çÃæÓÒÏÂ½Ç¼ÓÁËÁ½¸ö°´Å¥£¬¿ÉÒÔÔÚÖ±²¥¹ı³ÌÖĞËÍ»¢ÆË±Ò£¬Îª×Ô¼ºÖ§³ÖµÄÇò¶Ó¼ÓÓÍ£¬¾ßÌåµÄĞ§¹ûÈçÏÂÍ¼ËùÊ¾£º
+ä½œä¸ºä¸€ä¸ªèµ„æ·±ç¯®çƒçˆ±å¥½è€…ï¼Œæˆ‘ç»å¸¸ä¼šç”¨è™æ‰‘appçœ‹æ¯”èµ›ç›´æ’­ï¼Œåæ¥æ³¨æ„åˆ°æ–‡å­—ç›´æ’­ç•Œé¢å³ä¸‹è§’åŠ äº†ä¸¤ä¸ªæŒ‰é’®ï¼Œå¯ä»¥åœ¨ç›´æ’­è¿‡ç¨‹ä¸­é€è™æ‰‘å¸ï¼Œä¸ºè‡ªå·±æ”¯æŒçš„çƒé˜ŸåŠ æ²¹ï¼Œå…·ä½“çš„æ•ˆæœå¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
 
 ![1701061](http://upload-images.jianshu.io/upload_images/1159224-7c7fa3ec3fee2dbc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-ÎÒ¸öÈË¾õµÃÍ¦ºÃÍæµÄ£¬ËùÒÔ¾ö¶¨×Ô¼ºÊµÏÖÏÂÕâ¸ö°´Å¥£¬·Ï»°²»¶àËµ£¬ÏÈ¿´ÊµÏÖµÄĞ§¹û°É£º
+æˆ‘ä¸ªäººè§‰å¾—æŒºå¥½ç©çš„ï¼Œæ‰€ä»¥å†³å®šè‡ªå·±å®ç°ä¸‹è¿™ä¸ªæŒ‰é’®ï¼ŒåºŸè¯ä¸å¤šè¯´ï¼Œå…ˆçœ‹å®ç°çš„æ•ˆæœå§ï¼š
 
 ![hoopview](http://upload-images.jianshu.io/upload_images/1159224-d2787b7f019e3765.gif?imageMogr2/auto-orient/strip)
 
-Õâ¸öĞ§¹û¿´ÆğÀ´ºÍpopupwindow²î²»¶à£¬µ«ÎÒÊÇ²ÉÓÃ×Ô¶¨ÒåviewµÄ·½Ê½À´ÊµÏÖ£¬ÏÂÃæËµËµ¹ı³Ì¡£
+è¿™ä¸ªæ•ˆæœçœ‹èµ·æ¥å’Œpopupwindowå·®ä¸å¤šï¼Œä½†æˆ‘æ˜¯é‡‡ç”¨è‡ªå®šä¹‰viewçš„æ–¹å¼æ¥å®ç°ï¼Œä¸‹é¢è¯´è¯´è¿‡ç¨‹ã€‚
 
-Ê×ÏÈ´Ó»¢ÆËµÄĞ§¹û¿ÉÒÔ¿´µ½£¬ËüÕâÁ½¸ö°´Å¥Ê±¸¡ÔÚÕû¸ö½çÃæÖ®ÉÏµÄ£¬ËùÒÔËüĞèÒªºÍFrameLayout½áºÏÊ¹ÓÃ£¬Òò´ËÎÒÈÃËüµÄ¿í¶È¸úËæÆÁÄ»´óĞ¡£¬¸ß¶È¸ù¾İdpi¹Ì¶¨£¬ËüµÄÊµ¼Ê³ß´çÊ±ÕâÑùµÄ£º
+é¦–å…ˆä»è™æ‰‘çš„æ•ˆæœå¯ä»¥çœ‹åˆ°ï¼Œå®ƒè¿™ä¸¤ä¸ªæŒ‰é’®æ—¶æµ®åœ¨æ•´ä¸ªç•Œé¢ä¹‹ä¸Šçš„ï¼Œæ‰€ä»¥å®ƒéœ€è¦å’ŒFrameLayoutç»“åˆä½¿ç”¨ï¼Œå› æ­¤æˆ‘è®©å®ƒçš„å®½åº¦è·Ÿéšå±å¹•å¤§å°ï¼Œé«˜åº¦æ ¹æ®dpiå›ºå®šï¼Œå®ƒçš„å®é™…å°ºå¯¸æ—¶è¿™æ ·çš„ï¼š
 
 ![1701062](http://upload-images.jianshu.io/upload_images/1159224-e7203f8aab4ada5d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-ÁíÍâÕâ¸öview³õÊ¼»¯³öÀ´ÎÒÃÇ¿´µ½¿ÉÒÔ·ÖÎªÈı¿é£¬±³¾°Ô²¡¢Ô²ÄÚÎÄ×Ö¡¢Ô²ÉÏ·½Êı×Ö£¬ËùÒÔÕı³£×´Ì¬ÏÂ£¬Ö»ĞèÒªÔÚonDraw·½·¨ÖĞ»­³öÕâÈı¿éÄÚÈİ¼´¿É¡£ÏÈÔÚ³õÊ¼»¯·½·¨ÖĞ½«×Ô¶¨ÒåµÄÊôĞÔºÍ»­±ÊÒÔ¼°³õÊ¼»¯Êı¾İ×¼±¸ºÃ£º
+å¦å¤–è¿™ä¸ªviewåˆå§‹åŒ–å‡ºæ¥æˆ‘ä»¬çœ‹åˆ°å¯ä»¥åˆ†ä¸ºä¸‰å—ï¼ŒèƒŒæ™¯åœ†ã€åœ†å†…æ–‡å­—ã€åœ†ä¸Šæ–¹æ•°å­—ï¼Œæ‰€ä»¥æ­£å¸¸çŠ¶æ€ä¸‹ï¼Œåªéœ€è¦åœ¨onDrawæ–¹æ³•ä¸­ç”»å‡ºè¿™ä¸‰å—å†…å®¹å³å¯ã€‚å…ˆåœ¨åˆå§‹åŒ–æ–¹æ³•ä¸­å°†è‡ªå®šä¹‰çš„å±æ€§å’Œç”»ç¬”ä»¥åŠåˆå§‹åŒ–æ•°æ®å‡†å¤‡å¥½ï¼š
 
 ```java
 private void init(Context context, AttributeSet attrs) {
-	//»ñÈ¡×Ô¶¨ÒåÊôĞÔ
+	//è·å–è‡ªå®šä¹‰å±æ€§
 	TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.HoopView);
 	mThemeColor = typedArray.getColor(R.styleable.HoopView_theme_color, Color.YELLOW);
 	mText = typedArray.getString(R.styleable.HoopView_text);
@@ -61,13 +61,13 @@ private void init(Context context, AttributeSet attrs) {
 	countMargin = (int) context.getResources().getDimension(R.dimen.hoop_count_margin);
 
 	mDatas = new String[] {"1", "10", "100"};
-	// ¼ÆËã±³¾°¿ò¸Ä±äµÄ³¤¶È£¬Ä¬ÈÏÊÇÈı¸ö°´Å¥
+	// è®¡ç®—èƒŒæ™¯æ¡†æ”¹å˜çš„é•¿åº¦ï¼Œé»˜è®¤æ˜¯ä¸‰ä¸ªæŒ‰é’®
 	mChangeWidth = (int) (2 * mSmallRadius * 3 + 4 * margin);
 
 }
 ```
 
-ÔÚonMeasureÖĞ²â³öviewµÄ¿í¶Èºó£¬¸ù¾İ¿í¶È¼ÆËã³ö±³¾°Ô²µÄÔ²ĞÄ×ø±êºÍÒ»Ğ©Ïà¹ØµÄÊı¾İÖµ¡£
+åœ¨onMeasureä¸­æµ‹å‡ºviewçš„å®½åº¦åï¼Œæ ¹æ®å®½åº¦è®¡ç®—å‡ºèƒŒæ™¯åœ†çš„åœ†å¿ƒåæ ‡å’Œä¸€äº›ç›¸å…³çš„æ•°æ®å€¼ã€‚
 
 ```java
 @Override protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
@@ -75,40 +75,40 @@ private void init(Context context, AttributeSet attrs) {
 	mWidth = getDefaultSize(widthSize, widthMeasureSpec);
 	setMeasuredDimension(mWidth, mHeight);
 
-	// ´ËÊ±²Å²â³öÁËmWidthÖµ£¬ÔÙ¼ÆËãÔ²ĞÄ×ø±ê¼°Ïà¹ØÖµ
+	// æ­¤æ—¶æ‰æµ‹å‡ºäº†mWidthå€¼ï¼Œå†è®¡ç®—åœ†å¿ƒåæ ‡åŠç›¸å…³å€¼
 	cx = mWidth - mBigRadius;
 	cy = mHeight - mBigRadius;
-	// ´óÔ²Ô²ĞÄ
+	// å¤§åœ†åœ†å¿ƒ
 	circle = new PointF(cx, cy);
-	// Èı¸ö°´Å¥µÄÔ²ĞÄ
+	// ä¸‰ä¸ªæŒ‰é’®çš„åœ†å¿ƒ
 	circleOne = new PointF(cx - mBigRadius - mSmallRadius - margin, cy);
 	circleTwo = new PointF(cx - mBigRadius - 3 * mSmallRadius - 2 * margin, cy);
 	circleThree = new PointF(cx - mBigRadius - 5 * mSmallRadius - 3 * margin, cy);
-	// ³õÊ¼µÄ±³¾°¿òµÄ±ß½ç¼´Îª´óÔ²µÄËÄ¸ö±ß½çµã
+	// åˆå§‹çš„èƒŒæ™¯æ¡†çš„è¾¹ç•Œå³ä¸ºå¤§åœ†çš„å››ä¸ªè¾¹ç•Œç‚¹
 	top = cy - mBigRadius;
 	bottom = cy + mBigRadius;
 }
 ```
 
-ÒòÎªÕâÀïÃæÉæ¼°µ½µã»÷°´Å¥Õ¹¿ªºÍÊÕËõµÄ¹ı³Ì£¬ËùÒÔÎÒ¶¨ÒåÁËÈçÏÂ¼¸ÖÖ×´Ì¬£¬Ö»ÓĞÔÚÌØ¶¨µÄ×´Ì¬ÏÂ²ÅÄÜ½øĞĞÄ³Ğ©²Ù×÷¡£
+å› ä¸ºè¿™é‡Œé¢æ¶‰åŠåˆ°ç‚¹å‡»æŒ‰é’®å±•å¼€å’Œæ”¶ç¼©çš„è¿‡ç¨‹ï¼Œæ‰€ä»¥æˆ‘å®šä¹‰äº†å¦‚ä¸‹å‡ ç§çŠ¶æ€ï¼Œåªæœ‰åœ¨ç‰¹å®šçš„çŠ¶æ€ä¸‹æ‰èƒ½è¿›è¡ŒæŸäº›æ“ä½œã€‚
 
 ```java
-private int mState = STATE_NORMAL;//µ±Ç°Õ¹¿ªÊÕËõµÄ×´Ì¬
-private boolean mIsRun = false;//ÊÇ·ñÕıÔÚÕ¹¿ª»òÊÕËõ
+private int mState = STATE_NORMAL;//å½“å‰å±•å¼€æ”¶ç¼©çš„çŠ¶æ€
+private boolean mIsRun = false;//æ˜¯å¦æ­£åœ¨å±•å¼€æˆ–æ”¶ç¼©
 
-//Õı³£×´Ì¬
+//æ­£å¸¸çŠ¶æ€
 public static final int STATE_NORMAL = 0;
-//°´Å¥Õ¹¿ª
+//æŒ‰é’®å±•å¼€
 public static final int STATE_EXPAND = 1;
-//°´Å¥ÊÕËõ
+//æŒ‰é’®æ”¶ç¼©
 public static final int STATE_SHRINK = 2;
-//ÕıÔÚÕ¹¿ª
+//æ­£åœ¨å±•å¼€
 public static final int STATE_EXPANDING = 3;
-//ÕıÔÚÊÕËõ
+//æ­£åœ¨æ”¶ç¼©
 public static final int STATE_SHRINKING = 4;
 ```
 
-½ÓÏÂÀ´¾ÍÖ´ĞĞonDraw·½·¨ÁË£¬ÏÈ¿´¿´´úÂë£º
+æ¥ä¸‹æ¥å°±æ‰§è¡ŒonDrawæ–¹æ³•äº†ï¼Œå…ˆçœ‹çœ‹ä»£ç ï¼š
 
 ```java
 @Override protected void onDraw(Canvas canvas) {
@@ -130,13 +130,13 @@ public static final int STATE_SHRINKING = 4;
 }
 ```
 
-Ô²ÉÏ·½µÄÊı×ÖºÍÔ²ÄÚµÄÎÄ×ÖÊÇÕû¸ö¹ı³ÌÖĞÒ»Ö±´æÔÚµÄ£¬ËùÒÔÎÒ½«ÕâÁ½¸ö²Ù×÷·ÅÔÚ`switch`Ö®Íâ£¬Õı³£×´Ì¬ÏÂ»æÖÆÔ²ºÍÖ®Ç°Á½²¿·ÖÎÄ×Ö£¬µã»÷Õ¹¿ªÊ±»æÖÆ±³¾°¿òÕ¹¿ª¹ı³ÌºÍÎÄ×Ö£¬Õ¹¿ª×´Ì¬ÏÂÔÙ´Îµã»÷»æÖÆÊÕËõ¹ı³ÌºÍÎÄ×Ö£¬µ±È»ÔÚ»æÖÆ±³¾°¿òµÄ·½·¨ÖĞÒ²ĞèÒª²»¶Ï»æÖÆ´óÔ²£¬´óÔ²Ò²ÊÇÒ»Ö±´æÔÚµÄ¡£
+åœ†ä¸Šæ–¹çš„æ•°å­—å’Œåœ†å†…çš„æ–‡å­—æ˜¯æ•´ä¸ªè¿‡ç¨‹ä¸­ä¸€ç›´å­˜åœ¨çš„ï¼Œæ‰€ä»¥æˆ‘å°†è¿™ä¸¤ä¸ªæ“ä½œæ”¾åœ¨`switch`ä¹‹å¤–ï¼Œæ­£å¸¸çŠ¶æ€ä¸‹ç»˜åˆ¶åœ†å’Œä¹‹å‰ä¸¤éƒ¨åˆ†æ–‡å­—ï¼Œç‚¹å‡»å±•å¼€æ—¶ç»˜åˆ¶èƒŒæ™¯æ¡†å±•å¼€è¿‡ç¨‹å’Œæ–‡å­—ï¼Œå±•å¼€çŠ¶æ€ä¸‹å†æ¬¡ç‚¹å‡»ç»˜åˆ¶æ”¶ç¼©è¿‡ç¨‹å’Œæ–‡å­—ï¼Œå½“ç„¶åœ¨ç»˜åˆ¶èƒŒæ™¯æ¡†çš„æ–¹æ³•ä¸­ä¹Ÿéœ€è¦ä¸æ–­ç»˜åˆ¶å¤§åœ†ï¼Œå¤§åœ†ä¹Ÿæ˜¯ä¸€ç›´å­˜åœ¨çš„ã€‚
 
-ÉÏÃæµÄ»æÖÆ·½·¨£º
+ä¸Šé¢çš„ç»˜åˆ¶æ–¹æ³•ï¼š
 
 ```java
 /**
- * »­±³¾°´óÔ²
+ * ç”»èƒŒæ™¯å¤§åœ†
  * @param canvas
  */
 private void drawCircle(Canvas canvas) {
@@ -147,19 +147,19 @@ private void drawCircle(Canvas canvas) {
 
 
 /**
- * »­´óÔ²ÉÏÃæ±íÊ¾½ğ±ÒÊıµÄÎÄ×Ö
+ * ç”»å¤§åœ†ä¸Šé¢è¡¨ç¤ºé‡‘å¸æ•°çš„æ–‡å­—
  * @param canvas
  */
 private void drawCountText(Canvas canvas) {
 	canvas.translate(0, -countMargin);
-	//¼ÆËãÎÄ×ÖµÄ¿í¶È
+	//è®¡ç®—æ–‡å­—çš„å®½åº¦
 	float textWidth = mCountTextPaint.measureText(mCount, 0, mCount.length());
 	canvas.drawText(mCount, 0, mCount.length(), (2 * mBigRadius - textWidth - 35) / 2, 0.2f, mCountTextPaint);
 }
 
 
 /**
- * »­´óÔ²ÄÚµÄÎÄ×Ö
+ * ç”»å¤§åœ†å†…çš„æ–‡å­—
  * @param canvas
  */
 private void drawCircleText(Canvas canvas) {
@@ -171,7 +171,7 @@ private void drawCircleText(Canvas canvas) {
 
 
 /**
- * »­±³¾°¿òÕ¹¿ªºÍÊÕËõ
+ * ç”»èƒŒæ™¯æ¡†å±•å¼€å’Œæ”¶ç¼©
  * @param canvas
  */
 private void drawBackground(Canvas canvas) {
@@ -179,49 +179,49 @@ private void drawBackground(Canvas canvas) {
 	right = cx + mBigRadius;
 	canvas.drawRoundRect(left, top, right, bottom, mBigRadius, mBigRadius, mPopPaint);
 	if ((mChange > 0) && (mChange <= 2 * mSmallRadius + margin)) {
-		// »æÖÆµÚÒ»¸ö°´Å¥
+		// ç»˜åˆ¶ç¬¬ä¸€ä¸ªæŒ‰é’®
 		canvas.drawCircle(cx - mChange, cy, mSmallRadius, mBgPaint);
-		// »æÖÆµÚÒ»¸ö°´Å¥ÄÚµÄÎÄ×Ö
+		// ç»˜åˆ¶ç¬¬ä¸€ä¸ªæŒ‰é’®å†…çš„æ–‡å­—
 		canvas.drawText(mDatas[0], cx - (mBigRadius - mSmallRadius) - mChange, cy + 15, mTextPaint);
 	} else if ((mChange > 2 * mSmallRadius + margin) && (mChange <= 4 * mSmallRadius + 2 * margin)) {
-		// »æÖÆµÚÒ»¸ö°´Å¥
+		// ç»˜åˆ¶ç¬¬ä¸€ä¸ªæŒ‰é’®
 		canvas.drawCircle(cx - mBigRadius - mSmallRadius - margin, cy, mSmallRadius, mBgPaint);
-		// »æÖÆµÚÒ»¸ö°´Å¥ÄÚµÄÎÄ×Ö
+		// ç»˜åˆ¶ç¬¬ä¸€ä¸ªæŒ‰é’®å†…çš„æ–‡å­—
 		canvas.drawText(mDatas[0], cx - mBigRadius - mSmallRadius - margin - 20, cy + 15, mTextPaint);
 
-		// »æÖÆµÚ¶ş¸ö°´Å¥
+		// ç»˜åˆ¶ç¬¬äºŒä¸ªæŒ‰é’®
 		canvas.drawCircle(cx - mChange, cy, mSmallRadius, mBgPaint);
-		// »æÖÆµÚ¶ş¸ö°´Å¥ÄÚµÄÎÄ×Ö
+		// ç»˜åˆ¶ç¬¬äºŒä¸ªæŒ‰é’®å†…çš„æ–‡å­—
 		canvas.drawText(mDatas[1], cx - mChange - 20, cy + 15, mTextPaint);
 	} else if ((mChange > 4 * mSmallRadius + 2 * margin) && (mChange <= 6 * mSmallRadius + 3 * margin)) {
-		// »æÖÆµÚÒ»¸ö°´Å¥
+		// ç»˜åˆ¶ç¬¬ä¸€ä¸ªæŒ‰é’®
 		canvas.drawCircle(cx - mBigRadius - mSmallRadius - margin, cy, mSmallRadius, mBgPaint);
-		// »æÖÆµÚÒ»¸ö°´Å¥ÄÚµÄÎÄ×Ö
+		// ç»˜åˆ¶ç¬¬ä¸€ä¸ªæŒ‰é’®å†…çš„æ–‡å­—
 		canvas.drawText(mDatas[0], cx - mBigRadius - mSmallRadius - margin - 16, cy + 15, mTextPaint);
 
-		// »æÖÆµÚ¶ş¸ö°´Å¥
+		// ç»˜åˆ¶ç¬¬äºŒä¸ªæŒ‰é’®
 		canvas.drawCircle(cx - mBigRadius - 3 * mSmallRadius - 2 * margin, cy, mSmallRadius, mBgPaint);
-		// »æÖÆµÚ¶ş¸ö°´Å¥ÄÚµÄÎÄ×Ö
+		// ç»˜åˆ¶ç¬¬äºŒä¸ªæŒ‰é’®å†…çš„æ–‡å­—
 		canvas.drawText(mDatas[1], cx - mBigRadius - 3 * mSmallRadius - 2 * margin - 25, cy + 15, mTextPaint);
 
-		// »æÖÆµÚÈı¸ö°´Å¥
+		// ç»˜åˆ¶ç¬¬ä¸‰ä¸ªæŒ‰é’®
 		canvas.drawCircle(cx - mChange, cy, mSmallRadius, mBgPaint);
-		// »æÖÆµÚÈı¸ö°´Å¥ÄÚµÄÎÄ×Ö
+		// ç»˜åˆ¶ç¬¬ä¸‰ä¸ªæŒ‰é’®å†…çš„æ–‡å­—
 		canvas.drawText(mDatas[2], cx - mChange - 34, cy + 15, mTextPaint);
 	} else  if (mChange > 6 * mSmallRadius + 3 * margin) {
-		// »æÖÆµÚÒ»¸ö°´Å¥
+		// ç»˜åˆ¶ç¬¬ä¸€ä¸ªæŒ‰é’®
 		canvas.drawCircle(cx - mBigRadius - mSmallRadius - margin, cy, mSmallRadius, mBgPaint);
-		// »æÖÆµÚÒ»¸ö°´Å¥ÄÚµÄÎÄ×Ö
+		// ç»˜åˆ¶ç¬¬ä¸€ä¸ªæŒ‰é’®å†…çš„æ–‡å­—
 		canvas.drawText(mDatas[0], cx - mBigRadius - mSmallRadius - margin - 16, cy + 15, mTextPaint);
 
-		// »æÖÆµÚ¶ş¸ö°´Å¥
+		// ç»˜åˆ¶ç¬¬äºŒä¸ªæŒ‰é’®
 		canvas.drawCircle(cx - mBigRadius - 3 * mSmallRadius - 2 * margin, cy, mSmallRadius, mBgPaint);
-		// »æÖÆµÚ¶ş¸ö°´Å¥ÄÚµÄÎÄ×Ö
+		// ç»˜åˆ¶ç¬¬äºŒä¸ªæŒ‰é’®å†…çš„æ–‡å­—
 		canvas.drawText(mDatas[1], cx - mBigRadius - 3 * mSmallRadius - 2 * margin - 25, cy + 15, mTextPaint);
 
-		// »æÖÆµÚÈı¸ö°´Å¥
+		// ç»˜åˆ¶ç¬¬ä¸‰ä¸ªæŒ‰é’®
 		canvas.drawCircle(cx - mBigRadius - 5 * mSmallRadius - 3 * margin, cy, mSmallRadius, mBgPaint);
-		// »æÖÆµÚÈı¸ö°´Å¥ÄÚµÄÎÄ×Ö
+		// ç»˜åˆ¶ç¬¬ä¸‰ä¸ªæŒ‰é’®å†…çš„æ–‡å­—
 		canvas.drawText(mDatas[2], cx - mBigRadius - 5 * mSmallRadius - 3 * margin - 34, cy + 15, mTextPaint);
 	}
 	drawCircle(canvas);
@@ -229,28 +229,28 @@ private void drawBackground(Canvas canvas) {
 }
 ```
 
-È»ºóÊÇµã»÷ÊÂ¼şµÄ´¦Àí£¬Ö»ÓĞ´¥ÃşµãÔÚ´óÔ²ÄÚÊ±²Å»á´¥·¢Õ¹¿ª»òÊÕËõµÄ²Ù×÷£¬µã»÷Ğ¡Ô²Ê±Ìá¹©ÁËÒ»¸ö½Ó¿Ú¸øÍâ²¿µ÷ÓÃ¡£
+ç„¶åæ˜¯ç‚¹å‡»äº‹ä»¶çš„å¤„ç†ï¼Œåªæœ‰è§¦æ‘¸ç‚¹åœ¨å¤§åœ†å†…æ—¶æ‰ä¼šè§¦å‘å±•å¼€æˆ–æ”¶ç¼©çš„æ“ä½œï¼Œç‚¹å‡»å°åœ†æ—¶æä¾›äº†ä¸€ä¸ªæ¥å£ç»™å¤–éƒ¨è°ƒç”¨ã€‚
 
 ```java
 @Override public boolean onTouchEvent(MotionEvent event) {
 	int action = event.getAction();
 	switch (action) {
 		case MotionEvent.ACTION_DOWN:
-			//Èç¹ûµã»÷µÄÊ±ºò¶¯»­ÔÚ½øĞĞ£¬²»´¦Àí
+			//å¦‚æœç‚¹å‡»çš„æ—¶å€™åŠ¨ç”»åœ¨è¿›è¡Œï¼Œä¸å¤„ç†
 			if (mIsRun) return true;
 			PointF pointF = new PointF(event.getX(), event.getY());
-			if (isPointInCircle(pointF, circle, mBigRadius)) { //Èç¹û´¥ÃşµãÔÚ´óÔ²ÄÚ£¬¸ù¾İµ¯³ö·½Ïòµ¯³ö»òÕßÊÕËõ°´Å¥
+			if (isPointInCircle(pointF, circle, mBigRadius)) { //å¦‚æœè§¦æ‘¸ç‚¹åœ¨å¤§åœ†å†…ï¼Œæ ¹æ®å¼¹å‡ºæ–¹å‘å¼¹å‡ºæˆ–è€…æ”¶ç¼©æŒ‰é’®
 				if ((mState == STATE_SHRINK || mState == STATE_NORMAL) && !mIsRun) {
-					//Õ¹¿ª
-					mIsRun = true;//ÕâÊÇ±ØĞëÏÈÉèÖÃtrue£¬ÒòÎªonAnimationStartÔÚonAnimationUpdateÖ®ºó²Åµ÷ÓÃ
+					//å±•å¼€
+					mIsRun = true;//è¿™æ˜¯å¿…é¡»å…ˆè®¾ç½®trueï¼Œå› ä¸ºonAnimationStartåœ¨onAnimationUpdateä¹‹åæ‰è°ƒç”¨
 					showPopMenu();
 				} else {
-					//ÊÕËõ
+					//æ”¶ç¼©
 					mIsRun = true;
 					hidePopMenu();
 				}
-			} else { //´¥Ãşµã²»ÔÚ´óÔ²ÄÚ
-				if (mState == STATE_EXPAND) { //Èç¹ûÊÇÕ¹¿ª×´Ì¬
+			} else { //è§¦æ‘¸ç‚¹ä¸åœ¨å¤§åœ†å†…
+				if (mState == STATE_EXPAND) { //å¦‚æœæ˜¯å±•å¼€çŠ¶æ€
 					if (isPointInCircle(pointF, circleOne, mSmallRadius)) {
 						listener.clickButton(this, Integer.parseInt(mDatas[0]));
 					} else if (isPointInCircle(pointF, circleTwo, mSmallRadius)) {
@@ -268,7 +268,7 @@ private void drawBackground(Canvas canvas) {
 }
 ```
 
-Õ¹¿ªºÍÊÕËõµÄ¶¯»­ÊÇ¸Ä±ä±³¾°¿òµÄ¿í¶ÈÊôĞÔµÄ¶¯»­£¬²¢¼àÌıÕâ¸öÊôĞÔ¶¯»­£¬ÔÚ¿í¶ÈÖµ¸Ä±äµÄ¹ı³ÌÖĞÈ¥ÖØĞÂ»æÖÆÕû¸öview¡£ÒòÎªÒ»¿ªÊ¼ÎÒ¾ÍÈ·¶¨ÁË´óÔ²Ğ¡Ô²µÄ°ë¾¶ºÍĞ¡Ô²Óë±³¾°¿òÖ®¼äµÄ¼ä¾à£¬ËùÒÔ³õÊ¼»¯Ê±ÒÑ¾­¼ÆËãºÃÁË±³¾°¿òµÄ¿í¶È£º
+å±•å¼€å’Œæ”¶ç¼©çš„åŠ¨ç”»æ˜¯æ”¹å˜èƒŒæ™¯æ¡†çš„å®½åº¦å±æ€§çš„åŠ¨ç”»ï¼Œå¹¶ç›‘å¬è¿™ä¸ªå±æ€§åŠ¨ç”»ï¼Œåœ¨å®½åº¦å€¼æ”¹å˜çš„è¿‡ç¨‹ä¸­å»é‡æ–°ç»˜åˆ¶æ•´ä¸ªviewã€‚å› ä¸ºä¸€å¼€å§‹æˆ‘å°±ç¡®å®šäº†å¤§åœ†å°åœ†çš„åŠå¾„å’Œå°åœ†ä¸èƒŒæ™¯æ¡†ä¹‹é—´çš„é—´è·ï¼Œæ‰€ä»¥åˆå§‹åŒ–æ—¶å·²ç»è®¡ç®—å¥½äº†èƒŒæ™¯æ¡†çš„å®½åº¦ï¼š
 
 ```java
 mChangeWidth = (int) (2 * mSmallRadius * 3 + 4 * margin);
@@ -276,7 +276,7 @@ mChangeWidth = (int) (2 * mSmallRadius * 3 + 4 * margin);
 
 ```java
 /**
- * µ¯³ö±³¾°¿ò
+ * å¼¹å‡ºèƒŒæ™¯æ¡†
  */
 private void showPopMenu() {
 	if (mState == STATE_SHRINK || mState == STATE_NORMAL) {
@@ -310,7 +310,7 @@ private void showPopMenu() {
 			@Override public void onAnimationEnd(Animator animation) {
 				super.onAnimationEnd(animation);
 				mIsRun = false;
-				//¶¯»­½áÊøºóÉèÖÃ×´Ì¬ÎªÕ¹¿ª
+				//åŠ¨ç”»ç»“æŸåè®¾ç½®çŠ¶æ€ä¸ºå±•å¼€
 				mState = STATE_EXPAND;
 			}
 		});
@@ -322,7 +322,7 @@ private void showPopMenu() {
 
 ```java
 /**
- * Òş²Øµ¯³ö¿ò
+ * éšè—å¼¹å‡ºæ¡†
  */
 private void hidePopMenu() {
 	if (mState == STATE_EXPAND) {
@@ -355,7 +355,7 @@ private void hidePopMenu() {
 			@Override public void onAnimationEnd(Animator animation) {
 				super.onAnimationEnd(animation);
 				mIsRun = false;
-				//¶¯»­½áÊøºóÉèÖÃ×´Ì¬ÎªÊÕËõ
+				//åŠ¨ç”»ç»“æŸåè®¾ç½®çŠ¶æ€ä¸ºæ”¶ç¼©
 				mState = STATE_SHRINK;
 			}
 		});
@@ -365,9 +365,9 @@ private void hidePopMenu() {
 }
 ```
 
-Õâ¸ö¹ı³Ì¿´ÆğÀ´ÊÇµ¯³ö»òÊÕËõ£¬Êµ¼ÊÉÏ¿í¶ÈÖµÃ¿¸Ä±äÒ»µã£¬¾Í½«ËùÓĞµÄ×é¼şÖØ»æÒ»´Î£¬Ö»ÊÇÎÄ×ÖºÍ´óÔ²µÈÄÚÈİµÄ³ß´ç¼°Î»ÖÃ¶¼Ã»ÓĞ±ä»¯£¬Ö»ÓĞ±³¾°¿òµÄ¿í¶ÈÖµÔÚ±ä£¬ËùÒÔ²ÅÓĞÕâÖÖĞ§¹û¡£
+è¿™ä¸ªè¿‡ç¨‹çœ‹èµ·æ¥æ˜¯å¼¹å‡ºæˆ–æ”¶ç¼©ï¼Œå®é™…ä¸Šå®½åº¦å€¼æ¯æ”¹å˜ä¸€ç‚¹ï¼Œå°±å°†æ‰€æœ‰çš„ç»„ä»¶é‡ç»˜ä¸€æ¬¡ï¼Œåªæ˜¯æ–‡å­—å’Œå¤§åœ†ç­‰å†…å®¹çš„å°ºå¯¸åŠä½ç½®éƒ½æ²¡æœ‰å˜åŒ–ï¼Œåªæœ‰èƒŒæ™¯æ¡†çš„å®½åº¦å€¼åœ¨å˜ï¼Œæ‰€ä»¥æ‰æœ‰è¿™ç§æ•ˆæœã€‚
 
-ÔÚxmlÖĞµÄÊ¹ÓÃ£º
+åœ¨xmlä¸­çš„ä½¿ç”¨ï¼š
 
 ```xml
 <LinearLayout
@@ -383,7 +383,7 @@ private void hidePopMenu() {
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_marginRight="10dp"
-		app:text="Ö§³Ö»ğ¼ı"
+		app:text="æ”¯æŒç«ç®­"
 		app:count="1358"
 		app:theme_color="#31A129"/>
 
@@ -392,25 +392,25 @@ private void hidePopMenu() {
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_marginRight="10dp"
-		app:text="ÈÈ»ğÎŞµĞ"
+		app:text="çƒ­ç«æ— æ•Œ"
 		app:count="251"
 		app:theme_color="#F49C11"/>
 </LinearLayout>
 ```
 
-activityÖĞÊ¹ÓÃ£º
+activityä¸­ä½¿ç”¨ï¼š
 
 ```java
 hoopview1 = (HoopView) findViewById(R.id.hoopview1);
 hoopview1.setOnClickButtonListener(new HoopView.OnClickButtonListener() {
 	@Override public void clickButton(View view, int num) {
-		Toast.makeText(MainActivity.this, "hoopview1Ôö¼ÓÁË" + num, Toast.LENGTH_SHORT).show();
+		Toast.makeText(MainActivity.this, "hoopview1å¢åŠ äº†" + num, Toast.LENGTH_SHORT).show();
 	}
 });
 ```
 
 
-´óÖÂÊµÏÖ¹ı³Ì¾ÍÊÇÕâÑù£¬ÓëÔ­Ê¼Ğ§¹û»¹ÊÇÓĞµãÇø±ğ£¬ÎÒÕâ¸ö»¹ÓĞºÜ¶àè¦´Ã£¬±ÈÈçÎÄ×ÖµÄÎ»ÖÃ¾ÓÖĞÎÊÌâ£¬µ¯³ö»òÊÕËõÊ±£¬Ğ¡Ô²ÄÚµÄÎÄ×ÖµÄĞı×ª¶¯»­ÎÒÃ»ÓĞÊµÏÖ¡£
+å¤§è‡´å®ç°è¿‡ç¨‹å°±æ˜¯è¿™æ ·ï¼Œä¸åŸå§‹æ•ˆæœè¿˜æ˜¯æœ‰ç‚¹åŒºåˆ«ï¼Œæˆ‘è¿™ä¸ªè¿˜æœ‰å¾ˆå¤šç‘•ç–µï¼Œæ¯”å¦‚æ–‡å­—çš„ä½ç½®å±…ä¸­é—®é¢˜ï¼Œå¼¹å‡ºæˆ–æ”¶ç¼©æ—¶ï¼Œå°åœ†å†…çš„æ–‡å­—çš„æ—‹è½¬åŠ¨ç”»æˆ‘æ²¡æœ‰å®ç°ã€‚
 
-´úÂëµØÖ·£º
+ä»£ç åœ°å€ï¼š
 [https://github.com/shenhuniurou/HoopCustomView](https://github.com/shenhuniurou/HoopCustomView)
