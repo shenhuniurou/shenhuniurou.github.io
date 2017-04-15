@@ -117,11 +117,11 @@ textview.setOnClickListener(new View.OnClickListener() {
 
 其中的标签和代码中的属性都是对应的，很好理解，在xml中可以定义`ValueAnimator`、`ObjectAnimator`和`AnimatorSet`;
 
-<set>标签对应的AnimatorSet，<animator>对应ValueAnimator，<objectAnimator>对应ObjectAnimator;
+`<set>`标签对应的AnimatorSet，`<animator>`对应ValueAnimator，`<objectAnimator>`对应ObjectAnimator;
 
-<set>中的属性android:ordering表示它里面的动画集合执行的方式，together表示多个子动画同时执行，sequentially则表示按照xml中的先后顺序依次执行，默认是together；
+`<set>`中的属性android:ordering表示它里面的动画集合执行的方式，together表示多个子动画同时执行，sequentially则表示按照xml中的先后顺序依次执行，默认是together；
 
-android:propertyName表示动画作用于哪个属性的名称，比如translationX，rorationY等，需要注意的是，<animator>标签是没有这个属性的，其余属性和objectAnimator相同；
+android:propertyName表示动画作用于哪个属性的名称，比如translationX，rorationY等，需要注意的是，`<animator>`标签是没有这个属性的，其余属性和objectAnimator相同；
 
 android:duration表示动画时长；
 
