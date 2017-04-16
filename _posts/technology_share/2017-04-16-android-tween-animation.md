@@ -264,7 +264,9 @@ android:animation表示作用在子View上的动画效果，它里面的文件an
 </set>
 ```
 
-android:animationOrder表示子View播放动画的顺序：normal[顺序出场] | random[随机出场] | reverse[逆向出场]
+android:animationOrder表示子View播放动画的顺序：
+
+normal[顺序出场] | random[随机出场] | reverse[逆向出场]
 
 android:delay表示子View开始动画的延迟时间，注意这里的时间单位既不是秒也不是毫秒，比如我们这里子View动画的duration是500毫秒，那么这个dalay0.5表示每个子元素都需要延迟250毫秒才开始做动画，第一个item延迟250毫秒，第二延迟500，第三个750...
 
