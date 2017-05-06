@@ -88,7 +88,7 @@ new Thread("Thread2") {
 
 日志输出如图：
 
-![输入图片说明](https://static.oschina.net/uploads/img/201705/02230516_c061.png "在这里输入图片标题")
+![输入图片说明](https://static.oschina.net/uploads/img/201705/06223155_ZY7Y.png "在这里输入图片标题")
 
 上面的代码我们发现，在不同的线程访问同一个ThreadLocal对象，获取到的值却不一样。这是因为不同线程访问同一个ThreadLocal的get方法，ThreadLocal内部会从各自的线程中取一个数组，然后再从数组中根据当前ThreadLocal的索引去查找出对应的value值，所以不同线程的数组是不同的。
 
