@@ -595,7 +595,7 @@ getMethod(view, this.methodName, param).invoke(view, wrapArg(this.value));
 RemoteViews中的单击事件，只支持发起PendingIntent，不支持onClickListener这种方法。我们需要注意setOnClickPendingIntent、setPendingIntentTemplate和setOnClickFillInIntent这几个方法之间的区别和联系。setOnClickPendingIntent是用于给普通的View设置点击事件，但是它不能给ListView或者GridView、StackView中的item设置点击事件，因为开销比较大，系统禁止了这种方式。而setPendingIntentTemplate方法就能给item设置单击事件，具体使用请参照这篇文章[Android 之窗口小部件高级篇--App Widget 之 RemoteViews](http://www.cnblogs.com/skywang12345/p/3264991.html)。
 
 
-## RemoteVIews的优缺点
+## RemoteViews的优缺点
 
 实际开发中，跨进程通信我们可以选择AIDL去实现，但是如果对界面的更新比较频繁，这时会有效率问题，而且AIDL接口可能会变得很复杂，但如果采用RemoteViews来实现就没有这个问题了，RemoteViews的缺点就是它仅支持一些常见的View，而对于自定义View是不支持的。
 
