@@ -854,13 +854,13 @@ Volley的源码解析就结束了，其实源码解析没有必要每个类每�
 
 ## 参考资料
 
-[手撕 Volley（一）](http://www.jianshu.com/p/33be82da8f25)
-[手撕 Volley（二）](http://www.jianshu.com/p/358b766c8d27)
-[手撕 Volley（三）](http://www.jianshu.com/p/63c0cd0fd99c)
-[Android Volley完全解析(一)，初识Volley的基本用法](http://blog.csdn.net/guolin_blog/article/details/17482095)
-[Android Volley完全解析(二)，使用Volley加载网络图片](http://blog.csdn.net/guolin_blog/article/details/17482165)
-[Android Volley完全解析(三)，定制自己的Request](http://blog.csdn.net/guolin_blog/article/details/17612763)
-[Android Volley完全解析(四)，带你从源码的角度理解Volley](http://blog.csdn.net/guolin_blog/article/details/17656437)
-[HTTP协议详解](http://www.cnblogs.com/li0803/archive/2008/11/03/1324746.html)
-[HTTP协议详解](http://www.cnblogs.com/EricaMIN1987_IT/p/3837436.html)
-[HttpClient和HttpURLConnection的区别](http://blog.csdn.net/hguang_zjh/article/details/33743249)
+- [手撕 Volley（一）](http://www.jianshu.com/p/33be82da8f25)
+- [手撕 Volley（二）](http://www.jianshu.com/p/358b766c8d27)
+- [手撕 Volley（三）](http://www.jianshu.com/p/63c0cd0fd99c)
+- [Android Volley完全解析(一)，初识Volley的基本用法](http://blog.csdn.net/guolin_blog/article/details/17482095)
+- [Android Volley完全解析(二)，使用Volley加载网络图片](http://blog.csdn.net/guolin_blog/article/details/17482165)
+- [Android Volley完全解析(三)，定制自己的Request](http://blog.csdn.net/guolin_blog/article/details/17612763)
+- [Android Volley完全解析(四)，带你从源码的角度理解Volley](http://blog.csdn.net/guolin_blog/article/details/17656437)
+- [HTTP协议详解](http://www.cnblogs.com/li0803/archive/2008/11/03/1324746.html)
+- [HTTP协议详解](http://www.cnblogs.com/EricaMIN1987_IT/p/3837436.html)
+- [HttpClient和HttpURLConnection的区别](http://blog.csdn.net/hguang_zjh/article/details/33743249)
