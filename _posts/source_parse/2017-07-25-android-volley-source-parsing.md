@@ -812,7 +812,7 @@ private class ResponseDeliveryRunnable implements Runnable {
 
 至于这个从主线程切换到子线程再到主线程的过程到底是怎样的呢？我再来梳理一遍：
 
-当我们创建RequestQueue时，在start方法中，会创建五个子线程，其中一个CacheDispatcher，默认四个NetworkDispatcher，他们的构造方法中都有传递一个对象，就是这个mDelivery，它是一个ResponseDelivery接口，实现类是ExecutorDelivery，我们看看RequestQueue的这两个构造方法就清除了：
+当我们创建RequestQueue时，在start方法中，会创建五个子线程，其中一个CacheDispatcher，默认四个NetworkDispatcher，他们的构造方法中都有传递一个对象，就是这个mDelivery，它是一个ResponseDelivery接口，实现类是ExecutorDelivery，我们看看RequestQueue的这两个构造方法就清楚了：
 
 ```
 public RequestQueue(Cache cache, Network network, int threadPoolSize, ResponseDelivery delivery) {
