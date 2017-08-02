@@ -25,7 +25,7 @@ tags: 性能优化
 - assets 存放需要保持原始文件的资源文件
 - res 存放所有的资源文件
 - resource.arsc  所有资源文件的id映射
-- NETA-INF 签名校验文件
+- META-INF 签名校验文件
 - AndroldManifest.xml   Android应用全局配置文件
 - 其它一些配置文件和第三方库生成的文件
 
