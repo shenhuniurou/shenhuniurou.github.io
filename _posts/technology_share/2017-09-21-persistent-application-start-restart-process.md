@@ -1,4 +1,11 @@
-persistent应用的启动过程以及重启机制
+---
+layout: post
+title: persistent应用的启动过程以及重启机制
+category: 技术分享
+tags: Android、persistent
+---
+
+
 
 在AndroidManifest.xml定义中，application有这么一个属性android:persistent，根据字面意思来理解就是说该应用是可持久的，也即是常驻的应用。其实就是这么个理解，被android:persistent修饰的应用会在系统启动之后被AMS启动。
 
