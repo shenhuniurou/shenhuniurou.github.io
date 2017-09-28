@@ -363,7 +363,7 @@ public void buildMaxHeap(int[] nums, int position, int end) {
 
 堆执行一次调整需要`O(logn)`的时间，在排序过程中需要遍历所有元素执行堆调整，所以最终时间复杂度是`O(nlogn)`。空间复杂度是`O(n)`。
 
-## 参考文献
+## 参考文章
 
 - [必须知道的八大种排序算法](http://www.jianshu.com/p/8c915179fd02)
 - [经典排序算法总结与实现](http://wuchong.me/blog/2014/02/09/algorithm-sort-summary/)
