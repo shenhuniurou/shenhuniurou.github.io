@@ -340,3 +340,59 @@ final Entry<K,V> getEntry(Object key) {
 这没什么可说的，和 put 的操作相反。不过要注意的是在遍历链表节点时，有一个判断 e.hash == hash，这个判断是必须要的，如果传入的 key 对象重写了 equals 方法却没有重写 hashCode，而恰巧此对象定位到这个数组位置，如果仅仅用 equals 判断可能是相等的，但其 hashCode 和当前对象不一致，这种情况，根据 Object 的 hashCode 的约定(对象的 hashCode 返回值跟其存储地址有关)，不能返回当前对象，而应该返回 null。我们在进行 get 和 put 操作的时候，使用的 key 通过 equals 比较是相等的，但由于没有重写 hashCode 方法，所以 put 操作时，key(hashcode1)-->hash-->indexFor-->最终索引位置 ，而通过 key 取出 value 的时候 key(hashcode2)-->hash-->indexFor-->最终索引位置，由于 hashcode1 不等于 hashcode2，导致没有定位到一个数组位置而返回逻辑上错误的值 null（也有可能碰巧定位到一个数组位置，但是也会判断其 entry 的 hash 值是否相等。）所以，在重写equals的方法的时候，必须注意重写hashCode方法，同时还要保证通过equals判断相等的两个对象，调用hashCode方法要返回同样的整数值。
 
 
+
+**HashMap非线程安全的原因**
+
+我们知道 HashMap 是非线程安全的，在并发环境下，可能会形成环状链表，导致 get 操作时，cpu 空转，所以，在并发环境中使用 HashMap 是非常危险的。下面结合源码来分析下 HashMap 费线程安全的原因以及环状链表形成的原因。
+
+1、resize死循环
+
+HashMap 的初始容量是16，一般来说，当有数据要插入时，都会检查容量有没有超过设定的 thredhold ，如果超过，需要增大Hash表的尺寸，但是这样一来，整个 Hash 表里的元素都需要被重算一遍。这叫 rehash，这个成本相当的大。也就是 `addEntry` 这个方法，当超过 thredhold 时，会调用 resize 方法，这个方法做两件事，一是计算新的长度并生成一个新的 HashMapEntry 数组，二是把旧数组中的元素转移到新的数组来，这个转移过程在 transfer 方法中实现，代码这里就不贴了，上面有，我们看看这个方法中的步骤：
+
+```
+while(null != e) {
+    HashMapEntry<K,V> next = e.next;
+    int i = indexFor(e.hash, newCapacity);
+    e.next = newTable[i];
+    newTable[i] = e;
+    e = next;
+}
+```
+
+1、对索引数组中的元素遍历
+2、对链表上的每一个节点遍历：用 next 取得要转移那个元素的下一个，将 e 转移到新 Hash 表的头部，使用头插法插入节点
+3、循环2，直到链表节点全部转移
+4、循环1，直到所有索引数组全部转移
+
+
+因为是单链表，转移头指针时必须记住next节点，不然转移后链表就丢了，然后 e 要插入到链表的头部，所以要先用 e.next 指向新的 Hash 表第一个元素，接着将新 Hash 表的头指针指向 e，然后转移 e 的下一个结点，这也就是 rehash 的过程，在单线程中是没有问题的，如果在多线程中， 假设有两个线程同时在进行 put 操作，并且进入了 transfer 阶段，再假设线程1在执行完 `HashMapEntry<K,V> next = e.next;` 后被挂起了，因为访问的是同一份数据，此时线程2 rehash 后链表的顺序其实是和原来相反的，比如以前是3->5->7，扩容后如果还在同一链表的话，链表顺序就会变成7->5->3，在线程1中 next 指向5，但是线程2继续操作时取5的 next，又指向了3，即 a.next = b，而 b.next = a，这样就导致了环状链表出现。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
