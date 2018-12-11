@@ -12,7 +12,6 @@ layout: default
       </div>
       <div id="particles-js"></div>
     </div>
-
     <div class="index-content">
       <ul class="artical-list">
         {% for post in site.categories.blog %}
