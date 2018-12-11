@@ -1,7 +1,7 @@
 ---
 layout: post
 title: support design library中一些组件的使用
-category: 技术分享
+category: blog
 tags: support_design_library
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: View滑动冲突及解决方案
-category: 技术分享
+category: blog
 tags: Android、View
 ---
 

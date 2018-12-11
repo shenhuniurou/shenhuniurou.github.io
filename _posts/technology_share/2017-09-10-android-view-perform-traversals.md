@@ -1,7 +1,7 @@
 ---
 layout: post
 title: View的工作流程
-category: 技术分享
+category: blog
 tags: Android、View
 ---
 

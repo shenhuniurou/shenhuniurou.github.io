@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android中的线程和线程池
-category: 技术分享
+category: blog
 tags: 线程和线程池
 ---
 

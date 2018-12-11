@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ReactNative如何封装原生组件并发布到npm
-category: 技术分享
+category: blog
 tags: ReactNative、native、npm
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android中的RemoteViews
-category: 技术分享
+category: blog
 tags: RemoteViews
 ---
 

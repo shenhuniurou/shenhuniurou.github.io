@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LayoutInflater源码解析
-category: 源码解析
+category: blog
 tags: LayoutInflater
 ---
 

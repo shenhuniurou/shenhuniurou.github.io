@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 常用的几种查找算法
-category: 技术分享
+category: blog
 tags: 查找、算法
 ---
 

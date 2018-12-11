@@ -1,7 +1,7 @@
 ---
 layout: post
 title: persistent应用的启动过程以及重启机制
-category: 技术分享
+category: blog
 tags: Android、persistent
 ---
 

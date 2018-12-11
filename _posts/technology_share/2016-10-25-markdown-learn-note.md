@@ -1,7 +1,7 @@
 ---
 layout: post
 title: markdown语法学习笔记
-category: 技术分享
+category: blog
 tags: markdown语法
 ---
 

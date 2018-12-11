@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Matrix的原理及使用方法
-category: 技术分享
+category: blog
 tags: Matrix
 ---
 

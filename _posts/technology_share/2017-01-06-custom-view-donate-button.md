@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 自定义View-仿虎扑直播比赛界面的打赏按钮
-category: 技术分享
+category: blog
 tags: 自定义view
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 元旦长隆欢乐世界一日游
-category: 读书旅行
+category: blog
 tags: 2017旅行
 ---
 

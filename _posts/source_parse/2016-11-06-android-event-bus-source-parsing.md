@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EventBus的基本使用和源码解析
-category: 源码解析
+category: blog
 tags: EventBus3.0
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android代码混淆与进阶
-category: 技术分享
+category: blog
 tags: Android、混淆
 ---
 

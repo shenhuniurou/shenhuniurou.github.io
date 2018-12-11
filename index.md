@@ -14,7 +14,7 @@ layout: default
     </div>
     <div class="index-content">
       <ul class="artical-list">
-        {% for post in site.categories %}
+        {% for post in site.categories.blog %}
         <li>
           <a href="{{ post.url }}" class="title">{{ post.title }}</a>
           <div class="title-desc">{{ post.description }}</div>

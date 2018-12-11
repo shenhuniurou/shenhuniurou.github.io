@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 动态加载插件apk中的资源
-category: 技术分享
+category: blog
 tags: 动态加载
 ---
 

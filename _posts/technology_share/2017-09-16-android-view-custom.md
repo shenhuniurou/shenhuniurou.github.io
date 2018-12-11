@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 自定义View
-category: 技术分享
+category: blog
 tags: Android、View
 ---
 

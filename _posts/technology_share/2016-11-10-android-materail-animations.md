@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Material Design中全新的动画
-category: 技术分享
+category: blog
 tags: Android动画
 ---
 

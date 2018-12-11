@@ -1,7 +1,7 @@
 ---
 layout: post
 title: View的事件分发机制
-category: 技术分享
+category: blog
 tags: Android、View
 ---
 

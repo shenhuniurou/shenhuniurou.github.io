@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android-Universal-Image-Loader框架源码解析
-category: 源码解析
+category: blog
 tags: 图片框架
 ---
 

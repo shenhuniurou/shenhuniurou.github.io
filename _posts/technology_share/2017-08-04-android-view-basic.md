@@ -1,7 +1,7 @@
 ---
 layout: post
 title: View的基础知识
-category: 技术分享
+category: blog
 tags: Android、View
 ---
 

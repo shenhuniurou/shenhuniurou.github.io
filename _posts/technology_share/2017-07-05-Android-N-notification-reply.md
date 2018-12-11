@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android N在通知栏上实现直接回复消息
-category: 技术分享
+category: blog
 tags: Android通知
 ---
 

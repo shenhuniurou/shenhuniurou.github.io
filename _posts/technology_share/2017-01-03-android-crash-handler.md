@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android捕获崩溃异常
-category: 技术分享
+category: blog
 tags: crash异常
 ---
 

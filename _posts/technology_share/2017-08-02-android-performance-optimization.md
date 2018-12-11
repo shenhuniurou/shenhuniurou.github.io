@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Andorid性能优化总结
-category: 技术分享
+category: blog
 tags: 性能优化
 ---
 

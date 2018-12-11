@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android的消息机制
-category: 技术分享
+category: blog
 tags: 消息机制
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android动画之帧动画和补间动画
-category: 技术分享
+category: blog
 tags: 帧动画、补间动画
 ---
 

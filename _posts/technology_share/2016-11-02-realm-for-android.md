@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Realm在Android项目中的使用
-category: 技术分享
+category: blog
 tags: Realm
 ---
 

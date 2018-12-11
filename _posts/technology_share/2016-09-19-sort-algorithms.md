@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 几种经典排序算法
-category: 技术分享
+category: blog
 tags: 排序、算法
 ---
 

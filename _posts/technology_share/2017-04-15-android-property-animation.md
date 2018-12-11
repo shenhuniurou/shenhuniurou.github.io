@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android动画之属性动画
-category: 技术分享
+category: blog
 tags: 属性动画
 ---
 
