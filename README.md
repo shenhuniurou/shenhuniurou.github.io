@@ -1,9 +1,10 @@
-### 我的博客
+#一点点说明
 
-地址：[http://shenhuniurou.com](http://shenhuniurou.com)
+这是[BeiYuu.com](http://beiyuu.com)的示例代码，如果你看了[使用Github Pages建独立博客](http://beiyuu.com/github-pages)，希望看下去哦：
 
-模板是采用的[Peiwen Lu](https://github.com/P233)的模板，有喜欢的可以到他的github去fork。
-
-还要感谢[SuYan](https://github.com/suyan)，模板中有很多地方我都是参照他的修改的。
-
-折腾这么久终于像个样子了，接下来要好好写自己喜欢的东西了。
+* 马上动手，很赞
+* 感谢认可
+* 推荐阅读：[我为什么写博客？](http://beiyuu.com/why-blog)
+* 想复用我的设计，没问题，标个出处就好啦
+* 转载也没问题，标个出处呗少年
+* 恩，认真的童鞋最可爱啦~
